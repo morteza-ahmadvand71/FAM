@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5ADD7C0-DAF7-4BC3-9347-81800AD92681}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Baran.Ferroalloy.Management</RootNamespace>
+    <AssemblyName>Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICON3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Baran.Ferroalloy.Automation">
+      <HintPath>..\Automation\bin\Debug\Baran.Ferroalloy.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="Baran.Ferroalloy.Finance">
+      <HintPath>..\Finance\bin\Debug\Baran.Ferroalloy.Finance.dll</HintPath>
+    </Reference>
+    <Reference Include="Baran.Ferroalloy.Maintenance">
+      <HintPath>..\Maintenance\obj\Debug\Baran.Ferroalloy.Maintenance.dll</HintPath>
+    </Reference>
+    <Reference Include="Baran.Ferroalloy.Office">
+      <HintPath>..\Office\bin\Debug\Baran.Ferroalloy.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Baran.Ferroalloy.Production">
+      <HintPath>..\Production\obj\Debug\Baran.Ferroalloy.Production.dll</HintPath>
+    </Reference>
+    <Reference Include="Baran.Ferroalloy.Store">
+      <HintPath>..\Store\bin\Debug\Baran.Ferroalloy.Store.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Automation\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FamSetting.cs" />
+    <Compile Include="Finance\InvoiceImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\InvoiceImage.Designer.cs">
+      <DependentUpon>InvoiceImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\InvoiceItemsInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\InvoiceItemsInsert.Designer.cs">
+      <DependentUpon>InvoiceItemsInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\InvoiceInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\InvoiceInsert.Designer.cs">
+      <DependentUpon>InvoiceInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\InvoiceItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\InvoiceItems.Designer.cs">
+      <DependentUpon>InvoiceItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\InvoiceItemsUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\InvoiceItemsUpdate.Designer.cs">
+      <DependentUpon>InvoiceItemsUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\VendorInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\VendorInsert.Designer.cs">
+      <DependentUpon>VendorInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\Invoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\Invoices.Designer.cs">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\InvoiceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\InvoiceUpdate.Designer.cs">
+      <DependentUpon>InvoiceUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\SelectVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\SelectVendor.Designer.cs">
+      <DependentUpon>SelectVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\VendorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\VendorUpdate.Designer.cs">
+      <DependentUpon>VendorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\Vendors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\Vendors.Designer.cs">
+      <DependentUpon>Vendors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Office\OfficePrefrences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Office\OfficePrefrences.Designer.cs">
+      <DependentUpon>OfficePrefrences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production\ProductionPrefrences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\ProductionPrefrences.Designer.cs">
+      <DependentUpon>ProductionPrefrences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Store\StorePrefrences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\StorePrefrences.Designer.cs">
+      <DependentUpon>StorePrefrences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store\StoreGetOutItemUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\StoreGetOutItemUpdate.Designer.cs">
+      <DependentUpon>StoreGetOutItemUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store\StoreGetOutUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\StoreGetOutUpdate.Designer.cs">
+      <DependentUpon>StoreGetOutUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store\StoreGetOutInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\StoreGetOutInsert.Designer.cs">
+      <DependentUpon>StoreGetOutInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store\StoreGetOutItemInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\StoreGetOutItemInsert.Designer.cs">
+      <DependentUpon>StoreGetOutItemInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store\StoreGetOutItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\StoreGetOutItems.Designer.cs">
+      <DependentUpon>StoreGetOutItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store\StoreGetOuts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\StoreGetOuts.Designer.cs">
+      <DependentUpon>StoreGetOuts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\TechnicalPrefrences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\TechnicalPrefrences.Designer.cs">
+      <DependentUpon>TechnicalPrefrences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\SelectStuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\SelectStuff.Designer.cs">
+      <DependentUpon>SelectStuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\Types.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\Types.Designer.cs">
+      <DependentUpon>Types.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\Sections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\Sections.Designer.cs">
+      <DependentUpon>Sections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\Materials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\Materials.Designer.cs">
+      <DependentUpon>Materials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\Stores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\Stores.Designer.cs">
+      <DependentUpon>Stores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\SubprojectUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\SubprojectUpdate.Designer.cs">
+      <DependentUpon>SubprojectUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\SubprojectInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\SubprojectInsert.Designer.cs">
+      <DependentUpon>SubprojectInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\Subprojects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\Subprojects.Designer.cs">
+      <DependentUpon>Subprojects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\Projects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\Projects.Designer.cs">
+      <DependentUpon>Projects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\ProjectUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\ProjectUpdate.Designer.cs">
+      <DependentUpon>ProjectUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\ProjectInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\ProjectInsert.Designer.cs">
+      <DependentUpon>ProjectInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Office\SelectEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Office\SelectEmployee.Designer.cs">
+      <DependentUpon>SelectEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production\EmptyLadleRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\EmptyLadleRegister.Designer.cs">
+      <DependentUpon>EmptyLadleRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production\LoadingRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\LoadingRegister.Designer.cs">
+      <DependentUpon>LoadingRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\MaintenanceElectricalFurnace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\MaintenanceElectricalFurnace.Designer.cs">
+      <DependentUpon>MaintenanceElectricalFurnace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\MaintenanceElectricalFurnaceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\MaintenanceElectricalFurnaceUpdate.Designer.cs">
+      <DependentUpon>MaintenanceElectricalFurnaceUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\MaintenanceElectricalFurnaceInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\MaintenanceElectricalFurnaceInsert.Designer.cs">
+      <DependentUpon>MaintenanceElectricalFurnaceInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\TechnicalDocumentUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\TechnicalDocumentUpdate.Designer.cs">
+      <DependentUpon>TechnicalDocumentUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\TechnicalDocumentInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\TechnicalDocumentInsert.Designer.cs">
+      <DependentUpon>TechnicalDocumentInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\StuffInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\StuffInsert.Designer.cs">
+      <DependentUpon>StuffInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\TechnicalDocuments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\TechnicalDocuments.Designer.cs">
+      <DependentUpon>TechnicalDocuments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\StuffUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\StuffUpdate.Designer.cs">
+      <DependentUpon>StuffUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technical\Stuffs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical\Stuffs.Designer.cs">
+      <DependentUpon>Stuffs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Office\Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Office\Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Office\EmployeeInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Office\EmployeeInsert.Designer.cs">
+      <DependentUpon>EmployeeInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Office\EmployeeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Office\EmployeeUpdate.Designer.cs">
+      <DependentUpon>EmployeeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Automation\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management.Designer.cs">
+      <DependentUpon>Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Store\RequestItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\RequestItems.Designer.cs">
+      <DependentUpon>RequestItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store\RequestItemInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\RequestItemInsert.Designer.cs">
+      <DependentUpon>RequestItemInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store\RequestItemUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\RequestItemUpdate.Designer.cs">
+      <DependentUpon>RequestItemUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store\SelectRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\SelectRequest.Designer.cs">
+      <DependentUpon>SelectRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store\RequestUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\RequestUpdate.Designer.cs">
+      <DependentUpon>RequestUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store\RequestInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\RequestInsert.Designer.cs">
+      <DependentUpon>RequestInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store\Requests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store\Requests.Designer.cs">
+      <DependentUpon>Requests.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Automation\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\InvoiceImage.resx">
+      <DependentUpon>InvoiceImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\InvoiceItemsInsert.resx">
+      <DependentUpon>InvoiceItemsInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\InvoiceInsert.resx">
+      <DependentUpon>InvoiceInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\InvoiceItems.resx">
+      <DependentUpon>InvoiceItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\InvoiceItemsUpdate.resx">
+      <DependentUpon>InvoiceItemsUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\VendorInsert.resx">
+      <DependentUpon>VendorInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\Invoices.resx">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\InvoiceUpdate.resx">
+      <DependentUpon>InvoiceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\SelectVendor.resx">
+      <DependentUpon>SelectVendor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\VendorUpdate.resx">
+      <DependentUpon>VendorUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\Vendors.resx">
+      <DependentUpon>Vendors.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Office\OfficePrefrences.resx">
+      <DependentUpon>OfficePrefrences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\ProductionPrefrences.resx">
+      <DependentUpon>ProductionPrefrences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\StorePrefrences.resx">
+      <DependentUpon>StorePrefrences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\StoreGetOutItemUpdate.resx">
+      <DependentUpon>StoreGetOutItemUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\StoreGetOutUpdate.resx">
+      <DependentUpon>StoreGetOutUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\StoreGetOutInsert.resx">
+      <DependentUpon>StoreGetOutInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\StoreGetOutItemInsert.resx">
+      <DependentUpon>StoreGetOutItemInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\StoreGetOutItems.resx">
+      <DependentUpon>StoreGetOutItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\StoreGetOuts.resx">
+      <DependentUpon>StoreGetOuts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\TechnicalPrefrences.resx">
+      <DependentUpon>TechnicalPrefrences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\SelectStuff.resx">
+      <DependentUpon>SelectStuff.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\Types.resx">
+      <DependentUpon>Types.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\Sections.resx">
+      <DependentUpon>Sections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\Materials.resx">
+      <DependentUpon>Materials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\Stores.resx">
+      <DependentUpon>Stores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\SubprojectUpdate.resx">
+      <DependentUpon>SubprojectUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\SubprojectInsert.resx">
+      <DependentUpon>SubprojectInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\Subprojects.resx">
+      <DependentUpon>Subprojects.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\Projects.resx">
+      <DependentUpon>Projects.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\ProjectUpdate.resx">
+      <DependentUpon>ProjectUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\ProjectInsert.resx">
+      <DependentUpon>ProjectInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Office\SelectEmployee.resx">
+      <DependentUpon>SelectEmployee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\EmptyLadleRegister.resx">
+      <DependentUpon>EmptyLadleRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\LoadingRegister.resx">
+      <DependentUpon>LoadingRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\MaintenanceElectricalFurnace.resx">
+      <DependentUpon>MaintenanceElectricalFurnace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\MaintenanceElectricalFurnaceUpdate.resx">
+      <DependentUpon>MaintenanceElectricalFurnaceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\MaintenanceElectricalFurnaceInsert.resx">
+      <DependentUpon>MaintenanceElectricalFurnaceInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\TechnicalDocumentUpdate.resx">
+      <DependentUpon>TechnicalDocumentUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\TechnicalDocumentInsert.resx">
+      <DependentUpon>TechnicalDocumentInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\StuffInsert.resx">
+      <DependentUpon>StuffInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\TechnicalDocuments.resx">
+      <DependentUpon>TechnicalDocuments.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\StuffUpdate.resx">
+      <DependentUpon>StuffUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical\Stuffs.resx">
+      <DependentUpon>Stuffs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Office\Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Office\EmployeeInsert.resx">
+      <DependentUpon>EmployeeInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Office\EmployeeUpdate.resx">
+      <DependentUpon>EmployeeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management.resx">
+      <DependentUpon>Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\RequestItems.resx">
+      <DependentUpon>RequestItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\RequestItemInsert.resx">
+      <DependentUpon>RequestItemInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\RequestItemUpdate.resx">
+      <DependentUpon>RequestItemUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\SelectRequest.resx">
+      <DependentUpon>SelectRequest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\RequestUpdate.resx">
+      <DependentUpon>RequestUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\RequestInsert.resx">
+      <DependentUpon>RequestInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store\Requests.resx">
+      <DependentUpon>Requests.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FAM.ico" />
+    <Content Include="ICON3.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

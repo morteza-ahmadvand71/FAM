@@ -1,0 +1,17 @@
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Office\obj\Debug\Office.csproj.CoreCompileInputs.cache
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Office\bin\Debug\Baran.Ferroalloy.Office.dll
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Office\bin\Debug\Baran.Ferroalloy.Office.pdb
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Office\obj\Debug\Office.csproj.CopyComplete
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Office\obj\Debug\Baran.Ferroalloy.Office.dll
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Office\obj\Debug\Baran.Ferroalloy.Office.pdb
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Office\bin\Debug\Baran.Ferroalloy.Automation.dll
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Office\bin\Debug\Baran.Ferroalloy.Automation.pdb
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Office\obj\Debug\Office.csprojAssemblyReference.cache
+C:\FerroalloyManagement\Office\bin\Debug\Baran.Ferroalloy.Office.dll
+C:\FerroalloyManagement\Office\bin\Debug\Baran.Ferroalloy.Office.pdb
+C:\FerroalloyManagement\Office\bin\Debug\Baran.Ferroalloy.Automation.dll
+C:\FerroalloyManagement\Office\bin\Debug\Baran.Ferroalloy.Automation.pdb
+C:\FerroalloyManagement\Office\obj\Debug\Office.csprojAssemblyReference.cache
+C:\FerroalloyManagement\Office\obj\Debug\Office.csproj.CopyComplete
+C:\FerroalloyManagement\Office\obj\Debug\Baran.Ferroalloy.Office.dll
+C:\FerroalloyManagement\Office\obj\Debug\Baran.Ferroalloy.Office.pdb

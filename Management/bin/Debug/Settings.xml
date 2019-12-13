@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<App>
+  <DataBase>
+    <ConnectionString DataSource="89.32.251.8,9994" InitialCatalog="dbAfrz" PersistSecurityInfo="True" UserID="G/yvWyhyinw=" Password="FExkndGBw/d/qMZ3RLciEA==">
+    </ConnectionString>
+    <Login SaveUserName="True" LastUserName="Sadegh">
+    </Login>
+  </DataBase>
+  <Settings>
+  </Settings>
+</App>

@@ -1,0 +1,17 @@
+<Loading>
+  <IsInsertedToCurrent>true</IsInsertedToCurrent>
+  <IsLoading>false</IsLoading>
+  <LoadingCount>0</LoadingCount>
+  <Date>0001/01/01 00:00:00</Date>
+  <StartTime>00:00:00</StartTime>
+  <StopTime>00:00:00</StopTime>
+  <LadleNumber>0</LadleNumber>
+  <LadleLoadingCount>0</LadleLoadingCount>
+  <MasidegiWeight>0</MasidegiWeight>
+  <EmptyWeight>0</EmptyWeight>
+  <FillWeight>0</FillWeight>
+  <TapholeNumber>0</TapholeNumber>
+  <TapholePosition>0</TapholePosition>
+  <GroupNumber>0</GroupNumber>
+  <Shift>0</Shift>
+</Loading>

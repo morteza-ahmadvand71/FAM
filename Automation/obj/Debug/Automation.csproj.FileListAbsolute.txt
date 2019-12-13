@@ -1,0 +1,11 @@
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Automation\bin\Debug\Baran.Ferroalloy.Automation.dll
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Automation\bin\Debug\Baran.Ferroalloy.Automation.pdb
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Automation\obj\Debug\Automation.csproj.CoreCompileInputs.cache
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Automation\obj\Debug\Baran.Ferroalloy.Automation.dll
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Automation\obj\Debug\Baran.Ferroalloy.Automation.pdb
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Automation\obj\Debug\Automation.csprojAssemblyReference.cache
+C:\FerroalloyManagement\Automation\bin\Debug\Baran.Ferroalloy.Automation.dll
+C:\FerroalloyManagement\Automation\bin\Debug\Baran.Ferroalloy.Automation.pdb
+C:\FerroalloyManagement\Automation\obj\Debug\Automation.csprojAssemblyReference.cache
+C:\FerroalloyManagement\Automation\obj\Debug\Baran.Ferroalloy.Automation.dll
+C:\FerroalloyManagement\Automation\obj\Debug\Baran.Ferroalloy.Automation.pdb

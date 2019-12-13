@@ -1,0 +1,1205 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Baran.Ferroalloy.Maintenance.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.Category</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.#ctor(Baran.Ferroalloy.Maintenance.Category)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.Constructor">
+            <summary>Sets the shim of Category.Category()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.DeleteConnectionInt32">
+            <summary>Sets the shim of Category.Delete(Connection cnConnection, Int32 intIdArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.GetCategoriesAsDataTableConnection">
+            <summary>Sets the shim of Category.GetCategoriesAsDataTable(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.GetCategoriesConnection">
+            <summary>Sets the shim of Category.GetCategories(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.GetNameByNumberConnectionInt32">
+            <summary>Sets the shim of Category.GetNameByNumber(Connection cnConnection, Int32 intNumberLoc)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.GetNumberByNameConnectionString">
+            <summary>Sets the shim of Category.GetNumberByName(Connection cnConnection, String strCatagoryName)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.InsertConnectionString">
+            <summary>Sets the shim of Category.Insert(Connection cnConnection, String strNameArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.NextNumberConnection">
+            <summary>Sets the shim of Category.NextNumber(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimCategory.UpdateConnectionCategory">
+            <summary>Sets the shim of Category.Update(Connection cnConnection, Category deCategoryArg)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.MaintenanceFurnaceItem</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.#ctor(Baran.Ferroalloy.Maintenance.MaintenanceFurnaceItem)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.InsertConnection">
+            <summary>Sets the shim of MaintenanceFurnaceItem.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.UpdateConnection">
+            <summary>Sets the shim of MaintenanceFurnaceItem.Update(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.intIDPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.get_intIDPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.intIDPtySetInt32">
+            <summary>Sets the shim of MaintenanceFurnaceItem.set_intIDPty(Int32 value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.intTabShiftIDPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.get_intTabShiftIDPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.intTabShiftIDPtySetInt32">
+            <summary>Sets the shim of MaintenanceFurnaceItem.set_intTabShiftIDPty(Int32 value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.strEquipTagPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.get_strEquipTagPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.strEquipTagPtySetString">
+            <summary>Sets the shim of MaintenanceFurnaceItem.set_strEquipTagPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.strTipPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.get_strTipPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.strTipPtySetString">
+            <summary>Sets the shim of MaintenanceFurnaceItem.set_strTipPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.tsDurationPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.get_tsDurationPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.tsDurationPtySetTimeSpan">
+            <summary>Sets the shim of MaintenanceFurnaceItem.set_tsDurationPty(TimeSpan value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.tsTimePtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.get_tsTimePty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.AllInstances.tsTimePtySetTimeSpan">
+            <summary>Sets the shim of MaintenanceFurnaceItem.set_tsTimePty(TimeSpan value)</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.Constructor">
+            <summary>Sets the shim of MaintenanceFurnaceItem.MaintenanceFurnaceItem()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.DeleteItemEquipsConnectionDataSet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.DeleteItemEquips(Connection cnConnection, DataSet dsEquipsArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.DeleteItemPersonConnectionDataSet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.DeleteItemPerson(Connection cnConnection, DataSet dsPrsonsArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.DeleteItemsConnectionDataSet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.DeleteItems(Connection cnConnection, DataSet dsItems)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.GetItemEquipsConnectionInt32">
+            <summary>Sets the shim of MaintenanceFurnaceItem.GetItemEquips(Connection cnConnection, Int32 intIDArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.GetItemPersonsConnectionInt32">
+            <summary>Sets the shim of MaintenanceFurnaceItem.GetItemPersons(Connection cnConnection, Int32 intIDArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.GetMFIsConnectionMaintenanceFurnaceItemStringString">
+            <summary>Sets the shim of MaintenanceFurnaceItem.GetMFIs(Connection cnConnection, MaintenanceFurnaceItem mfiItem, String strStoreCodeArg, String strPersonCoIDArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.InsertConnection">
+            <summary>Sets the shim of MaintenanceFurnaceItem.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.InsertItemEquipConnectionDataSet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.InsertItemEquip(Connection cnConnection, DataSet dsItemEquipArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.InsertItemPersonConnectionDataSet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.InsertItemPerson(Connection cnConnection, DataSet dsItemPersonArg)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.ShimItemEquip">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.MaintenanceFurnaceItem+ItemEquip</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.ShimItemEquip.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.ShimItemEquip.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.ShimItemEquip.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.ShimItemEquip.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.ShimItemEquip.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.ShimItemPerson">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.MaintenanceFurnaceItem+ItemPerson</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.ShimItemPerson.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.ShimItemPerson.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.ShimItemPerson.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.ShimItemPerson.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.ShimItemPerson.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.UpdateConnection">
+            <summary>Sets the shim of MaintenanceFurnaceItem.Update(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.intIDPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.get_intIDPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.intIDPtySetInt32">
+            <summary>Sets the shim of MaintenanceFurnaceItem.set_intIDPty(Int32 value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.intTabShiftIDPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.get_intTabShiftIDPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.intTabShiftIDPtySetInt32">
+            <summary>Sets the shim of MaintenanceFurnaceItem.set_intTabShiftIDPty(Int32 value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.strEquipTagPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.get_strEquipTagPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.strEquipTagPtySetString">
+            <summary>Sets the shim of MaintenanceFurnaceItem.set_strEquipTagPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.strTipPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.get_strTipPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.strTipPtySetString">
+            <summary>Sets the shim of MaintenanceFurnaceItem.set_strTipPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.tsDurationPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.get_tsDurationPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.tsDurationPtySetTimeSpan">
+            <summary>Sets the shim of MaintenanceFurnaceItem.set_tsDurationPty(TimeSpan value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.tsTimePtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceItem.get_tsTimePty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceItem.tsTimePtySetTimeSpan">
+            <summary>Sets the shim of MaintenanceFurnaceItem.set_tsTimePty(TimeSpan value)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.MaintenanceFurnaceShift</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.#ctor(Baran.Ferroalloy.Maintenance.MaintenanceFurnaceShift)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.AllInstances.InsertConnection">
+            <summary>Sets the shim of MaintenanceFurnaceShift.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.AllInstances.dtDatePtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceShift.get_dtDatePty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.AllInstances.dtDatePtySetDateTime">
+            <summary>Sets the shim of MaintenanceFurnaceShift.set_dtDatePty(DateTime value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.AllInstances.intIDPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceShift.get_intIDPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.AllInstances.intIDPtySetInt32">
+            <summary>Sets the shim of MaintenanceFurnaceShift.set_intIDPty(Int32 value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.AllInstances.shiShiftPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceShift.get_shiShiftPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.AllInstances.shiShiftPtySetShiftInfoShift">
+            <summary>Sets the shim of MaintenanceFurnaceShift.set_shiShiftPty(Shift value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.AllInstances.strCaltegoryPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceShift.get_strCaltegoryPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.AllInstances.strCaltegoryPtySetString">
+            <summary>Sets the shim of MaintenanceFurnaceShift.set_strCaltegoryPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.AllInstances.strGroupPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceShift.get_strGroupPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.AllInstances.strGroupPtySetString">
+            <summary>Sets the shim of MaintenanceFurnaceShift.set_strGroupPty(String value)</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.Constructor">
+            <summary>Sets the shim of MaintenanceFurnaceShift.MaintenanceFurnaceShift()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.GetMFSsConnectionMaintenanceFurnaceShift">
+            <summary>Sets the shim of MaintenanceFurnaceShift.GetMFSs(Connection cnConnection, MaintenanceFurnaceShift mfsSearchArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.GetMFSsConnectionMaintenanceFurnaceShiftDateTimeDateTime">
+            <summary>Sets the shim of MaintenanceFurnaceShift.GetMFSs(Connection cnConnection, MaintenanceFurnaceShift mfsSearchArg, DateTime dtFromDate, DateTime dtToDate)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.InsertConnection">
+            <summary>Sets the shim of MaintenanceFurnaceShift.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.dtDatePtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceShift.get_dtDatePty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.dtDatePtySetDateTime">
+            <summary>Sets the shim of MaintenanceFurnaceShift.set_dtDatePty(DateTime value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.intIDPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceShift.get_intIDPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.intIDPtySetInt32">
+            <summary>Sets the shim of MaintenanceFurnaceShift.set_intIDPty(Int32 value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.shiShiftPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceShift.get_shiShiftPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.shiShiftPtySetShiftInfoShift">
+            <summary>Sets the shim of MaintenanceFurnaceShift.set_shiShiftPty(Shift value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.strCaltegoryPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceShift.get_strCaltegoryPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.strCaltegoryPtySetString">
+            <summary>Sets the shim of MaintenanceFurnaceShift.set_strCaltegoryPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.strGroupPtyGet">
+            <summary>Sets the shim of MaintenanceFurnaceShift.get_strGroupPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMaintenanceFurnaceShift.strGroupPtySetString">
+            <summary>Sets the shim of MaintenanceFurnaceShift.set_strGroupPty(String value)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimMeasurementUnit">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.MeasurementUnit</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMeasurementUnit.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMeasurementUnit.#ctor(Baran.Ferroalloy.Maintenance.MeasurementUnit)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimMeasurementUnit.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMeasurementUnit.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimMeasurementUnit.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMeasurementUnit.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMeasurementUnit.Constructor">
+            <summary>Sets the shim of MeasurementUnit.MeasurementUnit()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMeasurementUnit.GetCodeByNameConnectionString">
+            <summary>Sets the shim of MeasurementUnit.GetCodeByName(Connection cnConnection, String strEquipountsunitName)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMeasurementUnit.GetMeasurementUnitsConnection">
+            <summary>Sets the shim of MeasurementUnit.GetMeasurementUnits(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMeasurementUnit.GetMeasurementUnitsConnectionInt32">
+            <summary>Sets the shim of MeasurementUnit.GetMeasurementUnits(Connection cnConnection, Int32 intCategoryArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimMeasurementUnit.GetNameByCodeConnectionString">
+            <summary>Sets the shim of MeasurementUnit.GetNameByCode(Connection cnConnection, String strEquipountsunitCode)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimProject">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.Project</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.#ctor(Baran.Ferroalloy.Maintenance.Project)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.AllInstances.GetNextNumberConnection">
+            <summary>Sets the shim of Project.GetNextNumber(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.AllInstances.InsertConnection">
+            <summary>Sets the shim of Project.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.AllInstances.UpdateConnection">
+            <summary>Sets the shim of Project.Update(Connection cnConnection)</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.Constructor">
+            <summary>Sets the shim of Project.Project()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.DeleteProjectsConnectionDataSet">
+            <summary>Sets the shim of Project.DeleteProjects(Connection cnConnection, DataSet dsVendors)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.GetCategoryByNumberConnectionInt32">
+            <summary>Sets the shim of Project.GetCategoryByNumber(Connection cnConnection, Int32 intNumberArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.GetNameByNumberConnectionInt32">
+            <summary>Sets the shim of Project.GetNameByNumber(Connection cnConnection, Int32 intNumberArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.GetNextNumberConnection">
+            <summary>Sets the shim of Project.GetNextNumber(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.GetProjectsConnectionProject">
+            <summary>Sets the shim of Project.GetProjects(Connection cnConnection, Project proSearch)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.InsertConnection">
+            <summary>Sets the shim of Project.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProject.UpdateConnection">
+            <summary>Sets the shim of Project.Update(Connection cnConnection)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimProperty">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.Property</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimProperty.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimProperty.#ctor(Baran.Ferroalloy.Maintenance.Property)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimProperty.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimProperty.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimProperty.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProperty.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProperty.Constructor">
+            <summary>Sets the shim of Property.Property()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProperty.GetCodeByNameConnectionString">
+            <summary>Sets the shim of Property.GetCodeByName(Connection cnConnection, String strNameArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProperty.GetNameByCodeConnectionString">
+            <summary>Sets the shim of Property.GetNameByCode(Connection cnConnection, String strCodeArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProperty.GetPropertiesConnection">
+            <summary>Sets the shim of Property.GetProperties(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimProperty.GetPropertiesConnectionInt32">
+            <summary>Sets the shim of Property.GetProperties(Connection cnConnection, Int32 intCategoryArg)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.StoreCode</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.#ctor(Baran.Ferroalloy.Maintenance.StoreCode)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.Constructor">
+            <summary>Sets the shim of StoreCode.StoreCode()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetMaterialCodeByNameConnectionStringStringString">
+            <summary>Sets the shim of StoreCode.GetMaterialCodeByName(Connection cnConnection, String strStoreArg, String strSectionArg, String strNameArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetMaterialNameByCodeConnectionStringStringString">
+            <summary>Sets the shim of StoreCode.GetMaterialNameByCode(Connection cnConnection, String strStoreArg, String strSectionArg, String strCodeArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetMaterialTypeFromStoreCodeConnectionString">
+            <summary>Sets the shim of StoreCode.GetMaterialTypeFromStoreCode(Connection cnConnection, String strStoreCode)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetMaterialsAsDataSetConnectionStoreCodeMaterial">
+            <summary>Sets the shim of StoreCode.GetMaterialsAsDataSet(Connection cnConnection, Material maSearchArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetMaterialsConnectionStringString">
+            <summary>Sets the shim of StoreCode.GetMaterials(Connection cnConnection, String strStoreArg, String strSectionArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetNameByStoreCodeConnectionString">
+            <summary>Sets the shim of StoreCode.GetNameByStoreCode(Connection cnConnection, String strStoreCodeArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetSectionCodeByNameConnectionStringString">
+            <summary>Sets the shim of StoreCode.GetSectionCodeByName(Connection cnConnection, String strStoreArg, String strNameArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetSectionNameByCodeConnectionStringString">
+            <summary>Sets the shim of StoreCode.GetSectionNameByCode(Connection cnConnection, String strStoreArg, String strCodeArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetSectionsAsDataSetConnectionString">
+            <summary>Sets the shim of StoreCode.GetSectionsAsDataSet(Connection cnConnection, String strStoreArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetSectionsConnectionString">
+            <summary>Sets the shim of StoreCode.GetSections(Connection cnConnection, String strStoreArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetStoreCodeByNameConnectionString">
+            <summary>Sets the shim of StoreCode.GetStoreCodeByName(Connection cnConnection, String strNameArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetStoreNameByCodeConnectionString">
+            <summary>Sets the shim of StoreCode.GetStoreNameByCode(Connection cnConnection, String strCodeArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetStoresAsDataSetConnection">
+            <summary>Sets the shim of StoreCode.GetStoresAsDataSet(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetStoresConnection">
+            <summary>Sets the shim of StoreCode.GetStores(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetTypeCodeByNameConnectionStringStringStringString">
+            <summary>Sets the shim of StoreCode.GetTypeCodeByName(Connection cnConnection, String strStoreArg, String strSectionArg, String strMaterialArg, String strNameArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetTypeNameByCodeConnectionStringStringStringString">
+            <summary>Sets the shim of StoreCode.GetTypeNameByCode(Connection cnConnection, String strStoreArg, String strSectionArg, String strMaterialArg, String strCodeArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetTypesAsDataSetConnectionStoreCodeType">
+            <summary>Sets the shim of StoreCode.GetTypesAsDataSet(Connection cnConnection, Type tyTypeArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.GetTypesConnectionStringStringString">
+            <summary>Sets the shim of StoreCode.GetTypes(Connection cnConnection, String strStoreArg, String strSectionArg, String strMaterialArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.MaterialDeleteConnectionInt32">
+            <summary>Sets the shim of StoreCode.MaterialDelete(Connection cnConnection, Int32 intIdArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.MaterialInsertConnectionStoreCodeMaterial">
+            <summary>Sets the shim of StoreCode.MaterialInsert(Connection cnConnection, Material seSectionArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.MaterialNextCodeConnectionStoreCodeMaterial">
+            <summary>Sets the shim of StoreCode.MaterialNextCode(Connection cnConnection, Material maSearchArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.MaterialUpdateConnectionStoreCodeMaterial">
+            <summary>Sets the shim of StoreCode.MaterialUpdate(Connection cnConnection, Material seSectionArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.SectionDeleteConnectionInt32">
+            <summary>Sets the shim of StoreCode.SectionDelete(Connection cnConnection, Int32 intIdArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.SectionInsertConnectionStoreCodeSection">
+            <summary>Sets the shim of StoreCode.SectionInsert(Connection cnConnection, Section seSectionArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.SectionNextCodeConnectionString">
+            <summary>Sets the shim of StoreCode.SectionNextCode(Connection cnConnection, String strStoreArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.SectionUpdateConnectionStoreCodeSection">
+            <summary>Sets the shim of StoreCode.SectionUpdate(Connection cnConnection, Section seSectionArg)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimMaterial">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.StoreCode+Material</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimMaterial.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimMaterial.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimMaterial.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimMaterial.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimMaterial.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimSection">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.StoreCode+Section</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimSection.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimSection.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimSection.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimSection.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimSection.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimStore">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.StoreCode+Store</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimStore.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimStore.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimStore.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimStore.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimStore.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimType">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.StoreCode+Type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimType.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimType.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimType.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimType.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.ShimType.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.StoreDeleteConnectionInt32">
+            <summary>Sets the shim of StoreCode.StoreDelete(Connection cnConnection, Int32 intIdArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.StoreInsertConnectionString">
+            <summary>Sets the shim of StoreCode.StoreInsert(Connection cnConnection, String strNameArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.StoreNextCodeConnection">
+            <summary>Sets the shim of StoreCode.StoreNextCode(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.StoreUpdateConnectionStoreCodeStore">
+            <summary>Sets the shim of StoreCode.StoreUpdate(Connection cnConnection, Store stStoreArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.TypeDeleteConnectionInt32">
+            <summary>Sets the shim of StoreCode.TypeDelete(Connection cnConnection, Int32 intIdArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.TypeInsertConnectionStoreCodeType">
+            <summary>Sets the shim of StoreCode.TypeInsert(Connection cnConnection, Type tyTypeArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.TypeNextCodeConnectionStoreCodeType">
+            <summary>Sets the shim of StoreCode.TypeNextCode(Connection cnConnection, Type tyTypeArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStoreCode.TypeUpdateConnectionStoreCodeType">
+            <summary>Sets the shim of StoreCode.TypeUpdate(Connection cnConnection, Type tyTypeArg)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.Stuff</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.#ctor(Baran.Ferroalloy.Maintenance.Stuff)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.AllInstances.InsertConnection">
+            <summary>Sets the shim of Stuff.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.AllInstances.UpdateConnection">
+            <summary>Sets the shim of Stuff.Update(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.AllInstances.strStoreCodeGet">
+            <summary>Sets the shim of Stuff.get_strStoreCode()</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.Constructor">
+            <summary>Sets the shim of Stuff.Stuff()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.DeleteStuffsConnectionDataSet">
+            <summary>Sets the shim of Stuff.DeleteStuffs(Connection cnConnection, DataSet dsParts)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.GetStuffsConnectionStuff">
+            <summary>Sets the shim of Stuff.GetStuffs(Connection cnConnection, Stuff stSearchArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.InsertConnection">
+            <summary>Sets the shim of Stuff.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.IsStuffConnectionString">
+            <summary>Sets the shim of Stuff.IsStuff(Connection cnConnection, String strStoreCodeArg)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.UpdateConnection">
+            <summary>Sets the shim of Stuff.Update(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuff.strStoreCodeGet">
+            <summary>Sets the shim of Stuff.get_strStoreCode()</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.StuffProperty</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty.#ctor(Baran.Ferroalloy.Maintenance.StuffProperty)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty.AllInstances.DeleteConnection">
+            <summary>Sets the shim of StuffProperty.Delete(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty.AllInstances.InsertConnection">
+            <summary>Sets the shim of StuffProperty.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty.Constructor">
+            <summary>Sets the shim of StuffProperty.StuffProperty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty.DeleteConnection">
+            <summary>Sets the shim of StuffProperty.Delete(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty.GetStuffPropertiesConnectionString">
+            <summary>Sets the shim of StuffProperty.GetStuffProperties(Connection cnConnection, String strStoreCode)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimStuffProperty.InsertConnection">
+            <summary>Sets the shim of StuffProperty.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.Subproject</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.#ctor(Baran.Ferroalloy.Maintenance.Subproject)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.AllInstances.InsertConnection">
+            <summary>Sets the shim of Subproject.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.AllInstances.UpdateConnection">
+            <summary>Sets the shim of Subproject.Update(Connection cnConnection)</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.Constructor">
+            <summary>Sets the shim of Subproject.Subproject()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.DeleteSubprojectsConnectionDataSet">
+            <summary>Sets the shim of Subproject.DeleteSubprojects(Connection cnConnection, DataSet dsVendors)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.GetSubprojectsConnectionSubproject">
+            <summary>Sets the shim of Subproject.GetSubprojects(Connection cnConnection, Subproject spSearch)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.InsertConnection">
+            <summary>Sets the shim of Subproject.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimSubproject.UpdateConnection">
+            <summary>Sets the shim of Subproject.Update(Connection cnConnection)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.TechnicalDocument</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.#ctor(Baran.Ferroalloy.Maintenance.TechnicalDocument)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.Delete">
+            <summary>Sets the shim of TechnicalDocument.Delete()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.InsertConnection">
+            <summary>Sets the shim of TechnicalDocument.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.UpdateConnection">
+            <summary>Sets the shim of TechnicalDocument.Update(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.intIDPtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_intIDPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.intIDPtySetInt16">
+            <summary>Sets the shim of TechnicalDocument.set_intIDPty(Int16 value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.strCoDesignerPtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_strCoDesignerPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.strCoDesignerPtySetString">
+            <summary>Sets the shim of TechnicalDocument.set_strCoDesignerPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.strCodePtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_strCodePty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.strCodePtySetString">
+            <summary>Sets the shim of TechnicalDocument.set_strCodePty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.strPersonDesignerPtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_strPersonDesignerPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.strPersonDesignerPtySetString">
+            <summary>Sets the shim of TechnicalDocument.set_strPersonDesignerPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.strRevisionNumberPtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_strRevisionNumberPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.strRevisionNumberPtySetString">
+            <summary>Sets the shim of TechnicalDocument.set_strRevisionNumberPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.strTipPtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_strTipPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.strTipPtySetString">
+            <summary>Sets the shim of TechnicalDocument.set_strTipPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.strZonePtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_strZonePty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.AllInstances.strZonePtySetString">
+            <summary>Sets the shim of TechnicalDocument.set_strZonePty(String value)</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.Constructor">
+            <summary>Sets the shim of TechnicalDocument.TechnicalDocument()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.Delete">
+            <summary>Sets the shim of TechnicalDocument.Delete()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.DeleteTechnicalDocumentsConnectionDataSet">
+            <summary>Sets the shim of TechnicalDocument.DeleteTechnicalDocuments(Connection cnConnection, DataSet dsTechnicalDocuments)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.GetTechnicalDocumentsConnectionTechnicalDocument">
+            <summary>Sets the shim of TechnicalDocument.GetTechnicalDocuments(Connection cnConnection, TechnicalDocument tdSearch)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.InsertConnection">
+            <summary>Sets the shim of TechnicalDocument.Insert(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.UpdateConnection">
+            <summary>Sets the shim of TechnicalDocument.Update(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.intIDPtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_intIDPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.intIDPtySetInt16">
+            <summary>Sets the shim of TechnicalDocument.set_intIDPty(Int16 value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.strCoDesignerPtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_strCoDesignerPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.strCoDesignerPtySetString">
+            <summary>Sets the shim of TechnicalDocument.set_strCoDesignerPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.strCodePtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_strCodePty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.strCodePtySetString">
+            <summary>Sets the shim of TechnicalDocument.set_strCodePty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.strPersonDesignerPtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_strPersonDesignerPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.strPersonDesignerPtySetString">
+            <summary>Sets the shim of TechnicalDocument.set_strPersonDesignerPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.strRevisionNumberPtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_strRevisionNumberPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.strRevisionNumberPtySetString">
+            <summary>Sets the shim of TechnicalDocument.set_strRevisionNumberPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.strTipPtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_strTipPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.strTipPtySetString">
+            <summary>Sets the shim of TechnicalDocument.set_strTipPty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.strZonePtyGet">
+            <summary>Sets the shim of TechnicalDocument.get_strZonePty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimTechnicalDocument.strZonePtySetString">
+            <summary>Sets the shim of TechnicalDocument.set_strZonePty(String value)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimZone">
+            <summary>Shim type of Baran.Ferroalloy.Maintenance.Zone</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.#ctor(Baran.Ferroalloy.Maintenance.Zone)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.AllInstances.intIDPtyGet">
+            <summary>Sets the shim of Zone.get_intIDPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.AllInstances.intIDPtySetInt16">
+            <summary>Sets the shim of Zone.set_intIDPty(Int16 value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.AllInstances.strCodePtyGet">
+            <summary>Sets the shim of Zone.get_strCodePty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.AllInstances.strCodePtySetString">
+            <summary>Sets the shim of Zone.set_strCodePty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.AllInstances.strNamePtyGet">
+            <summary>Sets the shim of Zone.get_strNamePty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.AllInstances.strNamePtySetString">
+            <summary>Sets the shim of Zone.set_strNamePty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.AllInstances.strTipPtyGet">
+            <summary>Sets the shim of Zone.get_strTipPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.AllInstances.strTipPtySetString">
+            <summary>Sets the shim of Zone.set_strTipPty(String value)</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.Constructor">
+            <summary>Sets the shim of Zone.Zone()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.GetZoneCodeConnectionString">
+            <summary>Sets the shim of Zone.GetZoneCode(Connection cnConnection, String strCatagoryName)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.GetZoneNameConnectionString">
+            <summary>Sets the shim of Zone.GetZoneName(Connection cnConnection, String strCatagoryCode)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.GetZonesConnection">
+            <summary>Sets the shim of Zone.GetZones(Connection cnConnection)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.intIDPtyGet">
+            <summary>Sets the shim of Zone.get_intIDPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.intIDPtySetInt16">
+            <summary>Sets the shim of Zone.set_intIDPty(Int16 value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.strCodePtyGet">
+            <summary>Sets the shim of Zone.get_strCodePty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.strCodePtySetString">
+            <summary>Sets the shim of Zone.set_strCodePty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.strNamePtyGet">
+            <summary>Sets the shim of Zone.get_strNamePty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.strNamePtySetString">
+            <summary>Sets the shim of Zone.set_strNamePty(String value)</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.strTipPtyGet">
+            <summary>Sets the shim of Zone.get_strTipPty()</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.ShimZone.strTipPtySetString">
+            <summary>Sets the shim of Zone.set_strTipPty(String value)</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.StubCategory">
+            <summary>Stub type of Baran.Ferroalloy.Maintenance.Category</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubCategory.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubCategory.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubCategory.InitializeStub">
+            <summary>Initializes a new instance of type StubCategory</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubCategory.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubCategory.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.StubMaintenanceFurnaceItem">
+            <summary>Stub type of Baran.Ferroalloy.Maintenance.MaintenanceFurnaceItem</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubMaintenanceFurnaceItem.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubMaintenanceFurnaceItem.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubMaintenanceFurnaceItem.InitializeStub">
+            <summary>Initializes a new instance of type StubMaintenanceFurnaceItem</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubMaintenanceFurnaceItem.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubMaintenanceFurnaceItem.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.StubMaintenanceFurnaceShift">
+            <summary>Stub type of Baran.Ferroalloy.Maintenance.MaintenanceFurnaceShift</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubMaintenanceFurnaceShift.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubMaintenanceFurnaceShift.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubMaintenanceFurnaceShift.InitializeStub">
+            <summary>Initializes a new instance of type StubMaintenanceFurnaceShift</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubMaintenanceFurnaceShift.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubMaintenanceFurnaceShift.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.StubMeasurementUnit">
+            <summary>Stub type of Baran.Ferroalloy.Maintenance.MeasurementUnit</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubMeasurementUnit.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubMeasurementUnit.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubMeasurementUnit.InitializeStub">
+            <summary>Initializes a new instance of type StubMeasurementUnit</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubMeasurementUnit.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubMeasurementUnit.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.StubProject">
+            <summary>Stub type of Baran.Ferroalloy.Maintenance.Project</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubProject.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubProject.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubProject.InitializeStub">
+            <summary>Initializes a new instance of type StubProject</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubProject.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubProject.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.StubProperty">
+            <summary>Stub type of Baran.Ferroalloy.Maintenance.Property</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubProperty.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubProperty.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubProperty.InitializeStub">
+            <summary>Initializes a new instance of type StubProperty</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubProperty.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubProperty.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.StubStoreCode">
+            <summary>Stub type of Baran.Ferroalloy.Maintenance.StoreCode</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubStoreCode.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubStoreCode.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubStoreCode.InitializeStub">
+            <summary>Initializes a new instance of type StubStoreCode</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubStoreCode.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubStoreCode.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.StubStuff">
+            <summary>Stub type of Baran.Ferroalloy.Maintenance.Stuff</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubStuff.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubStuff.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubStuff.InitializeStub">
+            <summary>Initializes a new instance of type StubStuff</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubStuff.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubStuff.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.StubStuffProperty">
+            <summary>Stub type of Baran.Ferroalloy.Maintenance.StuffProperty</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubStuffProperty.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubStuffProperty.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubStuffProperty.InitializeStub">
+            <summary>Initializes a new instance of type StubStuffProperty</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubStuffProperty.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubStuffProperty.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.StubSubproject">
+            <summary>Stub type of Baran.Ferroalloy.Maintenance.Subproject</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubSubproject.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubSubproject.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubSubproject.InitializeStub">
+            <summary>Initializes a new instance of type StubSubproject</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubSubproject.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubSubproject.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.StubTechnicalDocument">
+            <summary>Stub type of Baran.Ferroalloy.Maintenance.TechnicalDocument</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubTechnicalDocument.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubTechnicalDocument.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubTechnicalDocument.InitializeStub">
+            <summary>Initializes a new instance of type StubTechnicalDocument</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubTechnicalDocument.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubTechnicalDocument.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Baran.Ferroalloy.Maintenance.Fakes.StubZone">
+            <summary>Stub type of Baran.Ferroalloy.Maintenance.Zone</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubZone.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubZone.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Baran.Ferroalloy.Maintenance.Fakes.StubZone.InitializeStub">
+            <summary>Initializes a new instance of type StubZone</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubZone.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Baran.Ferroalloy.Maintenance.Fakes.StubZone.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,19 @@
+<Loading>
+  <IsIntsertedToDB>true</IsIntsertedToDB>
+  <IsLoading>false</IsLoading>
+  <LoadingCount>0</LoadingCount>
+  <Date>0001/01/01 00:00:00</Date>
+  <StartTime>00:00:00</StartTime>
+  <StopTime>00:00:00</StopTime>
+  <Duration>00:00:00</Duration>
+  <LadleNumber>0</LadleNumber>
+  <LadleLoadingCount>0</LadleLoadingCount>
+  <EmptyWeightBefore>0</EmptyWeightBefore>
+  <EmptyWeightAfter>0</EmptyWeightAfter>
+  <FillWeight>0</FillWeight>
+  <MasidegiWeight>0</MasidegiWeight>
+  <TapholeNumber>0</TapholeNumber>
+  <TapholePosition>0</TapholePosition>
+  <GroupNumber>0</GroupNumber>
+  <Shift>0</Shift>
+</Loading>

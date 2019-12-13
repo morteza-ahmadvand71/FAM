@@ -1,0 +1,15 @@
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\b\Baran.Ferroalloy.Maintenance.Fakes.xml
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\b\Baran.Ferroalloy.Maintenance.Fakes.dll
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\b\Baran.Ferroalloy.Maintenance.Fakes.pdb
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\b\Baran.Ferroalloy.Automation.dll
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\b\Baran.Ferroalloy.Maintenance.dll
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\b\Baran.Ferroalloy.Office.dll
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\b\Baran.Ferroalloy.Maintenance.pdb
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\b\Baran.Ferroalloy.Automation.pdb
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\b\Baran.Ferroalloy.Office.pdb
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\o\f.csprojAssemblyReference.cache
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\o\f.csproj.CoreCompileInputs.cache
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\o\f.csproj.CopyComplete
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\o\Baran.Ferroalloy.Maintenance.Fakes.dll
+C:\Documents\Baran\Ferroalloy\FerroalloyManagement\Finance\obj\Debug\Fakes\bfm\o\Baran.Ferroalloy.Maintenance.Fakes.pdb
