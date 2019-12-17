@@ -663,7 +663,7 @@
             this.Name = "Management";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.Text = "افرا";
+            this.Text = "فام";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Management_FormClosing);
             this.Load += new System.EventHandler(this.Management_Load);
