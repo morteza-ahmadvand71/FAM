@@ -55,3 +55,15 @@ C:\FerroalloyManagement\Finance\obj\Debug\Finance.csprojAssemblyReference.cache
 C:\FerroalloyManagement\Finance\obj\Debug\Finance.csproj.CopyComplete
 C:\FerroalloyManagement\Finance\obj\Debug\Baran.Ferroalloy.Finance.dll
 C:\FerroalloyManagement\Finance\obj\Debug\Baran.Ferroalloy.Finance.pdb
+C:\Douran\FAM\Source\Finance\obj\Debug\Finance.csprojAssemblyReference.cache
+C:\Douran\FAM\Source\Finance\bin\Debug\Baran.Ferroalloy.Finance.dll
+C:\Douran\FAM\Source\Finance\bin\Debug\Baran.Ferroalloy.Finance.pdb
+C:\Douran\FAM\Source\Finance\bin\Debug\Baran.Ferroalloy.Automation.dll
+C:\Douran\FAM\Source\Finance\bin\Debug\Baran.Ferroalloy.Maintenance.dll
+C:\Douran\FAM\Source\Finance\bin\Debug\Baran.Ferroalloy.Office.dll
+C:\Douran\FAM\Source\Finance\bin\Debug\Baran.Ferroalloy.Automation.pdb
+C:\Douran\FAM\Source\Finance\bin\Debug\Baran.Ferroalloy.Maintenance.pdb
+C:\Douran\FAM\Source\Finance\bin\Debug\Baran.Ferroalloy.Office.pdb
+C:\Douran\FAM\Source\Finance\obj\Debug\Finance.csproj.CopyComplete
+C:\Douran\FAM\Source\Finance\obj\Debug\Baran.Ferroalloy.Finance.dll
+C:\Douran\FAM\Source\Finance\obj\Debug\Baran.Ferroalloy.Finance.pdb

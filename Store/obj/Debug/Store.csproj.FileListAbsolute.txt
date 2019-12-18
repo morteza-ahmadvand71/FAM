@@ -19,3 +19,13 @@ C:\FerroalloyManagement\Store\obj\Debug\Store.csprojAssemblyReference.cache
 C:\FerroalloyManagement\Store\obj\Debug\Store.csproj.CopyComplete
 C:\FerroalloyManagement\Store\obj\Debug\Baran.Ferroalloy.Store.dll
 C:\FerroalloyManagement\Store\obj\Debug\Baran.Ferroalloy.Store.pdb
+C:\Douran\FAM\Source\Store\obj\Debug\Store.csprojAssemblyReference.cache
+C:\Douran\FAM\Source\Store\bin\Debug\Baran.Ferroalloy.Store.dll
+C:\Douran\FAM\Source\Store\bin\Debug\Baran.Ferroalloy.Store.pdb
+C:\Douran\FAM\Source\Store\bin\Debug\Baran.Ferroalloy.Automation.dll
+C:\Douran\FAM\Source\Store\bin\Debug\Baran.Ferroalloy.Office.dll
+C:\Douran\FAM\Source\Store\bin\Debug\Baran.Ferroalloy.Automation.pdb
+C:\Douran\FAM\Source\Store\bin\Debug\Baran.Ferroalloy.Office.pdb
+C:\Douran\FAM\Source\Store\obj\Debug\Store.csproj.CopyComplete
+C:\Douran\FAM\Source\Store\obj\Debug\Baran.Ferroalloy.Store.dll
+C:\Douran\FAM\Source\Store\obj\Debug\Baran.Ferroalloy.Store.pdb

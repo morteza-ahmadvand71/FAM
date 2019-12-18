@@ -42,7 +42,8 @@
     <Reference Include="Baran.Ferroalloy.Automation">
       <HintPath>..\Automation\bin\Debug\Baran.Ferroalloy.Automation.dll</HintPath>
     </Reference>
-    <Reference Include="Baran.Ferroalloy.Finance">
+    <Reference Include="Baran.Ferroalloy.Finance, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Finance\bin\Debug\Baran.Ferroalloy.Finance.dll</HintPath>
     </Reference>
     <Reference Include="Baran.Ferroalloy.Maintenance">

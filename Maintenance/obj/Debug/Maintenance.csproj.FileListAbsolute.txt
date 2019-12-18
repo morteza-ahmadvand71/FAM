@@ -19,3 +19,13 @@ C:\FerroalloyManagement\Maintenance\obj\Debug\Maintenance.csprojAssemblyReferenc
 C:\FerroalloyManagement\Maintenance\obj\Debug\Maintenance.csproj.CopyComplete
 C:\FerroalloyManagement\Maintenance\obj\Debug\Baran.Ferroalloy.Maintenance.dll
 C:\FerroalloyManagement\Maintenance\obj\Debug\Baran.Ferroalloy.Maintenance.pdb
+C:\Douran\FAM\Source\Maintenance\obj\Debug\Maintenance.csprojAssemblyReference.cache
+C:\Douran\FAM\Source\Maintenance\bin\Debug\Baran.Ferroalloy.Maintenance.dll
+C:\Douran\FAM\Source\Maintenance\bin\Debug\Baran.Ferroalloy.Maintenance.pdb
+C:\Douran\FAM\Source\Maintenance\bin\Debug\Baran.Ferroalloy.Automation.dll
+C:\Douran\FAM\Source\Maintenance\bin\Debug\Baran.Ferroalloy.Office.dll
+C:\Douran\FAM\Source\Maintenance\bin\Debug\Baran.Ferroalloy.Automation.pdb
+C:\Douran\FAM\Source\Maintenance\bin\Debug\Baran.Ferroalloy.Office.pdb
+C:\Douran\FAM\Source\Maintenance\obj\Debug\Maintenance.csproj.CopyComplete
+C:\Douran\FAM\Source\Maintenance\obj\Debug\Baran.Ferroalloy.Maintenance.dll
+C:\Douran\FAM\Source\Maintenance\obj\Debug\Baran.Ferroalloy.Maintenance.pdb

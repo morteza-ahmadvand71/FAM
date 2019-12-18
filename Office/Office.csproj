@@ -31,8 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Baran.Ferroalloy.Automation">
-      <HintPath>..\Automation\obj\Debug\Baran.Ferroalloy.Automation.dll</HintPath>
+    <Reference Include="Baran.Ferroalloy.Automation, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Automation\bin\Debug\Baran.Ferroalloy.Automation.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
