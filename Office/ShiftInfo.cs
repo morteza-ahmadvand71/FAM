@@ -14,11 +14,11 @@ namespace Baran.Ferroalloy.Office
     {
         public enum ShiftType
         {
-            Shift1Hour24Work1Rest2 = 1,
-            Shift2Hour12Work2Rest2 = 2,
-            Shift2Hour8Work3Rest1 = 3,
-            Shift3Hour8Work2Rest2 = 4,
-            Shift3Hour8Work3Rest3 = 5
+            تعداد۱ـمدت۲۴ـکاری۱ـاستراحت۲ = 1,
+            تعداد۲ـمدت۱۲ـکاری۲ـاستراحت۲ = 2,
+            تعداد۲ـمدت8ـکاری3ـاستراحت1 = 3,
+            تعداد3ـمدت8ـکاری۲ـاستراحت۲ = 4,
+            تعداد۳ـمدت8ـکاری3ـاستراحت3 = 5
         }
         public enum Shift
         {
@@ -201,7 +201,7 @@ namespace Baran.Ferroalloy.Office
             }
             switch (this.stShiftType)
             {
-                case ShiftType.Shift1Hour24Work1Rest2:
+                case ShiftType.تعداد۱ـمدت۲۴ـکاری۱ـاستراحت۲:
                     intShiftTemp += intGroupArg - 1;
                     intShiftTemp %= this.intPeriodShiftsCountPty;
 
@@ -218,7 +218,7 @@ namespace Baran.Ferroalloy.Office
                         shiShiftLoc = Shift.استراحت;
                     }
                     break;
-                case ShiftType.Shift2Hour12Work2Rest2:
+                case ShiftType.تعداد۲ـمدت۱۲ـکاری۲ـاستراحت۲:
                     intShiftTemp += intGroupArg - 1;
                     intShiftTemp %= this.intPeriodShiftsCountPty;
 
@@ -235,7 +235,7 @@ namespace Baran.Ferroalloy.Office
                         shiShiftLoc = Shift.استراحت;
                     }
                     break;
-                case ShiftType.Shift3Hour8Work2Rest2:
+                case ShiftType.تعداد3ـمدت8ـکاری۲ـاستراحت۲:
                     intShiftTemp += intGroupArg - 1;
                     intShiftTemp %= this.intPeriodShiftsCountPty;
 
@@ -256,7 +256,7 @@ namespace Baran.Ferroalloy.Office
                         shiShiftLoc = Shift.استراحت;
                     }
                     break;
-                case ShiftType.Shift2Hour8Work3Rest1:
+                case ShiftType.تعداد۲ـمدت8ـکاری3ـاستراحت1:
                     intShiftTemp += intGroupArg - 1;
                     intShiftTemp %= this.intPeriodShiftsCountPty;
 
@@ -359,7 +359,7 @@ namespace Baran.Ferroalloy.Office
 
             switch (this.stShiftType)
             {
-                case ShiftType.Shift1Hour24Work1Rest2:
+                case ShiftType.تعداد۱ـمدت۲۴ـکاری۱ـاستراحت۲:
                     if(intShiftArg == 1)
                     {
                         shiShiftLoc = Shift.شبانه_روز;
@@ -373,7 +373,7 @@ namespace Baran.Ferroalloy.Office
                         shiShiftLoc = Shift.استراحت;
                     }
                     break;
-                case ShiftType.Shift2Hour12Work2Rest2:
+                case ShiftType.تعداد۲ـمدت۱۲ـکاری۲ـاستراحت۲:
                     if (intShiftArg == 1)
                     {
                         shiShiftLoc = Shift.صبح;
@@ -387,7 +387,7 @@ namespace Baran.Ferroalloy.Office
                         shiShiftLoc = Shift.استراحت;
                     }
                     break;
-                case ShiftType.Shift3Hour8Work2Rest2:
+                case ShiftType.تعداد3ـمدت8ـکاری۲ـاستراحت۲:
                     if (intShiftArg == 1)
                     {
                         shiShiftLoc = Shift.صبح;
@@ -405,7 +405,7 @@ namespace Baran.Ferroalloy.Office
                         shiShiftLoc = Shift.استراحت;
                     }
                     break;
-                case ShiftType.Shift2Hour8Work3Rest1:
+                case ShiftType.تعداد۲ـمدت8ـکاری3ـاستراحت1:
                     if (intShiftArg == 1)
                     {
                         shiShiftLoc = Shift.صبح;

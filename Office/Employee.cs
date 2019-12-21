@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
 using System.Collections;
+using Baran.Ferroalloy.Finance;
 
 namespace Baran.Ferroalloy.Office
 {
@@ -18,11 +19,13 @@ namespace Baran.Ferroalloy.Office
         public string strFirstName;
         public string strLastName;
         public string strNationalID;
+        public string strInsuranceNumber;
+        public bool bolIsShiftMode;
         public int intDepartment;
         public int intSubDepartment;
         public int intPost;
         public int intEmploymentType;
-        public int intShift;
+        public int intShiftType;
         public string strPhoneNumber;
         public DateTime dtBirth;
         public string strFatherName;
@@ -31,6 +34,16 @@ namespace Baran.Ferroalloy.Office
         public string strLocationCounty;
         public string strLocationCityVillage;
         public string strLocationAddress;
+        public string strPostalCode;
+        public Banking bnkInfo;
+
+        public string strName
+        {
+            get
+            {
+                return this.strFirstName + " " + this.strLastName;
+            }
+        }
 
         public enum EmploymentType
         {
@@ -38,7 +51,6 @@ namespace Baran.Ferroalloy.Office
             شرکتی = 2,
             قراردادی = 3
         }
-
         public enum EducationLevel
         {
             زیردیپلم=1,
@@ -48,7 +60,6 @@ namespace Baran.Ferroalloy.Office
             فوق‌لیسانس=5,
             دکترا=6
         }
-
         public enum PostType
         {
             مدیر_عامل=1,
@@ -60,13 +71,7 @@ namespace Baran.Ferroalloy.Office
             تکنسین=7,
             کارگر=8
         }
-        public string strName
-        {
-            get
-            {
-                return this.strFirstName + " " + this.strLastName;
-            }
-        }
+        
         public Employee()
         {
             this.intID = 0;
@@ -75,10 +80,13 @@ namespace Baran.Ferroalloy.Office
             this.strFirstName = "";
             this.strLastName = "";
             this.strNationalID = "";
+            this.strInsuranceNumber = "";
+            this.bolIsShiftMode = false;
+            this.intDepartment = 0;
             this.intSubDepartment = 0;
             this.intPost = 0;
             this.intEmploymentType = 0;
-            this.intShift = 0;
+            this.intShiftType = 0;
             this.strPhoneNumber = "";
             this.dtBirth = new DateTime();
             this.strFatherName = "";
@@ -87,6 +95,8 @@ namespace Baran.Ferroalloy.Office
             this.strLocationCounty = "";
             this.strLocationCityVillage = "";
             this.strLocationAddress = "";
+            this.strPostalCode = "";
+            this.bnkInfo = new Banking();
         }
         public static DataTable GetEmployees(Connection cnConnection, Employee emSearchArg)
         {
@@ -191,7 +201,7 @@ namespace Baran.Ferroalloy.Office
                 emResult.intDepartment = (int)drEmployees["intDepartment"];
                 emResult.intSubDepartment = (int)drEmployees["intSubDepartment"];
                 emResult.intEmploymentType = (int)drEmployees["intEmploymentType"];
-                emResult.intShift = (int)drEmployees["intShift"];
+                emResult.intShiftType = (int)drEmployees["intShiftType"];
                 emResult.strPhoneNumber = drEmployees["nvcMobileNumber"].ToString();
                 emResult.dtBirth = new DateTime();
                 emResult.strFatherName = drEmployees["nvcFatherName"].ToString();
@@ -209,7 +219,7 @@ namespace Baran.Ferroalloy.Office
         {
             SqlConnection scConnection = new SqlConnection(cnConnection.strConnectionStringPty);
             SqlCommand cmEmployees = new SqlCommand();
-
+            
             cmEmployees.Connection = scConnection;
             cmEmployees.CommandText = String.Format("SELECT * FROM tabEmployees WHERE nvcCoID='{0}'", strCoIDArg);
 
@@ -226,7 +236,7 @@ namespace Baran.Ferroalloy.Office
                 emEmployeeArg.intSubDepartment = (int)drEmployees["intSubDepartment"];
                 emEmployeeArg.intPost = (int)drEmployees["intPost"];
                 emEmployeeArg.intEmploymentType = (int)drEmployees["intEmploymentType"];
-                emEmployeeArg.intShift = (int)drEmployees["intShift"];
+                emEmployeeArg.intShiftType = (int)drEmployees["intShiftType"];
                 emEmployeeArg.strPhoneNumber = drEmployees["nvcMobileNumber"].ToString();
                 emEmployeeArg.dtBirth = new DateTime();
                 emEmployeeArg.strFatherName = drEmployees["nvcFatherName"].ToString();
@@ -244,24 +254,36 @@ namespace Baran.Ferroalloy.Office
             bool bolResultLoc;
 
             SqlConnection scConnection = new SqlConnection(cnConnection.strConnectionStringPty);
-            SqlCommand cmCommand = new SqlCommand();
 
-            cmCommand.Connection = scConnection;
-            cmCommand.CommandText = 
-                string.Format(@"INSERT INTO tabEmployees (nvcFirstName, nvcLastName, nvcCoID, intDepartment, nvcNationalID, intSubDepartment, intPost, intEmploymentType," +
-                "intShift, nvcMobileNumber, datBirth, nvcFatherName, intEducationLevel, nvcLocationProvince, nvcLocationCounty,nvcLocationCityVillage, nvcLocationAddress) VALUES " +
-                "(N'{0}',N'{1}',N'{2}',{3},N'{4}',{5},{6},{7},{8},N'{9}','{10}-{11}-{12}',N'{13}',{14},N'{15}',N'{16}',N'{17}',N'{18}')",this.strFirstName,this.strLastName,this.strCoID,
-                this.intDepartment,this.strNationalID,this.intSubDepartment,this.intPost,this.intEmploymentType,this.intShift,this.strPhoneNumber,this.dtBirth.Year,this.dtBirth.Month,
-                this.dtBirth.Day,this.strFatherName,this.intEducationLevel,this.strLocationProvince,this.strLocationCounty,this.strLocationCityVillage,this.strLocationAddress); 
-         
+            SqlCommand cmEmployees = new SqlCommand();
+            cmEmployees.Connection = scConnection;
+            cmEmployees.CommandText = 
+                string.Format(@"INSERT INTO tabEmployees (nvcCoID, nvcFirstName, nvcLastName, nvcNationalID, intDepartment,intSubDepartment, intPost, intEmploymentType," +
+                "bitIsShiftMode, intShiftType, nvcMobileNumber, datBirth, nvcFatherName, intEducationLevel, nvcLocationProvince, nvcLocationCounty, nvcLocationCityVillage," +
+                "nvcLocationAddress, nvcPostalCode) VALUES " +
+                "('{0}',N'{1}',N'{2}','{3}',{4},{5},{6},{7},'{8}',{9},'{10}','{11}-{12}-{13}',N'{14}',{15},N'{16}',N'{17}',N'{18}',N'{19}','{20}')", this.strCoID,this.strFirstName,this.strLastName,
+                this.strNationalID,this.intDepartment,this.intSubDepartment,this.intPost,this.intEmploymentType,this.bolIsShiftMode, this.intShiftType,this.strPhoneNumber,this.dtBirth.Year,this.dtBirth.Month,
+                this.dtBirth.Day,this.strFatherName,this.intEducationLevel,this.strLocationProvince,this.strLocationCounty,this.strLocationCityVillage,this.strLocationAddress,this.strPostalCode);
+
+            SqlCommand cmEmployeeBankInfo = new SqlCommand();
+            cmEmployeeBankInfo.Connection = scConnection;
+            cmEmployeeBankInfo.CommandText = string.Format(@"INSERT INTO tabEmployeesBankInfo (nvcIdentityCode,nvcName,nvcAccount,nvcShaba,nvcAtmCard)" + 
+                " VALUES ('{0}','{1}','{2}','{3}','{4}')",this.strNationalID,this.bnkInfo.strBankName, this.bnkInfo.strBankAccount, this.bnkInfo.strBankShaba,
+                this.bnkInfo.strBankAtmCard);
+
             scConnection.Open();
-            if(cmCommand.ExecuteNonQuery()>0)
+            if(cmEmployees.ExecuteNonQuery()>0)
             {
                 bolResultLoc = true;
             }
             else
-            {
+            { 
                 bolResultLoc = false;
+            }
+            if(this.bnkInfo.strBankName.Length != 0 || this.bnkInfo.strBankAccount.Length != 0 || 
+                this.bnkInfo.strBankShaba.Length != 0 || this.bnkInfo.strBankAtmCard.Length != 0)
+            {
+                cmEmployeeBankInfo.ExecuteNonQuery();
             }
             scConnection.Close();
 
@@ -370,6 +392,33 @@ namespace Baran.Ferroalloy.Office
             scConnection.Close();
 
             return alProvinces;
+        }
+        public static string GetNextCoId(Connection cnConnection)
+        {
+            string strNextCoId;
+
+            SqlConnection scConnection = new SqlConnection(cnConnection.strConnectionStringPty);
+            SqlCommand comEmployees = new SqlCommand();
+            comEmployees.Connection = scConnection;
+            comEmployees.CommandText = "SELECT MAX(nvcCoID) FROM tabEmployees";
+
+            int intCoId;
+            scConnection.Open();
+            try
+            {
+                intCoId = (int)comEmployees.ExecuteScalar();
+            }
+            catch(InvalidCastException)
+            {
+                intCoId = 1000;
+            }
+            
+              
+            strNextCoId = (++intCoId).ToString();
+           
+            scConnection.Close();
+
+            return strNextCoId;
         }
     }
 }

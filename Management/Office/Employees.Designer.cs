@@ -84,8 +84,8 @@
             this.intEmploymentTypeAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.intPost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.intPostAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intShift = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intShiftAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intShiftType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intShiftTypeAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nvcMobileNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nvcFatherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -181,8 +181,8 @@
             this.intEmploymentTypeAsName,
             this.intPost,
             this.intPostAsName,
-            this.intShift,
-            this.intShiftAsName,
+            this.intShiftType,
+            this.intShiftTypeAsName,
             this.nvcMobileNumber,
             this.datBirth,
             this.nvcFatherName,
@@ -539,26 +539,26 @@
             this.intPostAsName.ToolTipText = "سمت";
             this.intPostAsName.Width = 63;
             // 
-            // intShift
+            // intShiftType
             // 
-            this.intShift.DataPropertyName = "intShift";
+            this.intShiftType.DataPropertyName = "intShiftType";
             dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intShift.DefaultCellStyle = dataGridViewCellStyle15;
-            this.intShift.HeaderText = "شماره شیفت";
-            this.intShift.Name = "intShift";
-            this.intShift.ToolTipText = "شماره شیفت";
-            this.intShift.Visible = false;
-            this.intShift.Width = 102;
+            this.intShiftType.DefaultCellStyle = dataGridViewCellStyle15;
+            this.intShiftType.HeaderText = "شماره شیفت";
+            this.intShiftType.Name = "intShiftType";
+            this.intShiftType.ToolTipText = "شماره شیفت";
+            this.intShiftType.Visible = false;
+            this.intShiftType.Width = 102;
             // 
-            // intShiftAsName
+            // intShiftTypeAsName
             // 
-            this.intShiftAsName.DataPropertyName = "intShiftAsName";
+            this.intShiftTypeAsName.DataPropertyName = "intShiftTypeAsName";
             dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intShiftAsName.DefaultCellStyle = dataGridViewCellStyle16;
-            this.intShiftAsName.HeaderText = "شیفت";
-            this.intShiftAsName.Name = "intShiftAsName";
-            this.intShiftAsName.ToolTipText = "شیفت";
-            this.intShiftAsName.Width = 68;
+            this.intShiftTypeAsName.DefaultCellStyle = dataGridViewCellStyle16;
+            this.intShiftTypeAsName.HeaderText = "شیفت";
+            this.intShiftTypeAsName.Name = "intShiftTypeAsName";
+            this.intShiftTypeAsName.ToolTipText = "شیفت";
+            this.intShiftTypeAsName.Width = 68;
             // 
             // nvcMobileNumber
             // 
@@ -724,8 +724,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn intEmploymentTypeAsName;
         private System.Windows.Forms.DataGridViewTextBoxColumn intPost;
         private System.Windows.Forms.DataGridViewTextBoxColumn intPostAsName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn intShift;
-        private System.Windows.Forms.DataGridViewTextBoxColumn intShiftAsName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn intShiftType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn intShiftTypeAsName;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvcMobileNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn datBirth;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvcFatherName;

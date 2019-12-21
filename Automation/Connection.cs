@@ -13,7 +13,7 @@ namespace Baran.Ferroalloy.Automation.SqlDataBase
     {
         //Connection String of DataBase
         private String strConnectionString;
-
+        
         //Connection String of DataBase
         public String strConnectionStringPty
         {

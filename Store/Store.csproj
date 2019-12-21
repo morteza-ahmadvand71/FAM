@@ -31,12 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Baran.Ferroalloy.Automation">
-      <HintPath>..\Automation\bin\Debug\Baran.Ferroalloy.Automation.dll</HintPath>
-    </Reference>
-    <Reference Include="Baran.Ferroalloy.Office">
-      <HintPath>..\Office\bin\Debug\Baran.Ferroalloy.Office.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,6 +46,20 @@
     <Compile Include="Request.cs" />
     <Compile Include="RequestItem.cs" />
     <Compile Include="StoreGetOut.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Automation\Automation.csproj">
+      <Project>{6206f80e-caab-44d5-9e8a-4cf52496c206}</Project>
+      <Name>Automation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Finance\Finance.csproj">
+      <Project>{ce89cdfb-421d-4a57-834e-fb4ad4067939}</Project>
+      <Name>Finance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Office\Office.csproj">
+      <Project>{fdaeabd6-712c-45cf-bd9b-d6f299c7053f}</Project>
+      <Name>Office</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -31,7 +31,7 @@ namespace Baran.Ferroalloy.Store
         //Confirmation CEO of Request
         public String strCeoCoID;
       
-
+        
         public Request()
         {
             this.intID = 0;
@@ -149,7 +149,7 @@ namespace Baran.Ferroalloy.Store
                     strCommand += @"intRowBudget = " + ReqSearch.intRowBudget + " ";
                 }
             }
-
+            
             //Create a SqlDataAdapter for the Suppliers table.
             SqlDataAdapter daVendors = new SqlDataAdapter();
 

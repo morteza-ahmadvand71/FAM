@@ -26,7 +26,7 @@ namespace Baran.Ferroalloy.Management
         private Department[] deDepartments; 
         private DataSet dsCurrentAffairs;
         private DataSet dsProjects;
-
+        
         public RequestInsert()
         {
             InitializeComponent();

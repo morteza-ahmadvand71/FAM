@@ -39,24 +39,6 @@
     <ApplicationIcon>ICON3.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Baran.Ferroalloy.Automation">
-      <HintPath>..\Automation\bin\Debug\Baran.Ferroalloy.Automation.dll</HintPath>
-    </Reference>
-    <Reference Include="Baran.Ferroalloy.Finance">
-      <HintPath>..\Finance\bin\Debug\Baran.Ferroalloy.Finance.dll</HintPath>
-    </Reference>
-    <Reference Include="Baran.Ferroalloy.Maintenance">
-      <HintPath>..\Maintenance\obj\Debug\Baran.Ferroalloy.Maintenance.dll</HintPath>
-    </Reference>
-    <Reference Include="Baran.Ferroalloy.Office">
-      <HintPath>..\Office\bin\Debug\Baran.Ferroalloy.Office.dll</HintPath>
-    </Reference>
-    <Reference Include="Baran.Ferroalloy.Production">
-      <HintPath>..\Production\obj\Debug\Baran.Ferroalloy.Production.dll</HintPath>
-    </Reference>
-    <Reference Include="Baran.Ferroalloy.Store">
-      <HintPath>..\Store\bin\Debug\Baran.Ferroalloy.Store.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -647,6 +629,32 @@
   <ItemGroup>
     <Content Include="FAM.ico" />
     <Content Include="ICON3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Automation\Automation.csproj">
+      <Project>{6206f80e-caab-44d5-9e8a-4cf52496c206}</Project>
+      <Name>Automation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Finance\Finance.csproj">
+      <Project>{ce89cdfb-421d-4a57-834e-fb4ad4067939}</Project>
+      <Name>Finance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Maintenance\Maintenance.csproj">
+      <Project>{609700ca-bd32-4150-9b4f-c9912c869a5c}</Project>
+      <Name>Maintenance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Office\Office.csproj">
+      <Project>{fdaeabd6-712c-45cf-bd9b-d6f299c7053f}</Project>
+      <Name>Office</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Production\Production.csproj">
+      <Project>{70f4ab1b-05ff-4c04-bb12-1efc083c6a72}</Project>
+      <Name>Production</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store\Store.csproj">
+      <Project>{79d76780-4f90-4871-8b6c-f46e903b6c24}</Project>
+      <Name>Store</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

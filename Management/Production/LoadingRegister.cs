@@ -53,7 +53,7 @@ namespace Baran.Ferroalloy.Management
                 return this.setSetings.strXmlPath + @"\xmlNextLoading.xml";
             }
         }
-
+      
         public LoadingRegister()
         {
             InitializeComponent();

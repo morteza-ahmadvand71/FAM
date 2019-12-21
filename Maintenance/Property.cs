@@ -23,7 +23,7 @@ namespace Baran.Ferroalloy.Maintenance
             this.strCode = "";
             this.strCategory = "";
         }
-
+        
         public static Property[] GetProperties(Connection cnConnection)
         {
             Property[] prProperties;

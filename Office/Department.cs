@@ -16,7 +16,7 @@ namespace Baran.Ferroalloy.Office
         public bool bolIsActual;
         public string strName;
         public int intNumber;
-
+        
         public Department()
         {
             this.intID = 0;

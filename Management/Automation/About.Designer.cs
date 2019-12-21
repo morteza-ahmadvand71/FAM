@@ -69,7 +69,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(63, 106);
+            this.label1.Location = new System.Drawing.Point(63, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 21);
             this.label1.TabIndex = 17;
@@ -79,7 +79,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 128);
+            this.label2.Location = new System.Drawing.Point(63, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 21);
             this.label2.TabIndex = 18;
@@ -89,7 +89,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(149, 106);
+            this.label4.Location = new System.Drawing.Point(147, 98);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 21);
             this.label4.TabIndex = 20;
@@ -99,7 +99,7 @@
             // 
             this.labVersion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labVersion.AutoSize = true;
-            this.labVersion.Location = new System.Drawing.Point(108, 128);
+            this.labVersion.Location = new System.Drawing.Point(108, 120);
             this.labVersion.Name = "labVersion";
             this.labVersion.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labVersion.Size = new System.Drawing.Size(30, 21);
@@ -147,9 +147,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(159, 31);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 21);
+            this.label9.Size = new System.Drawing.Size(27, 21);
             this.label9.TabIndex = 26;
-            this.label9.Text = "باران";
+            this.label9.Text = "فام";
             // 
             // pictureBox1
             // 
@@ -173,11 +173,11 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btmOk);
             this.Controls.Add(this.labVersion);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.logoPictureBox);
+            this.Controls.Add(this.label4);
             this.Font = new System.Drawing.Font("B Yekan", 10F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);

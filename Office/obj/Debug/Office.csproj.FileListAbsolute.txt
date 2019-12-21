@@ -15,3 +15,13 @@ C:\FerroalloyManagement\Office\obj\Debug\Office.csprojAssemblyReference.cache
 C:\FerroalloyManagement\Office\obj\Debug\Office.csproj.CopyComplete
 C:\FerroalloyManagement\Office\obj\Debug\Baran.Ferroalloy.Office.dll
 C:\FerroalloyManagement\Office\obj\Debug\Baran.Ferroalloy.Office.pdb
+C:\Douran\FAM\Source\Office\obj\Debug\Office.csprojAssemblyReference.cache
+C:\Douran\FAM\Source\Office\bin\Debug\Baran.Ferroalloy.Office.dll
+C:\Douran\FAM\Source\Office\bin\Debug\Baran.Ferroalloy.Office.pdb
+C:\Douran\FAM\Source\Office\bin\Debug\Baran.Ferroalloy.Automation.dll
+C:\Douran\FAM\Source\Office\bin\Debug\Baran.Ferroalloy.Finance.dll
+C:\Douran\FAM\Source\Office\bin\Debug\Baran.Ferroalloy.Automation.pdb
+C:\Douran\FAM\Source\Office\bin\Debug\Baran.Ferroalloy.Finance.pdb
+C:\Douran\FAM\Source\Office\obj\Debug\Office.csproj.CopyComplete
+C:\Douran\FAM\Source\Office\obj\Debug\Baran.Ferroalloy.Office.dll
+C:\Douran\FAM\Source\Office\obj\Debug\Baran.Ferroalloy.Office.pdb

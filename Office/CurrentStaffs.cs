@@ -14,7 +14,7 @@ namespace Baran.Ferroalloy.Office
         public int intID;
         public int intNumber;
         public string strName;
-
+        
         public CurrentAffairs()
         {
             this.intID = 0;
