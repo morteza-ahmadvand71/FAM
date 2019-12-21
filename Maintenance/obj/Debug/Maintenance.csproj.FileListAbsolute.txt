@@ -29,3 +29,5 @@ C:\Douran\FAM\Source\Maintenance\bin\Debug\Baran.Ferroalloy.Office.pdb
 C:\Douran\FAM\Source\Maintenance\obj\Debug\Maintenance.csproj.CopyComplete
 C:\Douran\FAM\Source\Maintenance\obj\Debug\Baran.Ferroalloy.Maintenance.dll
 C:\Douran\FAM\Source\Maintenance\obj\Debug\Baran.Ferroalloy.Maintenance.pdb
+C:\Douran\FAM\Source\Maintenance\bin\Debug\Baran.Ferroalloy.Finance.dll
+C:\Douran\FAM\Source\Maintenance\bin\Debug\Baran.Ferroalloy.Finance.pdb

@@ -130,10 +130,9 @@
             // 
             // menEmployees
             // 
-            this.menEmployees.Enabled = false;
             this.menEmployees.Font = new System.Drawing.Font("B Yekan", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.menEmployees.Name = "menEmployees";
-            this.menEmployees.Size = new System.Drawing.Size(118, 22);
+            this.menEmployees.Size = new System.Drawing.Size(180, 22);
             this.menEmployees.Text = "کارمندان";
             this.menEmployees.Click += new System.EventHandler(this.menEmployees_Click);
             // 
@@ -144,7 +143,7 @@
             this.MensOfficeDepartmentStoreGetOuts});
             this.menOfficeStore.Font = new System.Drawing.Font("B Yekan", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.menOfficeStore.Name = "menOfficeStore";
-            this.menOfficeStore.Size = new System.Drawing.Size(118, 22);
+            this.menOfficeStore.Size = new System.Drawing.Size(180, 22);
             this.menOfficeStore.Text = "انبار";
             // 
             // MensOfficeDepartmentStorePurchaseRequests
@@ -168,7 +167,7 @@
             this.menOfficeDepartmentPrefrences.Enabled = false;
             this.menOfficeDepartmentPrefrences.Font = new System.Drawing.Font("B Yekan", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.menOfficeDepartmentPrefrences.Name = "menOfficeDepartmentPrefrences";
-            this.menOfficeDepartmentPrefrences.Size = new System.Drawing.Size(118, 22);
+            this.menOfficeDepartmentPrefrences.Size = new System.Drawing.Size(180, 22);
             this.menOfficeDepartmentPrefrences.Text = "تنطیمات";
             this.menOfficeDepartmentPrefrences.Click += new System.EventHandler(this.MenOfficeDepartmentPrefrences_Click);
             // 

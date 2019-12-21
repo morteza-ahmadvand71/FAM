@@ -24,7 +24,8 @@ namespace Baran.Ferroalloy.Management
         private FamSetting setSettings;
         private Employee emLogined;
         private string strXmlPath;
-     
+        
+       
         public Management()
         {
             InitializeComponent();

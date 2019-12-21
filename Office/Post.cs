@@ -13,10 +13,10 @@ namespace Baran.Ferroalloy.Office
         public static string GetNameByNumber(Connection cnConnection, int intNumberArg)
         {
             String strNameLoc = "";
-
+           
             SqlConnection cnSqlConnection = new SqlConnection(cnConnection.strConnectionStringPty);
             SqlCommand cmEmployee = new SqlCommand();
-
+            
             cmEmployee.CommandText = string.Format("SELECT * FROM tabPosts WHERE intNumber={0}",intNumberArg);
             cmEmployee.Connection = cnSqlConnection;
 

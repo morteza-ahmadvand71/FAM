@@ -13,6 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Baran.Ferroalloy.Finance;
 
 namespace Baran.Ferroalloy.Management
 {
@@ -24,6 +25,7 @@ namespace Baran.Ferroalloy.Management
         public Employee emInsert = new Employee();
         private Department[] depDepartments;
         private SubDepartment[] depSubDepartments;
+        private DataTable dtBankNames;
 
         public EmployeeInsert()
         {
@@ -61,6 +63,12 @@ namespace Baran.Ferroalloy.Management
             //Fill cbLocationProvince
             this.cbLocationProvince.DataSource = Employee.GetProvinces(this.cnConnection);
             this.cbLocationProvince.SelectedIndex = -1;
+
+            //Fill cbBankName
+            this.dtBankNames = Banking.GetBankNames(this.cnConnection);
+            this.cbBankName.DataSource = this.dtBankNames;
+            this.cbBankName.DisplayMember = "nvcName";
+            this.cbBankName.SelectedIndex = -1;
         }
 
         private void btmOK_Click(object sender, EventArgs e)
@@ -83,13 +91,16 @@ namespace Baran.Ferroalloy.Management
                 this.emInsert.intSubDepartment = this.depSubDepartments[this.cbSubDepartment.SelectedIndex].intNumber;
                 this.emInsert.intPost = this.cbPosts.SelectedIndex + 1;
                 this.emInsert.intEmploymentType = this.cbEmploymentTypes.SelectedIndex + 1;
-
+                this.emInsert.bnkInfo.strBankName = this.dtBankNames.Rows[this.cbBankName.SelectedIndex]["nvcName"].ToString();
+                this.emInsert.bnkInfo.strBankAccount = this.tbBankAccount.Text.Trim();
+                this.emInsert.bnkInfo.strBankShaba = this.tbBankShaba.Text.Trim();
+                this.emInsert.bnkInfo.strBankAtmCard = this.tbBankAtmCard.Text.Trim();
                 this.emInsert.intEducationLevel = this.cbEducationLevels.SelectedIndex + 1;
                 this.emInsert.strLocationProvince = this.cbLocationProvince.SelectedItem.ToString();
                 this.emInsert.strLocationCounty = this.tbLocationCounty.Text.Trim();
                 this.emInsert.strLocationCityVillage = this.tbLocationCityVillage.Text.Trim();
                 this.emInsert.strLocationAddress = this.tbLocationAddress.Text.Trim();
-                this.emInsert.strPostalCode = this.tbPostalCode.Text.Trim();
+                this.emInsert.strPostalCode = Language.GetEnglishText(this.tbPostalCode.Text);
 
                 this.emInsert.Insert(this.cnConnection);
 
@@ -141,15 +152,15 @@ namespace Baran.Ferroalloy.Management
             }
         }
 
-        private void SetNumbericTextButtoms(object sender, KeyPressEventArgs e)
+        private void SetToNumbericText(KeyPressEventArgs kpeKeyPressArg)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            if (!char.IsControl(kpeKeyPressArg.KeyChar) && !char.IsDigit(kpeKeyPressArg.KeyChar))
             {
-                e.Handled = true;
+                kpeKeyPressArg.Handled = true;
             }
         }
 
-        private void SetFarsiLanguageTextBoxes(object sender, EventArgs e)
+        private void SetToPersianText()
         {
             Language.SetFarsiLanguage();
         }
@@ -278,6 +289,151 @@ namespace Baran.Ferroalloy.Management
                 this.labShift.Enabled = false;
                 this.cbShiftType.Enabled = false;
             }
+        }
+
+        private void tbInsuranceNumber_TextChanged(object sender, EventArgs e)
+        {
+            SetEnableBtmOk();
+        }
+
+        private void tbInsuranceNumber_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbInsuranceNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SetToNumbericText(e);
+        }
+
+        private void tbCoID_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbCoID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SetToNumbericText(e);
+        }
+
+        private void tbFirstName_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbLastName_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbNationalID_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbNationalID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SetToNumbericText(e);
+        }
+
+        private void tbPhoneNumber_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SetToNumbericText(e);
+        }
+
+        private void tbFatherName_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbBankAccount_TextChanged(object sender, EventArgs e)
+        {
+            SetEnableBtmOk();
+        }
+
+        private void tbBankAccount_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbBankAccount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SetToNumbericText(e);
+        }
+
+        private void tbBankShaba_TextChanged(object sender, EventArgs e)
+        {
+            SetEnableBtmOk();
+        }
+
+        private void tbBankShaba_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbBankShaba_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SetToNumbericText(e);
+        }
+
+        private void tbBankAtmCard_TextChanged(object sender, EventArgs e)
+        {
+            SetEnableBtmOk();
+        }
+
+        private void tbBankAtmCard_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbBankAtmCard_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SetToNumbericText(e);
+        }
+
+        private void tbLocationCounty_TextChanged(object sender, EventArgs e)
+        {
+            SetEnableBtmOk();
+        }
+
+        private void tbLocationCounty_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbLocationCityVillage_TextChanged(object sender, EventArgs e)
+        {
+            SetEnableBtmOk();
+        }
+
+        private void tbLocationCityVillage_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbLocationAddress_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbPostalCode_TextChanged(object sender, EventArgs e)
+        {
+            SetEnableBtmOk();
+        }
+
+        private void tbPostalCode_Enter(object sender, EventArgs e)
+        {
+            SetToPersianText();
+        }
+
+        private void tbPostalCode_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SetToNumbericText(e);
         }
     }
 }

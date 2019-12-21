@@ -13,3 +13,4 @@ C:\Douran\FAM\Source\Automation\bin\Debug\Baran.Ferroalloy.Automation.dll
 C:\Douran\FAM\Source\Automation\bin\Debug\Baran.Ferroalloy.Automation.pdb
 C:\Douran\FAM\Source\Automation\obj\Debug\Baran.Ferroalloy.Automation.dll
 C:\Douran\FAM\Source\Automation\obj\Debug\Baran.Ferroalloy.Automation.pdb
+C:\Douran\FAM\Source\Automation\obj\Debug\Automation.csprojAssemblyReference.cache

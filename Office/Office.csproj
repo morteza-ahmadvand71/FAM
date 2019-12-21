@@ -31,10 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Baran.Ferroalloy.Automation, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Automation\bin\Debug\Baran.Ferroalloy.Automation.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
@@ -53,6 +49,16 @@
     <Compile Include="Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShiftInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Automation\Automation.csproj">
+      <Project>{6206f80e-caab-44d5-9e8a-4cf52496c206}</Project>
+      <Name>Automation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Finance\Finance.csproj">
+      <Project>{ce89cdfb-421d-4a57-834e-fb4ad4067939}</Project>
+      <Name>Finance</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

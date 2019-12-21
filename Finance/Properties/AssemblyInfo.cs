@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FerroalloyManagement")]
+[assembly: AssemblyTitle("Finance")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FerroalloyManagement")]
+[assembly: AssemblyProduct("Finance")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("365a8368-e861-48e3-9d59-965cbc77a0f9")]
+[assembly: Guid("ce89cdfb-421d-4a57-834e-fb4ad4067939")]
 
 // Version information for an assembly consists of the following four values:
 //

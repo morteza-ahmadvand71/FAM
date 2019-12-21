@@ -77,6 +77,8 @@
             this.tbPostalCode = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.cbShiftType = new System.Windows.Forms.ComboBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.cbBankName = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // tbNationalID
@@ -87,18 +89,18 @@
             this.tbNationalID.Margin = new System.Windows.Forms.Padding(4);
             this.tbNationalID.MaxLength = 10;
             this.tbNationalID.Name = "tbNationalID";
-            this.tbNationalID.Size = new System.Drawing.Size(120, 28);
+            this.tbNationalID.Size = new System.Drawing.Size(100, 28);
             this.tbNationalID.TabIndex = 4;
             this.tbNationalID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tbNationalID.TextChanged += new System.EventHandler(this.TbNationalID_TextChanged);
-            this.tbNationalID.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
-            this.tbNationalID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SetNumbericTextButtoms);
+            this.tbNationalID.Enter += new System.EventHandler(this.tbNationalID_Enter);
+            this.tbNationalID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNationalID_KeyPress);
             // 
             // tbCoID
             // 
             this.tbCoID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbCoID.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.tbCoID.Location = new System.Drawing.Point(96, 43);
+            this.tbCoID.Location = new System.Drawing.Point(103, 43);
             this.tbCoID.Margin = new System.Windows.Forms.Padding(4);
             this.tbCoID.MaxLength = 4;
             this.tbCoID.Name = "tbCoID";
@@ -106,8 +108,8 @@
             this.tbCoID.TabIndex = 1;
             this.tbCoID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbCoID.TextChanged += new System.EventHandler(this.TbCoID_TextChanged);
-            this.tbCoID.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
-            this.tbCoID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SetNumbericTextButtoms);
+            this.tbCoID.Enter += new System.EventHandler(this.tbCoID_Enter);
+            this.tbCoID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCoID_KeyPress);
             // 
             // tbLastName
             // 
@@ -120,7 +122,7 @@
             this.tbLastName.Size = new System.Drawing.Size(150, 28);
             this.tbLastName.TabIndex = 3;
             this.tbLastName.TextChanged += new System.EventHandler(this.TbLastName_TextChanged);
-            this.tbLastName.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
+            this.tbLastName.Enter += new System.EventHandler(this.tbLastName_Enter);
             // 
             // label4
             // 
@@ -141,7 +143,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("B Yekan", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(28, 47);
+            this.label3.Location = new System.Drawing.Point(35, 47);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 21);
@@ -170,7 +172,7 @@
             this.btmOK.Margin = new System.Windows.Forms.Padding(4);
             this.btmOK.Name = "btmOK";
             this.btmOK.Size = new System.Drawing.Size(125, 35);
-            this.btmOK.TabIndex = 14;
+            this.btmOK.TabIndex = 25;
             this.btmOK.Text = "تایید";
             this.ttEmployee.SetToolTip(this.btmOK, "تایید F6");
             this.btmOK.UseVisualStyleBackColor = true;
@@ -187,7 +189,7 @@
             this.tbFirstName.Size = new System.Drawing.Size(150, 28);
             this.tbFirstName.TabIndex = 2;
             this.tbFirstName.TextChanged += new System.EventHandler(this.TbFirstName_TextChanged);
-            this.tbFirstName.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
+            this.tbFirstName.Enter += new System.EventHandler(this.tbFirstName_Enter);
             // 
             // label1
             // 
@@ -210,7 +212,7 @@
             this.btmCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btmCancel.Name = "btmCancel";
             this.btmCancel.Size = new System.Drawing.Size(125, 35);
-            this.btmCancel.TabIndex = 15;
+            this.btmCancel.TabIndex = 26;
             this.btmCancel.Text = "رد";
             this.ttEmployee.SetToolTip(this.btmCancel, "رد F5");
             this.btmCancel.UseVisualStyleBackColor = true;
@@ -226,7 +228,7 @@
             this.cbDepartments.Margin = new System.Windows.Forms.Padding(4);
             this.cbDepartments.Name = "cbDepartments";
             this.cbDepartments.Size = new System.Drawing.Size(150, 28);
-            this.cbDepartments.TabIndex = 5;
+            this.cbDepartments.TabIndex = 11;
             this.cbDepartments.SelectedIndexChanged += new System.EventHandler(this.CbDepartments_SelectedIndexChanged);
             // 
             // label6
@@ -251,7 +253,7 @@
             this.cbSubDepartment.Margin = new System.Windows.Forms.Padding(4);
             this.cbSubDepartment.Name = "cbSubDepartment";
             this.cbSubDepartment.Size = new System.Drawing.Size(150, 28);
-            this.cbSubDepartment.TabIndex = 6;
+            this.cbSubDepartment.TabIndex = 12;
             this.cbSubDepartment.SelectedIndexChanged += new System.EventHandler(this.CbSubDepartment_SelectedIndexChanged);
             // 
             // label5
@@ -276,7 +278,7 @@
             this.cbPosts.Margin = new System.Windows.Forms.Padding(4);
             this.cbPosts.Name = "cbPosts";
             this.cbPosts.Size = new System.Drawing.Size(150, 28);
-            this.cbPosts.TabIndex = 7;
+            this.cbPosts.TabIndex = 13;
             this.cbPosts.SelectedIndexChanged += new System.EventHandler(this.CbPosts_SelectedIndexChanged);
             // 
             // label7
@@ -313,7 +315,7 @@
             this.cbEmploymentTypes.Margin = new System.Windows.Forms.Padding(4);
             this.cbEmploymentTypes.Name = "cbEmploymentTypes";
             this.cbEmploymentTypes.Size = new System.Drawing.Size(150, 28);
-            this.cbEmploymentTypes.TabIndex = 8;
+            this.cbEmploymentTypes.TabIndex = 14;
             this.cbEmploymentTypes.SelectedIndexChanged += new System.EventHandler(this.CbEmploymentTypes_SelectedIndexChanged);
             // 
             // labShift
@@ -322,7 +324,7 @@
             this.labShift.AutoSize = true;
             this.labShift.Enabled = false;
             this.labShift.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.labShift.Location = new System.Drawing.Point(127, 99);
+            this.labShift.Location = new System.Drawing.Point(102, 99);
             this.labShift.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labShift.Name = "labShift";
             this.labShift.Size = new System.Drawing.Size(67, 21);
@@ -333,15 +335,16 @@
             // 
             this.tbPhoneNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbPhoneNumber.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.tbPhoneNumber.Location = new System.Drawing.Point(434, 95);
+            this.tbPhoneNumber.Location = new System.Drawing.Point(468, 95);
             this.tbPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
-            this.tbPhoneNumber.MaxLength = 20;
+            this.tbPhoneNumber.MaxLength = 11;
             this.tbPhoneNumber.Name = "tbPhoneNumber";
-            this.tbPhoneNumber.Size = new System.Drawing.Size(150, 28);
-            this.tbPhoneNumber.TabIndex = 10;
+            this.tbPhoneNumber.Size = new System.Drawing.Size(100, 28);
+            this.tbPhoneNumber.TabIndex = 8;
+            this.tbPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tbPhoneNumber.TextChanged += new System.EventHandler(this.TbPhoneNumber_TextChanged);
-            this.tbPhoneNumber.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
-            this.tbPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SetNumbericTextButtoms);
+            this.tbPhoneNumber.Enter += new System.EventHandler(this.tbPhoneNumber_Enter);
+            this.tbPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPhoneNumber_KeyPress);
             // 
             // label10
             // 
@@ -349,7 +352,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("B Yekan", 10F);
             this.label10.ForeColor = System.Drawing.Color.Green;
-            this.label10.Location = new System.Drawing.Point(364, 99);
+            this.label10.Location = new System.Drawing.Point(398, 99);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(71, 21);
@@ -373,28 +376,28 @@
             this.dtpBrightDate.Location = new System.Drawing.Point(922, 95);
             this.dtpBrightDate.Name = "dtpBrightDate";
             this.dtpBrightDate.Size = new System.Drawing.Size(200, 28);
-            this.dtpBrightDate.TabIndex = 11;
+            this.dtpBrightDate.TabIndex = 10;
             this.dtpBrightDate.ValueChanged += new System.EventHandler(this.DtpBrightDate_ValueChanged);
             // 
             // tbFatherName
             // 
             this.tbFatherName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbFatherName.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.tbFatherName.Location = new System.Drawing.Point(668, 95);
+            this.tbFatherName.Location = new System.Drawing.Point(684, 95);
             this.tbFatherName.Margin = new System.Windows.Forms.Padding(4);
             this.tbFatherName.MaxLength = 20;
             this.tbFatherName.Name = "tbFatherName";
             this.tbFatherName.Size = new System.Drawing.Size(150, 28);
-            this.tbFatherName.TabIndex = 12;
+            this.tbFatherName.TabIndex = 9;
             this.tbFatherName.TextChanged += new System.EventHandler(this.TbFatherName_TextChanged);
-            this.tbFatherName.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
+            this.tbFatherName.Enter += new System.EventHandler(this.tbFatherName_Enter);
             // 
             // label12
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.label12.Location = new System.Drawing.Point(618, 99);
+            this.label12.Location = new System.Drawing.Point(634, 99);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(51, 21);
@@ -411,7 +414,7 @@
             this.cbEducationLevels.Margin = new System.Windows.Forms.Padding(4);
             this.cbEducationLevels.Name = "cbEducationLevels";
             this.cbEducationLevels.Size = new System.Drawing.Size(150, 28);
-            this.cbEducationLevels.TabIndex = 13;
+            this.cbEducationLevels.TabIndex = 19;
             this.cbEducationLevels.SelectedIndexChanged += new System.EventHandler(this.CbEducationLevels_SelectedIndexChanged);
             // 
             // label13
@@ -436,7 +439,7 @@
             this.cbLocationProvince.Margin = new System.Windows.Forms.Padding(4);
             this.cbLocationProvince.Name = "cbLocationProvince";
             this.cbLocationProvince.Size = new System.Drawing.Size(150, 28);
-            this.cbLocationProvince.TabIndex = 30;
+            this.cbLocationProvince.TabIndex = 20;
             this.cbLocationProvince.SelectedIndexChanged += new System.EventHandler(this.CbLocationProvince_SelectedIndexChanged);
             // 
             // label14
@@ -493,13 +496,13 @@
             this.tbLocationAddress.Font = new System.Drawing.Font("B Yekan", 10F);
             this.tbLocationAddress.Location = new System.Drawing.Point(218, 297);
             this.tbLocationAddress.Margin = new System.Windows.Forms.Padding(4);
-            this.tbLocationAddress.MaxLength = 20;
+            this.tbLocationAddress.MaxLength = 250;
             this.tbLocationAddress.Multiline = true;
             this.tbLocationAddress.Name = "tbLocationAddress";
             this.tbLocationAddress.Size = new System.Drawing.Size(500, 40);
-            this.tbLocationAddress.TabIndex = 37;
+            this.tbLocationAddress.TabIndex = 23;
             this.tbLocationAddress.TextChanged += new System.EventHandler(this.TbLocationAddress_TextChanged);
-            this.tbLocationAddress.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
+            this.tbLocationAddress.Enter += new System.EventHandler(this.tbLocationAddress_Enter);
             // 
             // tbLocationCounty
             // 
@@ -510,8 +513,9 @@
             this.tbLocationCounty.MaxLength = 20;
             this.tbLocationCounty.Name = "tbLocationCounty";
             this.tbLocationCounty.Size = new System.Drawing.Size(150, 28);
-            this.tbLocationCounty.TabIndex = 38;
-            this.tbLocationCounty.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
+            this.tbLocationCounty.TabIndex = 21;
+            this.tbLocationCounty.TextChanged += new System.EventHandler(this.tbLocationCounty_TextChanged);
+            this.tbLocationCounty.Enter += new System.EventHandler(this.tbLocationCounty_Enter);
             // 
             // tbLocationCityVillage
             // 
@@ -522,16 +526,17 @@
             this.tbLocationCityVillage.MaxLength = 20;
             this.tbLocationCityVillage.Name = "tbLocationCityVillage";
             this.tbLocationCityVillage.Size = new System.Drawing.Size(150, 28);
-            this.tbLocationCityVillage.TabIndex = 39;
-            this.tbLocationCityVillage.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
+            this.tbLocationCityVillage.TabIndex = 22;
+            this.tbLocationCityVillage.TextChanged += new System.EventHandler(this.tbLocationCityVillage_TextChanged);
+            this.tbLocationCityVillage.Enter += new System.EventHandler(this.tbLocationCityVillage_Enter);
             // 
             // cbIsShiftMode
             // 
             this.cbIsShiftMode.AutoSize = true;
-            this.cbIsShiftMode.Location = new System.Drawing.Point(60, 97);
+            this.cbIsShiftMode.Location = new System.Drawing.Point(40, 97);
             this.cbIsShiftMode.Name = "cbIsShiftMode";
             this.cbIsShiftMode.Size = new System.Drawing.Size(62, 25);
-            this.cbIsShiftMode.TabIndex = 40;
+            this.cbIsShiftMode.TabIndex = 6;
             this.cbIsShiftMode.Text = "شیفت";
             this.cbIsShiftMode.UseVisualStyleBackColor = true;
             this.cbIsShiftMode.CheckedChanged += new System.EventHandler(this.cbShift_CheckedChanged);
@@ -540,12 +545,16 @@
             // 
             this.tbBankAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbBankAccount.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.tbBankAccount.Location = new System.Drawing.Point(253, 195);
+            this.tbBankAccount.Location = new System.Drawing.Point(342, 195);
             this.tbBankAccount.Margin = new System.Windows.Forms.Padding(4);
             this.tbBankAccount.MaxLength = 18;
             this.tbBankAccount.Name = "tbBankAccount";
             this.tbBankAccount.Size = new System.Drawing.Size(150, 28);
             this.tbBankAccount.TabIndex = 41;
+            this.tbBankAccount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbBankAccount.TextChanged += new System.EventHandler(this.tbBankAccount_TextChanged);
+            this.tbBankAccount.Enter += new System.EventHandler(this.tbBankAccount_Enter);
+            this.tbBankAccount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBankAccount_KeyPress);
             // 
             // label9
             // 
@@ -553,7 +562,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("B Yekan", 10F);
             this.label9.ForeColor = System.Drawing.Color.Green;
-            this.label9.Location = new System.Drawing.Point(173, 199);
+            this.label9.Location = new System.Drawing.Point(262, 199);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 21);
@@ -564,12 +573,16 @@
             // 
             this.tbBankShaba.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbBankShaba.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.tbBankShaba.Location = new System.Drawing.Point(530, 195);
+            this.tbBankShaba.Location = new System.Drawing.Point(570, 195);
             this.tbBankShaba.Margin = new System.Windows.Forms.Padding(4);
             this.tbBankShaba.MaxLength = 26;
             this.tbBankShaba.Name = "tbBankShaba";
-            this.tbBankShaba.Size = new System.Drawing.Size(150, 28);
+            this.tbBankShaba.Size = new System.Drawing.Size(220, 28);
             this.tbBankShaba.TabIndex = 43;
+            this.tbBankShaba.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbBankShaba.TextChanged += new System.EventHandler(this.tbBankShaba_TextChanged);
+            this.tbBankShaba.Enter += new System.EventHandler(this.tbBankShaba_Enter);
+            this.tbBankShaba.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBankShaba_KeyPress);
             // 
             // label18
             // 
@@ -577,7 +590,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("B Yekan", 10F);
             this.label18.ForeColor = System.Drawing.Color.Green;
-            this.label18.Location = new System.Drawing.Point(465, 199);
+            this.label18.Location = new System.Drawing.Point(506, 199);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(66, 21);
@@ -588,12 +601,16 @@
             // 
             this.tbBankAtmCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbBankAtmCard.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.tbBankAtmCard.Location = new System.Drawing.Point(841, 195);
+            this.tbBankAtmCard.Location = new System.Drawing.Point(950, 195);
             this.tbBankAtmCard.Margin = new System.Windows.Forms.Padding(4);
             this.tbBankAtmCard.MaxLength = 16;
             this.tbBankAtmCard.Name = "tbBankAtmCard";
             this.tbBankAtmCard.Size = new System.Drawing.Size(150, 28);
             this.tbBankAtmCard.TabIndex = 45;
+            this.tbBankAtmCard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbBankAtmCard.TextChanged += new System.EventHandler(this.tbBankAtmCard_TextChanged);
+            this.tbBankAtmCard.Enter += new System.EventHandler(this.tbBankAtmCard_Enter);
+            this.tbBankAtmCard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBankAtmCard_KeyPress);
             // 
             // label19
             // 
@@ -601,7 +618,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("B Yekan", 10F);
             this.label19.ForeColor = System.Drawing.Color.Green;
-            this.label19.Location = new System.Drawing.Point(768, 199);
+            this.label19.Location = new System.Drawing.Point(877, 199);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(74, 21);
@@ -625,12 +642,16 @@
             // 
             this.tbInsuranceNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbInsuranceNumber.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.tbInsuranceNumber.Location = new System.Drawing.Point(1009, 43);
+            this.tbInsuranceNumber.Location = new System.Drawing.Point(1007, 43);
             this.tbInsuranceNumber.Margin = new System.Windows.Forms.Padding(4);
             this.tbInsuranceNumber.MaxLength = 10;
             this.tbInsuranceNumber.Name = "tbInsuranceNumber";
-            this.tbInsuranceNumber.Size = new System.Drawing.Size(150, 28);
-            this.tbInsuranceNumber.TabIndex = 41;
+            this.tbInsuranceNumber.Size = new System.Drawing.Size(100, 28);
+            this.tbInsuranceNumber.TabIndex = 5;
+            this.tbInsuranceNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbInsuranceNumber.TextChanged += new System.EventHandler(this.tbInsuranceNumber_TextChanged);
+            this.tbInsuranceNumber.Enter += new System.EventHandler(this.tbInsuranceNumber_Enter);
+            this.tbInsuranceNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbInsuranceNumber_KeyPress);
             // 
             // tbPostalCode
             // 
@@ -638,10 +659,14 @@
             this.tbPostalCode.Font = new System.Drawing.Font("B Yekan", 10F);
             this.tbPostalCode.Location = new System.Drawing.Point(812, 297);
             this.tbPostalCode.Margin = new System.Windows.Forms.Padding(4);
-            this.tbPostalCode.MaxLength = 20;
+            this.tbPostalCode.MaxLength = 10;
             this.tbPostalCode.Name = "tbPostalCode";
-            this.tbPostalCode.Size = new System.Drawing.Size(150, 28);
-            this.tbPostalCode.TabIndex = 48;
+            this.tbPostalCode.Size = new System.Drawing.Size(100, 28);
+            this.tbPostalCode.TabIndex = 24;
+            this.tbPostalCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbPostalCode.TextChanged += new System.EventHandler(this.tbPostalCode_TextChanged);
+            this.tbPostalCode.Enter += new System.EventHandler(this.tbPostalCode_Enter);
+            this.tbPostalCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPostalCode_KeyPress);
             // 
             // label21
             // 
@@ -660,13 +685,39 @@
             // 
             this.cbShiftType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbShiftType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbShiftType.Enabled = false;
             this.cbShiftType.Font = new System.Drawing.Font("B Yekan", 10F);
             this.cbShiftType.FormattingEnabled = true;
-            this.cbShiftType.Location = new System.Drawing.Point(194, 95);
+            this.cbShiftType.Location = new System.Drawing.Point(169, 95);
             this.cbShiftType.Margin = new System.Windows.Forms.Padding(4);
             this.cbShiftType.Name = "cbShiftType";
-            this.cbShiftType.Size = new System.Drawing.Size(150, 28);
-            this.cbShiftType.TabIndex = 49;
+            this.cbShiftType.Size = new System.Drawing.Size(214, 28);
+            this.cbShiftType.TabIndex = 7;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("B Yekan", 10F);
+            this.label22.ForeColor = System.Drawing.Color.Green;
+            this.label22.Location = new System.Drawing.Point(29, 199);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(55, 21);
+            this.label22.TabIndex = 51;
+            this.label22.Text = "نام بانک:";
+            // 
+            // cbBankName
+            // 
+            this.cbBankName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbBankName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBankName.Font = new System.Drawing.Font("B Yekan", 10F);
+            this.cbBankName.FormattingEnabled = true;
+            this.cbBankName.Location = new System.Drawing.Point(84, 195);
+            this.cbBankName.Margin = new System.Windows.Forms.Padding(4);
+            this.cbBankName.Name = "cbBankName";
+            this.cbBankName.Size = new System.Drawing.Size(150, 28);
+            this.cbBankName.TabIndex = 15;
             // 
             // EmployeeInsert
             // 
@@ -674,6 +725,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1193, 479);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.cbShiftType);
             this.Controls.Add(this.tbPostalCode);
             this.Controls.Add(this.label21);
@@ -710,6 +762,7 @@
             this.Controls.Add(this.tbLastName);
             this.Controls.Add(this.cbEmploymentTypes);
             this.Controls.Add(this.label8);
+            this.Controls.Add(this.cbBankName);
             this.Controls.Add(this.cbDepartments);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbNationalID);
@@ -788,5 +841,7 @@
         private System.Windows.Forms.TextBox tbPostalCode;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox cbShiftType;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.ComboBox cbBankName;
     }
 }

@@ -152,9 +152,9 @@ namespace Baran.Ferroalloy.Management
                 this.dgvEmployees.Rows[i].Cells["intPostAsName"].Value = 
                     Post.GetNameByNumber(this.cnConnection,(int)this.dgvEmployees.Rows[i].Cells["intPost"].Value);
 
-                if((int)this.dgvEmployees.Rows[i].Cells["intShift"].Value == -1)
+                if((int)this.dgvEmployees.Rows[i].Cells["intShiftType"].Value == -1)
                 {
-                    this.dgvEmployees.Rows[i].Cells["intShiftAsName"].Value = "-";
+                    this.dgvEmployees.Rows[i].Cells["intShiftTypeAsName"].Value = "-";
                 }
             }
         }

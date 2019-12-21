@@ -50,7 +50,6 @@ namespace Baran.Ferroalloy.Production.LoadingUnit
         //Counter Of Ladle Loading
         private int intLadleLoadingCount;
 
-
         //Number of Ladle
         public String strLadleNumberPty
         {

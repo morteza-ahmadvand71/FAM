@@ -19,13 +19,15 @@ C:\FerroalloyManagement\Production\obj\Debug\Production.csprojAssemblyReference.
 C:\FerroalloyManagement\Production\obj\Debug\Production.csproj.CopyComplete
 C:\FerroalloyManagement\Production\obj\Debug\Baran.Ferroalloy.Production.dll
 C:\FerroalloyManagement\Production\obj\Debug\Baran.Ferroalloy.Production.pdb
-C:\Douran\FAM\Source\Production\obj\Debug\Production.csprojAssemblyReference.cache
 C:\Douran\FAM\Source\Production\bin\Debug\Baran.Ferroalloy.Production.dll
 C:\Douran\FAM\Source\Production\bin\Debug\Baran.Ferroalloy.Production.pdb
 C:\Douran\FAM\Source\Production\bin\Debug\Baran.Ferroalloy.Automation.dll
+C:\Douran\FAM\Source\Production\bin\Debug\Baran.Ferroalloy.Finance.dll
 C:\Douran\FAM\Source\Production\bin\Debug\Baran.Ferroalloy.Office.dll
 C:\Douran\FAM\Source\Production\bin\Debug\Baran.Ferroalloy.Automation.pdb
+C:\Douran\FAM\Source\Production\bin\Debug\Baran.Ferroalloy.Finance.pdb
 C:\Douran\FAM\Source\Production\bin\Debug\Baran.Ferroalloy.Office.pdb
+C:\Douran\FAM\Source\Production\obj\Debug\Production.csprojAssemblyReference.cache
 C:\Douran\FAM\Source\Production\obj\Debug\Production.csproj.CopyComplete
 C:\Douran\FAM\Source\Production\obj\Debug\Baran.Ferroalloy.Production.dll
 C:\Douran\FAM\Source\Production\obj\Debug\Baran.Ferroalloy.Production.pdb
