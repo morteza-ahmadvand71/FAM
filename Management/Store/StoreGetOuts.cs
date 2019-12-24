@@ -178,7 +178,7 @@ namespace Baran.Ferroalloy.Management
                 sdSubDepartment.intDepartmnt = (int)this.dgvStoreGetOuts.Rows[i].Cells["intDepartment"].Value;
                 sdSubDepartment.intNumber = (int)this.dgvStoreGetOuts.Rows[i].Cells["intNumber"].Value;
                 this.dgvStoreGetOuts.Rows[i].Cells["intSubDepartmentAsName"].Value =
-                    SubDepartment.GetNameByNumber(this.cnConnection, sdSubDepartment);
+                    SubDepartment.GetNameByNumber(this.cnConnection, sdSubDepartment.intDepartmnt, sdSubDepartment.intNumber);
 
                 this.dgvStoreGetOuts.Rows[i].Cells["nvcRequesterCoIDAsName"].Value =
                    Employee.GetNameByCoID(this.cnConnection, this.dgvStoreGetOuts.Rows[i].Cells["nvcRequesterCoID"].Value.ToString());
@@ -393,7 +393,7 @@ namespace Baran.Ferroalloy.Management
                 sdSubDepartment.intDepartmnt = (int)this.dgvStoreGetOuts.Rows[i].Cells["intDepartment"].Value;
                 sdSubDepartment.intNumber = (int)this.dgvStoreGetOuts.Rows[i].Cells["intSubDepartment"].Value;
                 this.dgvStoreGetOuts.Rows[i].Cells["intSubDepartmentAsName"].Value =
-                    SubDepartment.GetNameByNumber(this.cnConnection, sdSubDepartment);
+                    SubDepartment.GetNameByNumber(this.cnConnection, sdSubDepartment.intDepartmnt, sdSubDepartment.intNumber);
 
                 this.dgvStoreGetOuts.Rows[i].Cells["nvcRequesterCoIDAsName"].Value =
                    Employee.GetNameByCoID(this.cnConnection, this.dgvStoreGetOuts.Rows[i].Cells["nvcRequesterCoID"].Value.ToString());
