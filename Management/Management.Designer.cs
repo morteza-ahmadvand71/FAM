@@ -132,7 +132,7 @@
             // 
             this.menEmployees.Font = new System.Drawing.Font("B Yekan", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.menEmployees.Name = "menEmployees";
-            this.menEmployees.Size = new System.Drawing.Size(180, 22);
+            this.menEmployees.Size = new System.Drawing.Size(118, 22);
             this.menEmployees.Text = "کارمندان";
             this.menEmployees.Click += new System.EventHandler(this.menEmployees_Click);
             // 
@@ -143,7 +143,7 @@
             this.MensOfficeDepartmentStoreGetOuts});
             this.menOfficeStore.Font = new System.Drawing.Font("B Yekan", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.menOfficeStore.Name = "menOfficeStore";
-            this.menOfficeStore.Size = new System.Drawing.Size(180, 22);
+            this.menOfficeStore.Size = new System.Drawing.Size(118, 22);
             this.menOfficeStore.Text = "انبار";
             // 
             // MensOfficeDepartmentStorePurchaseRequests
@@ -167,7 +167,7 @@
             this.menOfficeDepartmentPrefrences.Enabled = false;
             this.menOfficeDepartmentPrefrences.Font = new System.Drawing.Font("B Yekan", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.menOfficeDepartmentPrefrences.Name = "menOfficeDepartmentPrefrences";
-            this.menOfficeDepartmentPrefrences.Size = new System.Drawing.Size(180, 22);
+            this.menOfficeDepartmentPrefrences.Size = new System.Drawing.Size(118, 22);
             this.menOfficeDepartmentPrefrences.Text = "تنطیمات";
             this.menOfficeDepartmentPrefrences.Click += new System.EventHandler(this.MenOfficeDepartmentPrefrences_Click);
             // 
@@ -269,12 +269,11 @@
             this.menTechnicalDepartmentElectricalSunStation});
             this.تعمیراتToolStripMenuItem.Font = new System.Drawing.Font("B Yekan", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.تعمیراتToolStripMenuItem.Name = "تعمیراتToolStripMenuItem";
-            this.تعمیراتToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.تعمیراتToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.تعمیراتToolStripMenuItem.Text = "برق";
             // 
             // menTechnicalDepartmentElectricalFurnace
             // 
-            this.menTechnicalDepartmentElectricalFurnace.Enabled = false;
             this.menTechnicalDepartmentElectricalFurnace.Name = "menTechnicalDepartmentElectricalFurnace";
             this.menTechnicalDepartmentElectricalFurnace.Size = new System.Drawing.Size(102, 22);
             this.menTechnicalDepartmentElectricalFurnace.Text = "کوره";
@@ -303,7 +302,7 @@
             this.menTechnicalDepartmentMechanicalPiping});
             this.مکانیکToolStripMenuItem.Font = new System.Drawing.Font("B Yekan", 9F);
             this.مکانیکToolStripMenuItem.Name = "مکانیکToolStripMenuItem";
-            this.مکانیکToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.مکانیکToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.مکانیکToolStripMenuItem.Text = "مکانیک";
             // 
             // menTechnicalDepartmentMechanicalFurnace
@@ -341,7 +340,7 @@
             this.menTechnicalDepartmentMechanicalMaintenanceInfo});
             this.نگهداریPMToolStripMenuItem.Font = new System.Drawing.Font("B Yekan", 9F);
             this.نگهداریPMToolStripMenuItem.Name = "نگهداریPMToolStripMenuItem";
-            this.نگهداریPMToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.نگهداریPMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.نگهداریPMToolStripMenuItem.Text = "نگهداری (PM)";
             // 
             // menTechnicalDepartmentMechanicalTechnicalInfo
@@ -363,7 +362,7 @@
             this.menTechnicalDepartmentProjects.Enabled = false;
             this.menTechnicalDepartmentProjects.Font = new System.Drawing.Font("B Yekan", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.menTechnicalDepartmentProjects.Name = "menTechnicalDepartmentProjects";
-            this.menTechnicalDepartmentProjects.Size = new System.Drawing.Size(145, 22);
+            this.menTechnicalDepartmentProjects.Size = new System.Drawing.Size(180, 22);
             this.menTechnicalDepartmentProjects.Text = "پروژه‌ها";
             this.menTechnicalDepartmentProjects.Click += new System.EventHandler(this.MenProjects_Click);
             // 
@@ -374,7 +373,7 @@
             this.mensTechnicalDepartmentStoreGetOuts});
             this.انبارToolStripMenuItem2.Font = new System.Drawing.Font("B Yekan", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.انبارToolStripMenuItem2.Name = "انبارToolStripMenuItem2";
-            this.انبارToolStripMenuItem2.Size = new System.Drawing.Size(145, 22);
+            this.انبارToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.انبارToolStripMenuItem2.Text = "انبار";
             // 
             // MensTechnicalDepartmentStorePurchaseRequests
@@ -397,7 +396,7 @@
             this.menTechnicalDepartmentPrefrences.Enabled = false;
             this.menTechnicalDepartmentPrefrences.Font = new System.Drawing.Font("B Yekan", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.menTechnicalDepartmentPrefrences.Name = "menTechnicalDepartmentPrefrences";
-            this.menTechnicalDepartmentPrefrences.Size = new System.Drawing.Size(145, 22);
+            this.menTechnicalDepartmentPrefrences.Size = new System.Drawing.Size(180, 22);
             this.menTechnicalDepartmentPrefrences.Text = "تنظیمات";
             this.menTechnicalDepartmentPrefrences.Click += new System.EventHandler(this.MenTechnicalDepartmentPrefrences_Click);
             // 
@@ -417,7 +416,6 @@
             // 
             // menStoreDepartmentStuffs
             // 
-            this.menStoreDepartmentStuffs.Enabled = false;
             this.menStoreDepartmentStuffs.Font = new System.Drawing.Font("B Yekan", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.menStoreDepartmentStuffs.Name = "menStoreDepartmentStuffs";
             this.menStoreDepartmentStuffs.Size = new System.Drawing.Size(189, 22);

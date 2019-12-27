@@ -44,10 +44,10 @@ namespace Baran.Ferroalloy.Management
         {
             SetComponentsByPermisions();
 
-            this.siShiftInfo = new ShiftInfo(this.cnConnection, this.setSetings.stMaintenanceFurnaceShifttypePty,
-                this.setSetings.dtMaintenanceFurnaceShiftOrginPty);
+            //this.siShiftInfo = new ShiftInfo(this.cnConnection, this.setSetings.stMaintenanceFurnaceShifttypePty,
+            //    this.setSetings.dtMaintenanceFurnaceShiftOrginPty);
 
-            GetCurrentMaintenanceShiftAndItems();
+            //GetCurrentMaintenanceShiftAndItems();
         }
 
         private void SetComponentsByPermisions()

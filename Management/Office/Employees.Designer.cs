@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -54,10 +54,50 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btmExit = new System.Windows.Forms.Button();
             this.btmDelete = new System.Windows.Forms.Button();
             this.btmInsert = new System.Windows.Forms.Button();
             this.dgvEmployees = new System.Windows.Forms.DataGridView();
+            this.intID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bitSelect = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.nvcFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcNationalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcFatherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intDepartment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intDepartmentAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcCoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intSubDepartment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intSubDepartmentAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intEmploymentType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intEmploymentTypeAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intPost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intPostAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bitIsShiftMode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bitIsShiftModeAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intShiftType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intShiftTypeAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcMobileNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intEducationLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intEducationLevelAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcAccount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcShaba = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcAtmCard = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcLocationProvince = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcLocationCounty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcLocationCityVillage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcLocationAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcPostalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvcCoID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbLastName = new System.Windows.Forms.TextBox();
             this.cbDepartments = new System.Windows.Forms.ComboBox();
             this.btmSearch = new System.Windows.Forms.Button();
@@ -70,31 +110,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.ttEmployees = new System.Windows.Forms.ToolTip(this.components);
-            this.intID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bitSelect = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.nvcFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nvcLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intDepartment = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intDepartmentAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nvcNationalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nvcCoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intSubDepartment = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intSubDepartmentAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intEmploymentType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intEmploymentTypeAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intPost = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intPostAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intShiftType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intShiftTypeAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nvcMobileNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nvcFatherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intEducationLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intEducationLevelAsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nvcLocationProvince = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nvcLocationCounty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nvcLocationCityVillage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nvcLocationAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
             this.SuspendLayout();
             // 
@@ -171,9 +186,11 @@
             this.bitSelect,
             this.nvcFirstName,
             this.nvcLastName,
+            this.nvcNationalID,
+            this.nvcFatherName,
+            this.datBirth,
             this.intDepartment,
             this.intDepartmentAsName,
-            this.nvcNationalID,
             this.nvcCoID,
             this.intSubDepartment,
             this.intSubDepartmentAsName,
@@ -181,30 +198,37 @@
             this.intEmploymentTypeAsName,
             this.intPost,
             this.intPostAsName,
+            this.bitIsShiftMode,
+            this.bitIsShiftModeAsName,
             this.intShiftType,
             this.intShiftTypeAsName,
             this.nvcMobileNumber,
-            this.datBirth,
-            this.nvcFatherName,
             this.intEducationLevel,
             this.intEducationLevelAsName,
+            this.nvcName,
+            this.nvcAccount,
+            this.nvcShaba,
+            this.nvcAtmCard,
             this.nvcLocationProvince,
             this.nvcLocationCounty,
             this.nvcLocationCityVillage,
-            this.nvcLocationAddress});
+            this.nvcLocationAddress,
+            this.nvcPostalCode,
+            this.intID1,
+            this.nvcCoID1});
             this.dgvEmployees.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dgvEmployees.Location = new System.Drawing.Point(130, 222);
             this.dgvEmployees.Margin = new System.Windows.Forms.Padding(2);
             this.dgvEmployees.MultiSelect = false;
             this.dgvEmployees.Name = "dgvEmployees";
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("B Yekan", 10F);
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEmployees.RowHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("B Yekan", 10F);
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmployees.RowHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.dgvEmployees.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvEmployees.RowTemplate.Height = 55;
             this.dgvEmployees.Size = new System.Drawing.Size(1100, 353);
@@ -212,6 +236,373 @@
             this.dgvEmployees.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvEmployees_CellContentClick);
             this.dgvEmployees.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvEmployees_CellValueChanged);
             this.dgvEmployees.Sorted += new System.EventHandler(this.DgvEmployees_Sorted);
+            // 
+            // intID
+            // 
+            this.intID.DataPropertyName = "intID";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intID.DefaultCellStyle = dataGridViewCellStyle2;
+            this.intID.HeaderText = "intID";
+            this.intID.MinimumWidth = 10;
+            this.intID.Name = "intID";
+            this.intID.Visible = false;
+            this.intID.Width = 63;
+            // 
+            // bitSelect
+            // 
+            this.bitSelect.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.bitSelect.DataPropertyName = "bitSelect";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.NullValue = false;
+            this.bitSelect.DefaultCellStyle = dataGridViewCellStyle3;
+            this.bitSelect.FillWeight = 407.6923F;
+            this.bitSelect.HeaderText = "انتخاب";
+            this.bitSelect.MinimumWidth = 10;
+            this.bitSelect.Name = "bitSelect";
+            this.bitSelect.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.bitSelect.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.bitSelect.Width = 69;
+            // 
+            // nvcFirstName
+            // 
+            this.nvcFirstName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nvcFirstName.DataPropertyName = "nvcFirstName";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcFirstName.DefaultCellStyle = dataGridViewCellStyle4;
+            this.nvcFirstName.FillWeight = 38.46154F;
+            this.nvcFirstName.HeaderText = "نام";
+            this.nvcFirstName.MinimumWidth = 10;
+            this.nvcFirstName.Name = "nvcFirstName";
+            this.nvcFirstName.ReadOnly = true;
+            this.nvcFirstName.ToolTipText = "نام کوچک";
+            this.nvcFirstName.Width = 50;
+            // 
+            // nvcLastName
+            // 
+            this.nvcLastName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nvcLastName.DataPropertyName = "nvcLastName";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcLastName.DefaultCellStyle = dataGridViewCellStyle5;
+            this.nvcLastName.FillWeight = 38.46154F;
+            this.nvcLastName.HeaderText = "نام خانوادگی";
+            this.nvcLastName.MinimumWidth = 10;
+            this.nvcLastName.Name = "nvcLastName";
+            this.nvcLastName.ReadOnly = true;
+            this.nvcLastName.Width = 99;
+            // 
+            // nvcNationalID
+            // 
+            this.nvcNationalID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nvcNationalID.DataPropertyName = "nvcNationalID";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcNationalID.DefaultCellStyle = dataGridViewCellStyle6;
+            this.nvcNationalID.FillWeight = 38.46154F;
+            this.nvcNationalID.HeaderText = "کد ملی";
+            this.nvcNationalID.MinimumWidth = 10;
+            this.nvcNationalID.Name = "nvcNationalID";
+            this.nvcNationalID.ReadOnly = true;
+            this.nvcNationalID.Width = 71;
+            // 
+            // nvcFatherName
+            // 
+            this.nvcFatherName.DataPropertyName = "nvcFatherName";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcFatherName.DefaultCellStyle = dataGridViewCellStyle7;
+            this.nvcFatherName.HeaderText = "نام پدر";
+            this.nvcFatherName.Name = "nvcFatherName";
+            this.nvcFatherName.ToolTipText = "نام پدر";
+            this.nvcFatherName.Width = 72;
+            // 
+            // datBirth
+            // 
+            this.datBirth.DataPropertyName = "datBirth";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.Format = "D";
+            dataGridViewCellStyle8.NullValue = null;
+            this.datBirth.DefaultCellStyle = dataGridViewCellStyle8;
+            this.datBirth.HeaderText = "تاریخ تولد";
+            this.datBirth.Name = "datBirth";
+            this.datBirth.ToolTipText = "تاریخ تولد";
+            this.datBirth.Width = 88;
+            // 
+            // intDepartment
+            // 
+            this.intDepartment.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.intDepartment.DataPropertyName = "intDepartment";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intDepartment.DefaultCellStyle = dataGridViewCellStyle9;
+            this.intDepartment.FillWeight = 38.46154F;
+            this.intDepartment.HeaderText = "کد واحد";
+            this.intDepartment.MinimumWidth = 10;
+            this.intDepartment.Name = "intDepartment";
+            this.intDepartment.ReadOnly = true;
+            this.intDepartment.ToolTipText = "کد واحد";
+            this.intDepartment.Visible = false;
+            // 
+            // intDepartmentAsName
+            // 
+            this.intDepartmentAsName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.intDepartmentAsName.DataPropertyName = "intDepartmentAsName";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intDepartmentAsName.DefaultCellStyle = dataGridViewCellStyle10;
+            this.intDepartmentAsName.HeaderText = "واحد";
+            this.intDepartmentAsName.MinimumWidth = 10;
+            this.intDepartmentAsName.Name = "intDepartmentAsName";
+            this.intDepartmentAsName.ReadOnly = true;
+            this.intDepartmentAsName.ToolTipText = "واحد";
+            this.intDepartmentAsName.Width = 60;
+            // 
+            // nvcCoID
+            // 
+            this.nvcCoID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nvcCoID.DataPropertyName = "nvcCoID";
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcCoID.DefaultCellStyle = dataGridViewCellStyle11;
+            this.nvcCoID.FillWeight = 38.46154F;
+            this.nvcCoID.HeaderText = "کد پرسنلی";
+            this.nvcCoID.MinimumWidth = 10;
+            this.nvcCoID.Name = "nvcCoID";
+            this.nvcCoID.ReadOnly = true;
+            this.nvcCoID.ToolTipText = "کد پرسنلی";
+            this.nvcCoID.Width = 91;
+            // 
+            // intSubDepartment
+            // 
+            this.intSubDepartment.DataPropertyName = "intSubDepartment";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intSubDepartment.DefaultCellStyle = dataGridViewCellStyle12;
+            this.intSubDepartment.HeaderText = "شماره بخش";
+            this.intSubDepartment.Name = "intSubDepartment";
+            this.intSubDepartment.ToolTipText = "شماره بخش";
+            this.intSubDepartment.Visible = false;
+            this.intSubDepartment.Width = 96;
+            // 
+            // intSubDepartmentAsName
+            // 
+            this.intSubDepartmentAsName.DataPropertyName = "intSubDepartmentAsName";
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intSubDepartmentAsName.DefaultCellStyle = dataGridViewCellStyle13;
+            this.intSubDepartmentAsName.HeaderText = "بخش";
+            this.intSubDepartmentAsName.Name = "intSubDepartmentAsName";
+            this.intSubDepartmentAsName.ToolTipText = "بخش";
+            this.intSubDepartmentAsName.Width = 62;
+            // 
+            // intEmploymentType
+            // 
+            this.intEmploymentType.DataPropertyName = "intEmploymentType";
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intEmploymentType.DefaultCellStyle = dataGridViewCellStyle14;
+            this.intEmploymentType.HeaderText = "شماره نوع استخدام";
+            this.intEmploymentType.Name = "intEmploymentType";
+            this.intEmploymentType.ToolTipText = "شماره نوع استخدام";
+            this.intEmploymentType.Visible = false;
+            this.intEmploymentType.Width = 135;
+            // 
+            // intEmploymentTypeAsName
+            // 
+            this.intEmploymentTypeAsName.DataPropertyName = "intEmploymentTypeAsName";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intEmploymentTypeAsName.DefaultCellStyle = dataGridViewCellStyle15;
+            this.intEmploymentTypeAsName.HeaderText = "نوع استخدام";
+            this.intEmploymentTypeAsName.Name = "intEmploymentTypeAsName";
+            this.intEmploymentTypeAsName.ToolTipText = "نوع استخدام";
+            this.intEmploymentTypeAsName.Width = 101;
+            // 
+            // intPost
+            // 
+            this.intPost.DataPropertyName = "intPost";
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intPost.DefaultCellStyle = dataGridViewCellStyle16;
+            this.intPost.HeaderText = "شماره سمت";
+            this.intPost.Name = "intPost";
+            this.intPost.ToolTipText = "شماره سمت";
+            this.intPost.Visible = false;
+            this.intPost.Width = 97;
+            // 
+            // intPostAsName
+            // 
+            this.intPostAsName.DataPropertyName = "intPostAsName";
+            this.intPostAsName.HeaderText = "سمت";
+            this.intPostAsName.Name = "intPostAsName";
+            this.intPostAsName.ToolTipText = "سمت";
+            this.intPostAsName.Width = 63;
+            // 
+            // bitIsShiftMode
+            // 
+            this.bitIsShiftMode.DataPropertyName = "bitIsShiftMode";
+            this.bitIsShiftMode.HeaderText = "شماره وضعیت شیفت";
+            this.bitIsShiftMode.Name = "bitIsShiftMode";
+            this.bitIsShiftMode.ToolTipText = "شماره وضعیت شیفت";
+            this.bitIsShiftMode.Visible = false;
+            this.bitIsShiftMode.Width = 145;
+            // 
+            // bitIsShiftModeAsName
+            // 
+            this.bitIsShiftModeAsName.DataPropertyName = "bitIsShiftModeAsName";
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.bitIsShiftModeAsName.DefaultCellStyle = dataGridViewCellStyle17;
+            this.bitIsShiftModeAsName.HeaderText = "وضعیت شیفت";
+            this.bitIsShiftModeAsName.Name = "bitIsShiftModeAsName";
+            this.bitIsShiftModeAsName.ToolTipText = "وضعیت شیفت";
+            this.bitIsShiftModeAsName.Width = 111;
+            // 
+            // intShiftType
+            // 
+            this.intShiftType.DataPropertyName = "intShiftType";
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intShiftType.DefaultCellStyle = dataGridViewCellStyle18;
+            this.intShiftType.HeaderText = "شماره نوع شیفت";
+            this.intShiftType.Name = "intShiftType";
+            this.intShiftType.ToolTipText = "شماره نوع شیفت";
+            this.intShiftType.Visible = false;
+            this.intShiftType.Width = 122;
+            // 
+            // intShiftTypeAsName
+            // 
+            this.intShiftTypeAsName.DataPropertyName = "intShiftTypeAsName";
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intShiftTypeAsName.DefaultCellStyle = dataGridViewCellStyle19;
+            this.intShiftTypeAsName.HeaderText = "نوع شیفت";
+            this.intShiftTypeAsName.Name = "intShiftTypeAsName";
+            this.intShiftTypeAsName.ToolTipText = "نوع شیفت";
+            this.intShiftTypeAsName.Width = 88;
+            // 
+            // nvcMobileNumber
+            // 
+            this.nvcMobileNumber.DataPropertyName = "nvcMobileNumber";
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcMobileNumber.DefaultCellStyle = dataGridViewCellStyle20;
+            this.nvcMobileNumber.HeaderText = "شماره همراه";
+            this.nvcMobileNumber.Name = "nvcMobileNumber";
+            this.nvcMobileNumber.ToolTipText = "شماره همراه";
+            this.nvcMobileNumber.Width = 99;
+            // 
+            // intEducationLevel
+            // 
+            this.intEducationLevel.DataPropertyName = "intEducationLevel";
+            this.intEducationLevel.HeaderText = "شماره سطح تحصیلات";
+            this.intEducationLevel.Name = "intEducationLevel";
+            this.intEducationLevel.ToolTipText = "شماره سطح تحصیلات";
+            this.intEducationLevel.Visible = false;
+            this.intEducationLevel.Width = 142;
+            // 
+            // intEducationLevelAsName
+            // 
+            this.intEducationLevelAsName.DataPropertyName = "intEducationLevelAsName";
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intEducationLevelAsName.DefaultCellStyle = dataGridViewCellStyle21;
+            this.intEducationLevelAsName.HeaderText = "سطح تحصیلات";
+            this.intEducationLevelAsName.Name = "intEducationLevelAsName";
+            this.intEducationLevelAsName.ToolTipText = "سطح تحصیلات";
+            this.intEducationLevelAsName.Width = 108;
+            // 
+            // nvcName
+            // 
+            this.nvcName.DataPropertyName = "nvcName";
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcName.DefaultCellStyle = dataGridViewCellStyle22;
+            this.nvcName.HeaderText = "نام بانک";
+            this.nvcName.Name = "nvcName";
+            this.nvcName.ToolTipText = "نام بانک";
+            this.nvcName.Width = 76;
+            // 
+            // nvcAccount
+            // 
+            this.nvcAccount.DataPropertyName = "nvcAccount";
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcAccount.DefaultCellStyle = dataGridViewCellStyle23;
+            this.nvcAccount.HeaderText = "شماره حساب";
+            this.nvcAccount.Name = "nvcAccount";
+            this.nvcAccount.ToolTipText = "شماره حساب";
+            this.nvcAccount.Width = 101;
+            // 
+            // nvcShaba
+            // 
+            this.nvcShaba.DataPropertyName = "nvcShaba";
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcShaba.DefaultCellStyle = dataGridViewCellStyle24;
+            this.nvcShaba.HeaderText = "شماره شبا";
+            this.nvcShaba.Name = "nvcShaba";
+            this.nvcShaba.ToolTipText = "شماره شبا";
+            this.nvcShaba.Width = 87;
+            // 
+            // nvcAtmCard
+            // 
+            this.nvcAtmCard.DataPropertyName = "nvcAtmCard";
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcAtmCard.DefaultCellStyle = dataGridViewCellStyle25;
+            this.nvcAtmCard.HeaderText = "شماره کارت";
+            this.nvcAtmCard.Name = "nvcAtmCard";
+            this.nvcAtmCard.ToolTipText = "شماره کارت";
+            this.nvcAtmCard.Width = 95;
+            // 
+            // nvcLocationProvince
+            // 
+            this.nvcLocationProvince.DataPropertyName = "nvcLocationProvince";
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcLocationProvince.DefaultCellStyle = dataGridViewCellStyle26;
+            this.nvcLocationProvince.HeaderText = "استان";
+            this.nvcLocationProvince.Name = "nvcLocationProvince";
+            this.nvcLocationProvince.Width = 66;
+            // 
+            // nvcLocationCounty
+            // 
+            this.nvcLocationCounty.DataPropertyName = "nvcLocationCounty";
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcLocationCounty.DefaultCellStyle = dataGridViewCellStyle27;
+            this.nvcLocationCounty.HeaderText = "شهرستان";
+            this.nvcLocationCounty.Name = "nvcLocationCounty";
+            this.nvcLocationCounty.ToolTipText = "شهرستان";
+            this.nvcLocationCounty.Width = 83;
+            // 
+            // nvcLocationCityVillage
+            // 
+            this.nvcLocationCityVillage.DataPropertyName = "nvcLocationCityVillage";
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcLocationCityVillage.DefaultCellStyle = dataGridViewCellStyle28;
+            this.nvcLocationCityVillage.HeaderText = "شهر/روستا";
+            this.nvcLocationCityVillage.Name = "nvcLocationCityVillage";
+            this.nvcLocationCityVillage.ToolTipText = "شهر/روستا";
+            this.nvcLocationCityVillage.Width = 93;
+            // 
+            // nvcLocationAddress
+            // 
+            this.nvcLocationAddress.DataPropertyName = "nvcLocationAddress";
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcLocationAddress.DefaultCellStyle = dataGridViewCellStyle29;
+            this.nvcLocationAddress.HeaderText = "نشانی";
+            this.nvcLocationAddress.Name = "nvcLocationAddress";
+            this.nvcLocationAddress.ToolTipText = "نشانی";
+            this.nvcLocationAddress.Width = 66;
+            // 
+            // nvcPostalCode
+            // 
+            this.nvcPostalCode.DataPropertyName = "nvcPostalCode";
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nvcPostalCode.DefaultCellStyle = dataGridViewCellStyle30;
+            this.nvcPostalCode.HeaderText = "کدپستی";
+            this.nvcPostalCode.Name = "nvcPostalCode";
+            this.nvcPostalCode.ToolTipText = "کدپستی";
+            this.nvcPostalCode.Width = 79;
+            // 
+            // intID1
+            // 
+            this.intID1.DataPropertyName = "intID1";
+            this.intID1.HeaderText = "intID1";
+            this.intID1.Name = "intID1";
+            this.intID1.ToolTipText = "intID1";
+            this.intID1.Visible = false;
+            this.intID1.Width = 71;
+            // 
+            // nvcCoID1
+            // 
+            this.nvcCoID1.DataPropertyName = "nvcCoID1";
+            this.nvcCoID1.HeaderText = "nvcCoID1";
+            this.nvcCoID1.Name = "nvcCoID1";
+            this.nvcCoID1.ToolTipText = "nvcCoID1";
+            this.nvcCoID1.Visible = false;
+            this.nvcCoID1.Width = 95;
             // 
             // tbLastName
             // 
@@ -369,287 +760,6 @@
             this.label5.TabIndex = 21;
             this.label5.Text = "واحد:";
             // 
-            // intID
-            // 
-            this.intID.DataPropertyName = "intID";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intID.DefaultCellStyle = dataGridViewCellStyle2;
-            this.intID.HeaderText = "intID";
-            this.intID.MinimumWidth = 10;
-            this.intID.Name = "intID";
-            this.intID.Visible = false;
-            this.intID.Width = 63;
-            // 
-            // bitSelect
-            // 
-            this.bitSelect.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.bitSelect.DataPropertyName = "bitSelect";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.NullValue = false;
-            this.bitSelect.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bitSelect.FillWeight = 407.6923F;
-            this.bitSelect.HeaderText = "انتخاب";
-            this.bitSelect.MinimumWidth = 10;
-            this.bitSelect.Name = "bitSelect";
-            this.bitSelect.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.bitSelect.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.bitSelect.Width = 69;
-            // 
-            // nvcFirstName
-            // 
-            this.nvcFirstName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.nvcFirstName.DataPropertyName = "nvcFirstName";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nvcFirstName.DefaultCellStyle = dataGridViewCellStyle4;
-            this.nvcFirstName.FillWeight = 38.46154F;
-            this.nvcFirstName.HeaderText = "نام";
-            this.nvcFirstName.MinimumWidth = 10;
-            this.nvcFirstName.Name = "nvcFirstName";
-            this.nvcFirstName.ReadOnly = true;
-            this.nvcFirstName.ToolTipText = "نام کوچک";
-            this.nvcFirstName.Width = 50;
-            // 
-            // nvcLastName
-            // 
-            this.nvcLastName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.nvcLastName.DataPropertyName = "nvcLastName";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nvcLastName.DefaultCellStyle = dataGridViewCellStyle5;
-            this.nvcLastName.FillWeight = 38.46154F;
-            this.nvcLastName.HeaderText = "نام خانوادگی";
-            this.nvcLastName.MinimumWidth = 10;
-            this.nvcLastName.Name = "nvcLastName";
-            this.nvcLastName.ReadOnly = true;
-            this.nvcLastName.Width = 99;
-            // 
-            // intDepartment
-            // 
-            this.intDepartment.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.intDepartment.DataPropertyName = "intDepartment";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intDepartment.DefaultCellStyle = dataGridViewCellStyle6;
-            this.intDepartment.FillWeight = 38.46154F;
-            this.intDepartment.HeaderText = "کد واحد";
-            this.intDepartment.MinimumWidth = 10;
-            this.intDepartment.Name = "intDepartment";
-            this.intDepartment.ReadOnly = true;
-            this.intDepartment.ToolTipText = "کد واحد";
-            this.intDepartment.Visible = false;
-            this.intDepartment.Width = 77;
-            // 
-            // intDepartmentAsName
-            // 
-            this.intDepartmentAsName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.intDepartmentAsName.DataPropertyName = "intDepartmentAsName";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intDepartmentAsName.DefaultCellStyle = dataGridViewCellStyle7;
-            this.intDepartmentAsName.HeaderText = "واحد";
-            this.intDepartmentAsName.MinimumWidth = 10;
-            this.intDepartmentAsName.Name = "intDepartmentAsName";
-            this.intDepartmentAsName.ReadOnly = true;
-            this.intDepartmentAsName.ToolTipText = "واحد";
-            this.intDepartmentAsName.Width = 60;
-            // 
-            // nvcNationalID
-            // 
-            this.nvcNationalID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.nvcNationalID.DataPropertyName = "nvcNationalID";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nvcNationalID.DefaultCellStyle = dataGridViewCellStyle8;
-            this.nvcNationalID.FillWeight = 38.46154F;
-            this.nvcNationalID.HeaderText = "کد ملی";
-            this.nvcNationalID.MinimumWidth = 10;
-            this.nvcNationalID.Name = "nvcNationalID";
-            this.nvcNationalID.ReadOnly = true;
-            this.nvcNationalID.Width = 71;
-            // 
-            // nvcCoID
-            // 
-            this.nvcCoID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.nvcCoID.DataPropertyName = "nvcCoID";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nvcCoID.DefaultCellStyle = dataGridViewCellStyle9;
-            this.nvcCoID.FillWeight = 38.46154F;
-            this.nvcCoID.HeaderText = "کد پرسنلی";
-            this.nvcCoID.MinimumWidth = 10;
-            this.nvcCoID.Name = "nvcCoID";
-            this.nvcCoID.ReadOnly = true;
-            this.nvcCoID.ToolTipText = "کد پرسنلی";
-            this.nvcCoID.Width = 91;
-            // 
-            // intSubDepartment
-            // 
-            this.intSubDepartment.DataPropertyName = "intSubDepartment";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intSubDepartment.DefaultCellStyle = dataGridViewCellStyle10;
-            this.intSubDepartment.HeaderText = "شماره بخش";
-            this.intSubDepartment.Name = "intSubDepartment";
-            this.intSubDepartment.ToolTipText = "شماره بخش";
-            this.intSubDepartment.Visible = false;
-            this.intSubDepartment.Width = 96;
-            // 
-            // intSubDepartmentAsName
-            // 
-            this.intSubDepartmentAsName.DataPropertyName = "intSubDepartmentAsName";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intSubDepartmentAsName.DefaultCellStyle = dataGridViewCellStyle11;
-            this.intSubDepartmentAsName.HeaderText = "بخش";
-            this.intSubDepartmentAsName.Name = "intSubDepartmentAsName";
-            this.intSubDepartmentAsName.ToolTipText = "بخش";
-            this.intSubDepartmentAsName.Width = 62;
-            // 
-            // intEmploymentType
-            // 
-            this.intEmploymentType.DataPropertyName = "intEmploymentType";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intEmploymentType.DefaultCellStyle = dataGridViewCellStyle12;
-            this.intEmploymentType.HeaderText = "شماره نوع استخدام";
-            this.intEmploymentType.Name = "intEmploymentType";
-            this.intEmploymentType.ToolTipText = "شماره نوع استخدام";
-            this.intEmploymentType.Visible = false;
-            this.intEmploymentType.Width = 135;
-            // 
-            // intEmploymentTypeAsName
-            // 
-            this.intEmploymentTypeAsName.DataPropertyName = "intEmploymentTypeAsName";
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intEmploymentTypeAsName.DefaultCellStyle = dataGridViewCellStyle13;
-            this.intEmploymentTypeAsName.HeaderText = "نوع استخدام";
-            this.intEmploymentTypeAsName.Name = "intEmploymentTypeAsName";
-            this.intEmploymentTypeAsName.ToolTipText = "نوع استخدام";
-            this.intEmploymentTypeAsName.Width = 101;
-            // 
-            // intPost
-            // 
-            this.intPost.DataPropertyName = "intPost";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intPost.DefaultCellStyle = dataGridViewCellStyle14;
-            this.intPost.HeaderText = "شماره سمت";
-            this.intPost.Name = "intPost";
-            this.intPost.ToolTipText = "شماره سمت";
-            this.intPost.Visible = false;
-            this.intPost.Width = 97;
-            // 
-            // intPostAsName
-            // 
-            this.intPostAsName.DataPropertyName = "intPostAsName";
-            this.intPostAsName.HeaderText = "سمت";
-            this.intPostAsName.Name = "intPostAsName";
-            this.intPostAsName.ToolTipText = "سمت";
-            this.intPostAsName.Width = 63;
-            // 
-            // intShiftType
-            // 
-            this.intShiftType.DataPropertyName = "intShiftType";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intShiftType.DefaultCellStyle = dataGridViewCellStyle15;
-            this.intShiftType.HeaderText = "شماره شیفت";
-            this.intShiftType.Name = "intShiftType";
-            this.intShiftType.ToolTipText = "شماره شیفت";
-            this.intShiftType.Visible = false;
-            this.intShiftType.Width = 102;
-            // 
-            // intShiftTypeAsName
-            // 
-            this.intShiftTypeAsName.DataPropertyName = "intShiftTypeAsName";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intShiftTypeAsName.DefaultCellStyle = dataGridViewCellStyle16;
-            this.intShiftTypeAsName.HeaderText = "شیفت";
-            this.intShiftTypeAsName.Name = "intShiftTypeAsName";
-            this.intShiftTypeAsName.ToolTipText = "شیفت";
-            this.intShiftTypeAsName.Width = 68;
-            // 
-            // nvcMobileNumber
-            // 
-            this.nvcMobileNumber.DataPropertyName = "nvcMobileNumber";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nvcMobileNumber.DefaultCellStyle = dataGridViewCellStyle17;
-            this.nvcMobileNumber.HeaderText = "شماره همراه";
-            this.nvcMobileNumber.Name = "nvcMobileNumber";
-            this.nvcMobileNumber.ToolTipText = "شماره همراه";
-            this.nvcMobileNumber.Width = 99;
-            // 
-            // datBirth
-            // 
-            this.datBirth.DataPropertyName = "datBirth";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.Format = "D";
-            dataGridViewCellStyle18.NullValue = null;
-            this.datBirth.DefaultCellStyle = dataGridViewCellStyle18;
-            this.datBirth.HeaderText = "تاریخ تولد";
-            this.datBirth.Name = "datBirth";
-            this.datBirth.ToolTipText = "تاریخ تولد";
-            this.datBirth.Width = 88;
-            // 
-            // nvcFatherName
-            // 
-            this.nvcFatherName.DataPropertyName = "nvcFatherName";
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nvcFatherName.DefaultCellStyle = dataGridViewCellStyle19;
-            this.nvcFatherName.HeaderText = "نام پدر";
-            this.nvcFatherName.Name = "nvcFatherName";
-            this.nvcFatherName.ToolTipText = "نام پدر";
-            this.nvcFatherName.Width = 72;
-            // 
-            // intEducationLevel
-            // 
-            this.intEducationLevel.DataPropertyName = "intEducationLevel";
-            this.intEducationLevel.HeaderText = "شماره سطح تحصیلات";
-            this.intEducationLevel.Name = "intEducationLevel";
-            this.intEducationLevel.ToolTipText = "شماره سطح تحصیلات";
-            this.intEducationLevel.Visible = false;
-            this.intEducationLevel.Width = 142;
-            // 
-            // intEducationLevelAsName
-            // 
-            this.intEducationLevelAsName.DataPropertyName = "intEducationLevelAsName";
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intEducationLevelAsName.DefaultCellStyle = dataGridViewCellStyle20;
-            this.intEducationLevelAsName.HeaderText = "سطح تحصیلات";
-            this.intEducationLevelAsName.Name = "intEducationLevelAsName";
-            this.intEducationLevelAsName.ToolTipText = "سطح تحصیلات";
-            this.intEducationLevelAsName.Width = 108;
-            // 
-            // nvcLocationProvince
-            // 
-            this.nvcLocationProvince.DataPropertyName = "nvcLocationProvince";
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nvcLocationProvince.DefaultCellStyle = dataGridViewCellStyle21;
-            this.nvcLocationProvince.HeaderText = "استان";
-            this.nvcLocationProvince.Name = "nvcLocationProvince";
-            this.nvcLocationProvince.Width = 66;
-            // 
-            // nvcLocationCounty
-            // 
-            this.nvcLocationCounty.DataPropertyName = "nvcLocationCounty";
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nvcLocationCounty.DefaultCellStyle = dataGridViewCellStyle22;
-            this.nvcLocationCounty.HeaderText = "شهرستان";
-            this.nvcLocationCounty.Name = "nvcLocationCounty";
-            this.nvcLocationCounty.ToolTipText = "شهرستان";
-            this.nvcLocationCounty.Width = 83;
-            // 
-            // nvcLocationCityVillage
-            // 
-            this.nvcLocationCityVillage.DataPropertyName = "nvcLocationCityVillage";
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nvcLocationCityVillage.DefaultCellStyle = dataGridViewCellStyle23;
-            this.nvcLocationCityVillage.HeaderText = "شهر/روستا";
-            this.nvcLocationCityVillage.Name = "nvcLocationCityVillage";
-            this.nvcLocationCityVillage.ToolTipText = "شهر/روستا";
-            this.nvcLocationCityVillage.Width = 93;
-            // 
-            // nvcLocationAddress
-            // 
-            this.nvcLocationAddress.DataPropertyName = "nvcLocationAddress";
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nvcLocationAddress.DefaultCellStyle = dataGridViewCellStyle24;
-            this.nvcLocationAddress.HeaderText = "نشانی";
-            this.nvcLocationAddress.Name = "nvcLocationAddress";
-            this.nvcLocationAddress.ToolTipText = "نشانی";
-            this.nvcLocationAddress.Width = 66;
-            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -682,7 +792,7 @@
             this.RightToLeftLayout = true;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "/mg";
+            this.Text = "کارمندان";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Employees_FormClosing);
             this.Load += new System.EventHandler(this.Employees_Load);
             this.Enter += new System.EventHandler(this.Employees_Enter);
@@ -714,9 +824,11 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn bitSelect;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvcFirstName;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvcLastName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nvcNationalID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nvcFatherName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datBirth;
         private System.Windows.Forms.DataGridViewTextBoxColumn intDepartment;
         private System.Windows.Forms.DataGridViewTextBoxColumn intDepartmentAsName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nvcNationalID;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvcCoID;
         private System.Windows.Forms.DataGridViewTextBoxColumn intSubDepartment;
         private System.Windows.Forms.DataGridViewTextBoxColumn intSubDepartmentAsName;
@@ -724,16 +836,23 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn intEmploymentTypeAsName;
         private System.Windows.Forms.DataGridViewTextBoxColumn intPost;
         private System.Windows.Forms.DataGridViewTextBoxColumn intPostAsName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bitIsShiftMode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bitIsShiftModeAsName;
         private System.Windows.Forms.DataGridViewTextBoxColumn intShiftType;
         private System.Windows.Forms.DataGridViewTextBoxColumn intShiftTypeAsName;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvcMobileNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn datBirth;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nvcFatherName;
         private System.Windows.Forms.DataGridViewTextBoxColumn intEducationLevel;
         private System.Windows.Forms.DataGridViewTextBoxColumn intEducationLevelAsName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nvcName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nvcAccount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nvcShaba;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nvcAtmCard;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvcLocationProvince;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvcLocationCounty;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvcLocationCityVillage;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvcLocationAddress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nvcPostalCode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn intID1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nvcCoID1;
     }
 }

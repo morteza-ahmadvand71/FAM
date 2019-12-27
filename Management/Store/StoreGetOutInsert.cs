@@ -37,10 +37,8 @@ namespace Baran.Ferroalloy.Management
 
             this.labRequester.Text = this.emLogined.strName;
             this.labDepartment.Text = Department.GetNameByNumber(this.cnConnection, this.emLogined.intDepartment);
-            SubDepartment sdSubDepartment = new SubDepartment();
-            sdSubDepartment.intDepartmnt = this.emLogined.intDepartment;
-            sdSubDepartment.intNumber = this.emLogined.intSubDepartment;
-            this.labSubDepartment.Text = SubDepartment.GetNameByNumber(this.cnConnection, sdSubDepartment);
+           
+            this.labSubDepartment.Text = SubDepartment.GetNameByNumber(this.cnConnection, this.emLogined.intDepartment, this.emLogined.intSubDepartment);
         }
 
         private void btmOK_Click(object sender, EventArgs e)

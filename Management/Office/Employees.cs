@@ -143,7 +143,8 @@ namespace Baran.Ferroalloy.Management
                 SubDepartment sdSubDepartment = new SubDepartment();
                 sdSubDepartment.intDepartmnt = (int)this.dgvEmployees.Rows[i].Cells["intDepartment"].Value;
                 sdSubDepartment.intNumber = (int)this.dgvEmployees.Rows[i].Cells["intSubDepartment"].Value;
-                this.dgvEmployees.Rows[i].Cells["intSubDepartmentAsName"].Value = SubDepartment.GetNameByNumber(cnConnection, sdSubDepartment);
+                this.dgvEmployees.Rows[i].Cells["intSubDepartmentAsName"].Value = 
+                    SubDepartment.GetNameByNumber(cnConnection, sdSubDepartment.intDepartmnt, sdSubDepartment.intNumber);
 
                 this.dgvEmployees.Rows[i].Cells["intEducationLevelAsName"].Value = (Employee.EducationLevel)this.dgvEmployees.Rows[i].Cells["intEducationLevel"].Value;
 
@@ -152,9 +153,23 @@ namespace Baran.Ferroalloy.Management
                 this.dgvEmployees.Rows[i].Cells["intPostAsName"].Value = 
                     Post.GetNameByNumber(this.cnConnection,(int)this.dgvEmployees.Rows[i].Cells["intPost"].Value);
 
+                if((bool)this.dgvEmployees.Rows[i].Cells["bitIsShiftMode"].Value)
+                {
+                    this.dgvEmployees.Rows[i].Cells["bitIsShiftModeAsName"].Value = "بله";
+                }
+                else
+                {
+                    this.dgvEmployees.Rows[i].Cells["bitIsShiftModeAsName"].Value = "خیر";
+                }
+
                 if((int)this.dgvEmployees.Rows[i].Cells["intShiftType"].Value == -1)
                 {
                     this.dgvEmployees.Rows[i].Cells["intShiftTypeAsName"].Value = "-";
+                }
+                else
+                {
+                    this.dgvEmployees.Rows[i].Cells["intShiftTypeAsName"].Value = 
+                        ((ShiftInfo.ShiftType)this.dgvEmployees.Rows[i].Cells["intShiftType"].Value).ToString();
                 }
             }
         }
@@ -197,11 +212,32 @@ namespace Baran.Ferroalloy.Management
 
                 Employee emEmployee = new Employee();
                 emEmployee.intID = (int)this.dgvEmployees.Rows[e.RowIndex].Cells["intID"].Value;
+                emEmployee.strCoID = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcCoID"].Value.ToString();
                 emEmployee.strFirstName = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcFirstName"].Value.ToString();
                 emEmployee.strLastName = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcLastName"].Value.ToString();
-                emEmployee.strCoID = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcCoID"].Value.ToString();
-                emEmployee.intDepartment = (int)this.dgvEmployees.Rows[e.RowIndex].Cells["intDepartment"].Value;
                 emEmployee.strNationalID = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcNationalID"].Value.ToString();
+                emEmployee.strInsuranceNumber = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcCoID"].Value.ToString();
+                emEmployee.bolIsShiftMode = (bool)this.dgvEmployees.Rows[e.RowIndex].Cells["bitIsShiftMode"].Value;
+                emEmployee.intShiftType = (int)this.dgvEmployees.Rows[e.RowIndex].Cells["intShiftType"].Value;
+                emEmployee.strPhoneNumber = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcMobileNumber"].Value.ToString();
+                emEmployee.strFatherName = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcFatherName"].Value.ToString();
+                emEmployee.dtBirth = (DateTime)this.dgvEmployees.Rows[e.RowIndex].Cells["datBirth"].Value;
+                emEmployee.intDepartment = (int)this.dgvEmployees.Rows[e.RowIndex].Cells["intDepartment"].Value;
+                emEmployee.intSubDepartment = (int)this.dgvEmployees.Rows[e.RowIndex].Cells["intSubDepartment"].Value;
+                emEmployee.intPost = (int)this.dgvEmployees.Rows[e.RowIndex].Cells["intPost"].Value;
+                emEmployee.intEmploymentType = (int)this.dgvEmployees.Rows[e.RowIndex].Cells["intEmploymentType"].Value;
+                emEmployee.bnkInfo.strBankName = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcName"].Value.ToString();
+                emEmployee.bnkInfo.strBankAccount = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcAccount"].Value.ToString();
+                emEmployee.bnkInfo.strBankShaba = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcShaba"].Value.ToString();
+                emEmployee.bnkInfo.strBankAtmCard = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcAtmCard"].Value.ToString();
+                emEmployee.intEducationLevel = (int)this.dgvEmployees.Rows[e.RowIndex].Cells["intEducationLevel"].Value;
+                emEmployee.strLocationProvince = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcLocationProvince"].Value.ToString();
+                emEmployee.strLocationCounty = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcLocationCounty"].Value.ToString();
+                emEmployee.strLocationCityVillage = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcLocationCityVillage"].Value.ToString();
+                emEmployee.strLocationAddress = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcLocationAddress"].Value.ToString();
+                emEmployee.strPostalCode = this.dgvEmployees.Rows[e.RowIndex].Cells["nvcCoID"].Value.ToString();
+
+
                 frmEmployeeUpdate.emUpdate = emEmployee;
 
                 frmEmployeeUpdate.ShowDialog();

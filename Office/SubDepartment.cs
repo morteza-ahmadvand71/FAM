@@ -173,7 +173,7 @@ namespace Baran.Ferroalloy.Office
 
             return intNumberLoc;
         }
-        public static String GetNameByNumber(Connection cnConnection, SubDepartment sdSubDepartmentArg)
+        public static String GetNameByNumber(Connection cnConnection, int intDepartmntArg, int intSubDepartmntArg)
         {
             String strNameLoc = "";
 
@@ -182,8 +182,8 @@ namespace Baran.Ferroalloy.Office
 
             cmSubDepartments.Connection = scConnection;
             cmSubDepartments.CommandText = 
-                String.Format("SELECT nvcName FROM tabSubDepartments WHERE intDepartment={0} AND intNumber={1}", 
-                sdSubDepartmentArg.intDepartmnt, sdSubDepartmentArg.intNumber);
+                String.Format("SELECT nvcName FROM tabSubDepartments WHERE intDepartment={0} AND intNumber={1}",
+                intDepartmntArg, intSubDepartmntArg);
 
             scConnection.Open();
             SqlDataReader drDepartment = cmSubDepartments.ExecuteReader();

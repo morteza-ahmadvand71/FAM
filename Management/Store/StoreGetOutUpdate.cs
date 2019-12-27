@@ -44,7 +44,7 @@ namespace Baran.Ferroalloy.Management
             SubDepartment sdSubDepartment = new SubDepartment();
             sdSubDepartment.intDepartmnt = this.emUpdate.intDepartment;
             sdSubDepartment.intNumber = this.emUpdate.intSubDepartment;
-            this.labSubDepartment.Text = SubDepartment.GetNameByNumber(this.cnConnection, sdSubDepartment);
+            this.labSubDepartment.Text = SubDepartment.GetNameByNumber(this.cnConnection, sdSubDepartment.intDepartmnt, sdSubDepartment.intNumber);
         }
 
         private void btmOK_Click(object sender, EventArgs e)

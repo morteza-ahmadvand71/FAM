@@ -105,8 +105,10 @@ namespace Baran.Ferroalloy.Office
 
             
             String strCommand = @"SELECT * FROM tabEmployees";
-   
-            if(emSearchArg.strFirstName.Length != 0 || emSearchArg.strLastName.Length != 0 || emSearchArg.strCoID.Length != 0 ||
+            strCommand += " inner join tabEmployeesBankInfo on tabEmployees.nvcCoID=tabEmployeesBankInfo.nvcCoID ";
+
+
+            if (emSearchArg.strFirstName.Length != 0 || emSearchArg.strLastName.Length != 0 || emSearchArg.strCoID.Length != 0 ||
                 emSearchArg.strNationalID.Length != 0 || emSearchArg.intDepartment != 0)
             {
                 strCommand += @" WHERE ";
@@ -167,6 +169,7 @@ namespace Baran.Ferroalloy.Office
                     strCommand += @"intDepartment ='" + emSearchArg.intDepartment + "' ";
                 }
             }
+
 
             //Create a SqlDataAdapter for the Suppliers table.
             SqlDataAdapter daEmployees = new SqlDataAdapter();
@@ -268,7 +271,7 @@ namespace Baran.Ferroalloy.Office
             SqlCommand cmEmployeeBankInfo = new SqlCommand();
             cmEmployeeBankInfo.Connection = scConnection;
             cmEmployeeBankInfo.CommandText = string.Format(@"INSERT INTO tabEmployeesBankInfo (nvcIdentityCode,nvcName,nvcAccount,nvcShaba,nvcAtmCard)" + 
-                " VALUES ('{0}','{1}','{2}','{3}','{4}')",this.strNationalID,this.bnkInfo.strBankName, this.bnkInfo.strBankAccount, this.bnkInfo.strBankShaba,
+                " VALUES ('{0}',N'{1}','{2}','{3}','{4}')",this.strNationalID,this.bnkInfo.strBankName, this.bnkInfo.strBankAccount, this.bnkInfo.strBankShaba,
                 this.bnkInfo.strBankAtmCard);
 
             scConnection.Open();
@@ -277,7 +280,7 @@ namespace Baran.Ferroalloy.Office
                 bolResultLoc = true;
             }
             else
-            { 
+            {
                 bolResultLoc = false;
             }
             if(this.bnkInfo.strBankName.Length != 0 || this.bnkInfo.strBankAccount.Length != 0 || 
@@ -291,20 +294,25 @@ namespace Baran.Ferroalloy.Office
         }
         //Update The Object in Sql Server DataBase
         public void Update(Connection cnConnection)
-        {
-            SqlConnection cnSqlConnection = new SqlConnection(cnConnection.strConnectionStringPty);
-            SqlCommand cmCommand = new SqlCommand();
-            cmCommand.Connection = cnSqlConnection;
-            cmCommand.CommandText = "UPDATE tabEmployees SET " +
-                "nvcFirstName=N'" + this.strFirstName + "'," +
-                "nvcLastName=N'" + this.strLastName + "'," +
-                "nvcCoID='" + this.strCoID + "'," +
-                "intDepartment=" + this.intDepartment + "," +
-                "nvcNationalID='" + this.strNationalID + "'" +
-                " WHERE intID = " + this.intID.ToString();
-           
+        { 
+            SqlConnection cnSqlConnection = new SqlConnection(cnConnection.strConnectionStringPty); 
+
+            SqlCommand cmEmployees = new SqlCommand(); 
+            cmEmployees.Connection = cnSqlConnection;
+            cmEmployees.CommandText = string.Format("UPDATE tabEmployees SET nvcCoID= '{0}', nvcFirstName=N'{1}', nvcLastName=N'{2}', nvcNationalID='{3}', intDepartment={4}, intSubDepartment={5}, intPost={6}, intEmploymentType={7}, " +
+                "bitIsShiftMode='{8}', intShiftType={9}, nvcMobileNumber='{10}', datBirth='{11}-{12}-{13}', nvcFatherName=N'{14}', intEducationLevel={15}, nvcLocationProvince=N'{16}', nvcLocationCounty=N'{17}', nvcLocationCityVillage=N'{18}'," +
+                "nvcLocationAddress=N'{19}', nvcPostalCode='{20}'  WHERE intID={21}",this.strCoID,this.strFirstName,this.strLastName, this.strNationalID,this.intDepartment,this.intSubDepartment,this.intPost,this.intEmploymentType,this.bolIsShiftMode, 
+                this.intShiftType,this.strPhoneNumber,this.dtBirth.Year,this.dtBirth.Month,this.dtBirth.Day,this.strFatherName,this.intEducationLevel,this.strLocationProvince,this.strLocationCounty,this.strLocationCityVillage,
+                this.strLocationAddress,this.strPostalCode,this.intID);
+
+            SqlCommand cmEmployeeBankInfo = new SqlCommand();
+            cmEmployeeBankInfo.Connection = cnSqlConnection;
+            cmEmployeeBankInfo.CommandText = string.Format("UPDATE tabEmployeesBankInfo SET nvcName='{0}', nvcAccount='{1}', nvcShaba='{2}', nvcAtmCard='{3}'  WHERE nvcCoID='{4}'",
+                this.bnkInfo.strBankName,this.bnkInfo.strBankAccount,this.bnkInfo.strBankShaba,this.bnkInfo.strBankAtmCard, this.strCoID);
+
             cnSqlConnection.Open();
-            cmCommand.ExecuteNonQuery();
+            cmEmployees.ExecuteNonQuery();
+            cmEmployeeBankInfo.ExecuteNonQuery();
             cnSqlConnection.Close();
         }
         //Delete The Object from Sql Server DataBase

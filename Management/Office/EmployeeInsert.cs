@@ -91,10 +91,10 @@ namespace Baran.Ferroalloy.Management
                 this.emInsert.intSubDepartment = this.depSubDepartments[this.cbSubDepartment.SelectedIndex].intNumber;
                 this.emInsert.intPost = this.cbPosts.SelectedIndex + 1;
                 this.emInsert.intEmploymentType = this.cbEmploymentTypes.SelectedIndex + 1;
-                this.emInsert.bnkInfo.strBankName = this.dtBankNames.Rows[this.cbBankName.SelectedIndex]["nvcName"].ToString();
-                this.emInsert.bnkInfo.strBankAccount = this.tbBankAccount.Text.Trim();
-                this.emInsert.bnkInfo.strBankShaba = this.tbBankShaba.Text.Trim();
-                this.emInsert.bnkInfo.strBankAtmCard = this.tbBankAtmCard.Text.Trim();
+                this.emInsert.bnkInfo.strBankName = this.cbBankName.Text;
+                this.emInsert.bnkInfo.strBankAccount = Language.GetEnglishText(this.tbBankAccount.Text);
+                this.emInsert.bnkInfo.strBankShaba = Language.GetEnglishText(this.tbBankShaba.Text);
+                this.emInsert.bnkInfo.strBankAtmCard = Language.GetEnglishText(this.tbBankAtmCard.Text);
                 this.emInsert.intEducationLevel = this.cbEducationLevels.SelectedIndex + 1;
                 this.emInsert.strLocationProvince = this.cbLocationProvince.SelectedItem.ToString();
                 this.emInsert.strLocationCounty = this.tbLocationCounty.Text.Trim();

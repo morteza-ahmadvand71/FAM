@@ -499,7 +499,7 @@
             this.tbLocationAddress.MaxLength = 250;
             this.tbLocationAddress.Multiline = true;
             this.tbLocationAddress.Name = "tbLocationAddress";
-            this.tbLocationAddress.Size = new System.Drawing.Size(500, 40);
+            this.tbLocationAddress.Size = new System.Drawing.Size(500, 56);
             this.tbLocationAddress.TabIndex = 23;
             this.tbLocationAddress.TextChanged += new System.EventHandler(this.TbLocationAddress_TextChanged);
             this.tbLocationAddress.Enter += new System.EventHandler(this.tbLocationAddress_Enter);
