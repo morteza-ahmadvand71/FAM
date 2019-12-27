@@ -64,18 +64,6 @@
             this.btmDelete = new System.Windows.Forms.Button();
             this.btmInsert = new System.Windows.Forms.Button();
             this.dgvEmployees = new System.Windows.Forms.DataGridView();
-            this.tbLastName = new System.Windows.Forms.TextBox();
-            this.cbDepartments = new System.Windows.Forms.ComboBox();
-            this.btmSearch = new System.Windows.Forms.Button();
-            this.tbNationalID = new System.Windows.Forms.TextBox();
-            this.tbCoID = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbFirstName = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.ttEmployees = new System.Windows.Forms.ToolTip(this.components);
             this.intID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bitSelect = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.nvcFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -110,6 +98,18 @@
             this.nvcPostalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.intID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nvcCoID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbLastName = new System.Windows.Forms.TextBox();
+            this.cbDepartments = new System.Windows.Forms.ComboBox();
+            this.btmSearch = new System.Windows.Forms.Button();
+            this.tbNationalID = new System.Windows.Forms.TextBox();
+            this.tbCoID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbFirstName = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ttEmployees = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
             this.SuspendLayout();
             // 
@@ -237,162 +237,6 @@
             this.dgvEmployees.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvEmployees_CellValueChanged);
             this.dgvEmployees.Sorted += new System.EventHandler(this.DgvEmployees_Sorted);
             // 
-            // tbLastName
-            // 
-            this.tbLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLastName.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.tbLastName.Location = new System.Drawing.Point(791, 56);
-            this.tbLastName.Margin = new System.Windows.Forms.Padding(2);
-            this.tbLastName.MaxLength = 20;
-            this.tbLastName.Name = "tbLastName";
-            this.tbLastName.Size = new System.Drawing.Size(150, 28);
-            this.tbLastName.TabIndex = 13;
-            this.tbLastName.TextChanged += new System.EventHandler(this.TbLastName_TextChanged);
-            this.tbLastName.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
-            // 
-            // cbDepartments
-            // 
-            this.cbDepartments.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbDepartments.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDepartments.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.cbDepartments.FormattingEnabled = true;
-            this.cbDepartments.Location = new System.Drawing.Point(610, 147);
-            this.cbDepartments.Margin = new System.Windows.Forms.Padding(2);
-            this.cbDepartments.Name = "cbDepartments";
-            this.cbDepartments.Size = new System.Drawing.Size(150, 28);
-            this.cbDepartments.TabIndex = 14;
-            this.cbDepartments.SelectedIndexChanged += new System.EventHandler(this.CbDepartments_SelectedIndexChanged);
-            // 
-            // btmSearch
-            // 
-            this.btmSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btmSearch.AutoSize = true;
-            this.btmSearch.Enabled = false;
-            this.btmSearch.Font = new System.Drawing.Font("B Yekan", 11F);
-            this.btmSearch.Location = new System.Drawing.Point(966, 173);
-            this.btmSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.btmSearch.Name = "btmSearch";
-            this.btmSearch.Size = new System.Drawing.Size(125, 35);
-            this.btmSearch.TabIndex = 20;
-            this.btmSearch.Text = "جستجو";
-            this.ttEmployees.SetToolTip(this.btmSearch, "جستجو F2");
-            this.btmSearch.UseVisualStyleBackColor = true;
-            this.btmSearch.Click += new System.EventHandler(this.btmSearch_Click);
-            // 
-            // tbNationalID
-            // 
-            this.tbNationalID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbNationalID.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.tbNationalID.Location = new System.Drawing.Point(518, 103);
-            this.tbNationalID.Margin = new System.Windows.Forms.Padding(2);
-            this.tbNationalID.MaxLength = 10;
-            this.tbNationalID.Name = "tbNationalID";
-            this.tbNationalID.Size = new System.Drawing.Size(150, 28);
-            this.tbNationalID.TabIndex = 18;
-            this.tbNationalID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.tbNationalID.TextChanged += new System.EventHandler(this.TbNationalID_TextChanged);
-            this.tbNationalID.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
-            this.tbNationalID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SetNumbericCharsTextBoxes);
-            // 
-            // tbCoID
-            // 
-            this.tbCoID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbCoID.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.tbCoID.Location = new System.Drawing.Point(787, 103);
-            this.tbCoID.Margin = new System.Windows.Forms.Padding(2);
-            this.tbCoID.MaxLength = 4;
-            this.tbCoID.Name = "tbCoID";
-            this.tbCoID.Size = new System.Drawing.Size(90, 28);
-            this.tbCoID.TabIndex = 16;
-            this.tbCoID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tbCoID.TextChanged += new System.EventHandler(this.TbCoID_TextChanged);
-            this.tbCoID.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
-            this.tbCoID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SetNumbericCharsTextBoxes);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.label1.Location = new System.Drawing.Point(399, 60);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 21);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "نام:";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.label2.Location = new System.Drawing.Point(715, 60);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 21);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "نام خانوادگی:";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.label4.Location = new System.Drawing.Point(470, 107);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 21);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "کد ملی:";
-            // 
-            // tbFirstName
-            // 
-            this.tbFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbFirstName.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.tbFirstName.Location = new System.Drawing.Point(426, 56);
-            this.tbFirstName.Margin = new System.Windows.Forms.Padding(2);
-            this.tbFirstName.MaxLength = 20;
-            this.tbFirstName.Name = "tbFirstName";
-            this.tbFirstName.Size = new System.Drawing.Size(150, 28);
-            this.tbFirstName.TabIndex = 12;
-            this.tbFirstName.TextChanged += new System.EventHandler(this.TbFirstName_TextChanged);
-            this.tbFirstName.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.label3.Location = new System.Drawing.Point(719, 107);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 21);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "کد پرسنلی:";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("B Yekan", 10F);
-            this.label5.Location = new System.Drawing.Point(571, 151);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 21);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "واحد:";
-            // 
             // intID
             // 
             this.intID.DataPropertyName = "intID";
@@ -495,7 +339,6 @@
             this.intDepartment.ReadOnly = true;
             this.intDepartment.ToolTipText = "کد واحد";
             this.intDepartment.Visible = false;
-            this.intDepartment.Width = 77;
             // 
             // intDepartmentAsName
             // 
@@ -761,6 +604,162 @@
             this.nvcCoID1.Visible = false;
             this.nvcCoID1.Width = 95;
             // 
+            // tbLastName
+            // 
+            this.tbLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbLastName.Font = new System.Drawing.Font("B Yekan", 10F);
+            this.tbLastName.Location = new System.Drawing.Point(791, 56);
+            this.tbLastName.Margin = new System.Windows.Forms.Padding(2);
+            this.tbLastName.MaxLength = 20;
+            this.tbLastName.Name = "tbLastName";
+            this.tbLastName.Size = new System.Drawing.Size(150, 28);
+            this.tbLastName.TabIndex = 13;
+            this.tbLastName.TextChanged += new System.EventHandler(this.TbLastName_TextChanged);
+            this.tbLastName.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
+            // 
+            // cbDepartments
+            // 
+            this.cbDepartments.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbDepartments.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDepartments.Font = new System.Drawing.Font("B Yekan", 10F);
+            this.cbDepartments.FormattingEnabled = true;
+            this.cbDepartments.Location = new System.Drawing.Point(610, 147);
+            this.cbDepartments.Margin = new System.Windows.Forms.Padding(2);
+            this.cbDepartments.Name = "cbDepartments";
+            this.cbDepartments.Size = new System.Drawing.Size(150, 28);
+            this.cbDepartments.TabIndex = 14;
+            this.cbDepartments.SelectedIndexChanged += new System.EventHandler(this.CbDepartments_SelectedIndexChanged);
+            // 
+            // btmSearch
+            // 
+            this.btmSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btmSearch.AutoSize = true;
+            this.btmSearch.Enabled = false;
+            this.btmSearch.Font = new System.Drawing.Font("B Yekan", 11F);
+            this.btmSearch.Location = new System.Drawing.Point(966, 173);
+            this.btmSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btmSearch.Name = "btmSearch";
+            this.btmSearch.Size = new System.Drawing.Size(125, 35);
+            this.btmSearch.TabIndex = 20;
+            this.btmSearch.Text = "جستجو";
+            this.ttEmployees.SetToolTip(this.btmSearch, "جستجو F2");
+            this.btmSearch.UseVisualStyleBackColor = true;
+            this.btmSearch.Click += new System.EventHandler(this.btmSearch_Click);
+            // 
+            // tbNationalID
+            // 
+            this.tbNationalID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbNationalID.Font = new System.Drawing.Font("B Yekan", 10F);
+            this.tbNationalID.Location = new System.Drawing.Point(518, 103);
+            this.tbNationalID.Margin = new System.Windows.Forms.Padding(2);
+            this.tbNationalID.MaxLength = 10;
+            this.tbNationalID.Name = "tbNationalID";
+            this.tbNationalID.Size = new System.Drawing.Size(150, 28);
+            this.tbNationalID.TabIndex = 18;
+            this.tbNationalID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbNationalID.TextChanged += new System.EventHandler(this.TbNationalID_TextChanged);
+            this.tbNationalID.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
+            this.tbNationalID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SetNumbericCharsTextBoxes);
+            // 
+            // tbCoID
+            // 
+            this.tbCoID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbCoID.Font = new System.Drawing.Font("B Yekan", 10F);
+            this.tbCoID.Location = new System.Drawing.Point(787, 103);
+            this.tbCoID.Margin = new System.Windows.Forms.Padding(2);
+            this.tbCoID.MaxLength = 4;
+            this.tbCoID.Name = "tbCoID";
+            this.tbCoID.Size = new System.Drawing.Size(90, 28);
+            this.tbCoID.TabIndex = 16;
+            this.tbCoID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCoID.TextChanged += new System.EventHandler(this.TbCoID_TextChanged);
+            this.tbCoID.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
+            this.tbCoID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SetNumbericCharsTextBoxes);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("B Yekan", 10F);
+            this.label1.Location = new System.Drawing.Point(399, 60);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 21);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "نام:";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("B Yekan", 10F);
+            this.label2.Location = new System.Drawing.Point(715, 60);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 21);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "نام خانوادگی:";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("B Yekan", 10F);
+            this.label4.Location = new System.Drawing.Point(470, 107);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 21);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "کد ملی:";
+            // 
+            // tbFirstName
+            // 
+            this.tbFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbFirstName.Font = new System.Drawing.Font("B Yekan", 10F);
+            this.tbFirstName.Location = new System.Drawing.Point(426, 56);
+            this.tbFirstName.Margin = new System.Windows.Forms.Padding(2);
+            this.tbFirstName.MaxLength = 20;
+            this.tbFirstName.Name = "tbFirstName";
+            this.tbFirstName.Size = new System.Drawing.Size(150, 28);
+            this.tbFirstName.TabIndex = 12;
+            this.tbFirstName.TextChanged += new System.EventHandler(this.TbFirstName_TextChanged);
+            this.tbFirstName.Enter += new System.EventHandler(this.SetFarsiLanguageTextBoxes);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("B Yekan", 10F);
+            this.label3.Location = new System.Drawing.Point(719, 107);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 21);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "کد پرسنلی:";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("B Yekan", 10F);
+            this.label5.Location = new System.Drawing.Point(571, 151);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 21);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "واحد:";
+            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -793,7 +792,7 @@
             this.RightToLeftLayout = true;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "/mg";
+            this.Text = "کارمندان";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Employees_FormClosing);
             this.Load += new System.EventHandler(this.Employees_Load);
             this.Enter += new System.EventHandler(this.Employees_Enter);
