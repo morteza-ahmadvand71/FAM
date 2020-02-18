@@ -31,3 +31,19 @@ C:\Douran\FAM\Source\Store\obj\Debug\Store.csprojAssemblyReference.cache
 C:\Douran\FAM\Source\Store\obj\Debug\Store.csproj.CopyComplete
 C:\Douran\FAM\Source\Store\obj\Debug\Baran.Ferroalloy.Store.dll
 C:\Douran\FAM\Source\Store\obj\Debug\Baran.Ferroalloy.Store.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Store\bin\Debug\Baran.Ferroalloy.Store.dll
+E:\Classes\Project WindowsForm\FAM_Project\Store\bin\Debug\Baran.Ferroalloy.Store.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Store\bin\Debug\Baran.Ferroalloy.Automation.dll
+E:\Classes\Project WindowsForm\FAM_Project\Store\bin\Debug\Baran.Ferroalloy.Finance.dll
+E:\Classes\Project WindowsForm\FAM_Project\Store\bin\Debug\Baran.Ferroalloy.Office.dll
+E:\Classes\Project WindowsForm\FAM_Project\Store\bin\Debug\EntityFramework.dll
+E:\Classes\Project WindowsForm\FAM_Project\Store\bin\Debug\Baran.Ferroalloy.Automation.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Store\bin\Debug\Baran.Ferroalloy.Automation.dll.config
+E:\Classes\Project WindowsForm\FAM_Project\Store\bin\Debug\Baran.Ferroalloy.Finance.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Store\bin\Debug\Baran.Ferroalloy.Office.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Store\bin\Debug\EntityFramework.xml
+E:\Classes\Project WindowsForm\FAM_Project\Store\obj\Debug\Store.csprojAssemblyReference.cache
+E:\Classes\Project WindowsForm\FAM_Project\Store\obj\Debug\Store.csproj.CoreCompileInputs.cache
+E:\Classes\Project WindowsForm\FAM_Project\Store\obj\Debug\Store.csproj.CopyComplete
+E:\Classes\Project WindowsForm\FAM_Project\Store\obj\Debug\Baran.Ferroalloy.Store.dll
+E:\Classes\Project WindowsForm\FAM_Project\Store\obj\Debug\Baran.Ferroalloy.Store.pdb

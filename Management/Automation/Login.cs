@@ -193,7 +193,7 @@ namespace Baran.Ferroalloy.Management
                 {
                     //مدیریت
                     case 4:
-                        this.frmManagement.menStoreDepartmentStuffs.Enabled = true;
+                        //this.frmManagement.menStoreDepartmentStuffs.Enabled = true;
                         this.frmManagement.menStoreDepartmentVendors.Enabled = true;
                         this.frmManagement.menStoreDepartmentInvoices.Enabled = true;
                         this.frmManagement.MensStoreDepartmentStorePurchaseRequests.Enabled = true;

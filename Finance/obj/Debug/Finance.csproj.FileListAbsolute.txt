@@ -6,3 +6,15 @@ C:\Douran\FAM\Source\Finance\bin\Debug\Baran.Ferroalloy.Automation.pdb
 C:\Douran\FAM\Source\Finance\obj\Debug\Finance.csproj.CopyComplete
 C:\Douran\FAM\Source\Finance\obj\Debug\Baran.Ferroalloy.Finance.dll
 C:\Douran\FAM\Source\Finance\obj\Debug\Baran.Ferroalloy.Finance.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Finance\bin\Debug\Baran.Ferroalloy.Finance.dll
+E:\Classes\Project WindowsForm\FAM_Project\Finance\bin\Debug\Baran.Ferroalloy.Finance.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Finance\bin\Debug\Baran.Ferroalloy.Automation.dll
+E:\Classes\Project WindowsForm\FAM_Project\Finance\bin\Debug\EntityFramework.dll
+E:\Classes\Project WindowsForm\FAM_Project\Finance\bin\Debug\Baran.Ferroalloy.Automation.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Finance\bin\Debug\Baran.Ferroalloy.Automation.dll.config
+E:\Classes\Project WindowsForm\FAM_Project\Finance\bin\Debug\EntityFramework.xml
+E:\Classes\Project WindowsForm\FAM_Project\Finance\obj\Debug\Finance.csprojAssemblyReference.cache
+E:\Classes\Project WindowsForm\FAM_Project\Finance\obj\Debug\Finance.csproj.CoreCompileInputs.cache
+E:\Classes\Project WindowsForm\FAM_Project\Finance\obj\Debug\Finance.csproj.CopyComplete
+E:\Classes\Project WindowsForm\FAM_Project\Finance\obj\Debug\Baran.Ferroalloy.Finance.dll
+E:\Classes\Project WindowsForm\FAM_Project\Finance\obj\Debug\Baran.Ferroalloy.Finance.pdb

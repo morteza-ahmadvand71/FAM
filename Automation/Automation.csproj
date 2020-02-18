@@ -31,8 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,12 +51,273 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Generic.cs" />
+    <Compile Include="Classes\MaintenanceClasses\Branch.cs" />
+    <Compile Include="Classes\MaintenanceClasses\Categories.cs" />
+    <Compile Include="Classes\MaintenanceClasses\DepartmentSrvice.cs" />
+    <Compile Include="Classes\MaintenanceClasses\EmployeesService.cs" />
+    <Compile Include="Classes\MaintenanceClasses\EquipNameService.cs" />
+    <Compile Include="Classes\MaintenanceClasses\EquipService.cs" />
+    <Compile Include="Classes\MaintenanceClasses\MaintenanceItemsService.cs" />
+    <Compile Include="Classes\MaintenanceClasses\MaintenancePartsService.cs" />
+    <Compile Include="Classes\MaintenanceClasses\MaintenanceService.cs" />
+    <Compile Include="Classes\MaintenanceClasses\MeasurementUnits.cs" />
+    <Compile Include="Classes\MaintenanceClasses\Name.cs" />
+    <Compile Include="Classes\MaintenanceClasses\Parts.cs" />
+    <Compile Include="Classes\MaintenanceClasses\Properties.cs" />
+    <Compile Include="Classes\MaintenanceClasses\Shift.cs" />
+    <Compile Include="Classes\MaintenanceClasses\Store.cs" />
+    <Compile Include="Classes\MaintenanceClasses\SubBranch.cs" />
+    <Compile Include="Classes\MaintenanceClasses\SubDepartmentService.cs" />
+    <Compile Include="Classes\MaintenanceClasses\SubZoneService.cs" />
+    <Compile Include="Classes\MaintenanceClasses\ZoneService.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="ExceptionConnection.cs" />
     <Compile Include="Cryption.cs" />
+    <Compile Include="Interfaces\IGeneric.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IBranch.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\ICategories.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IDepartment.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IEmployees.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IEquip.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IEquipName.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IMaintenance.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IMaintenanceItem.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IMeasurementUnits.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IName.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IParts.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IProperties.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IShift.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IStore.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\ISubBranch.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\ISubDepartment.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IMaintenanceParts.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\ISubZone.cs" />
+    <Compile Include="Interfaces\MaintenanceInterfaces\IZone.cs" />
     <Compile Include="Language.cs" />
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabBanks.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabBranch.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabCategories.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabCoInformation.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabCurrentAffairs.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabDepartments.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabEmployees.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabEmployeesBankInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabEquipName.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabEquips.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabFamSettings.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabInvoiceItems.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabInvoices.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabLoadingLadles.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabMaintenanceFurnaceEquips.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabMaintenanceItems.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabMaintenanceParts.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabMaintenances.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabMeasurementUnits.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabName.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabParts.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabPosts.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabProductionMeltLoadings.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabProjects.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabProperties.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabProvinces.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabRequestItems.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabRequests.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabShifts.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabShiftType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabStoreGetOutItems.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabStoreGetOuts.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabStores.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabStuffMaterials.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabStuffProperties.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabStuffSections.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabStuffTypes.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabSubBranch.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabSubDepartments.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabSubdepartmentSubsets.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabSubprojects.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabSubZones.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabTagParts.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabTechnicalDocuments.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabTechnicalDocumentTags.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabUsers.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabVendors.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tabZones.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UnitOfWork.cs" />
+    <Compile Include="RtlMessageBox.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ListMaintenancesViewModel.cs" />
+    <Compile Include="ViewModels\Maintenance\dgvListMaintenancePartsViewModel.cs" />
+    <Compile Include="ViewModels\Maintenance\dgvListStoresViewModel.cs" />
+    <Compile Include="ViewModels\Maintenance\dgvMaintenanceViewModel.cs" />
+    <Compile Include="ViewModels\Maintenance\EquipsViewModel.cs" />
+    <Compile Include="ViewModels\Maintenance\PartsViewModel.cs" />
+    <Compile Include="ViewModels\Maintenance\StoresViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Resources\1370791030_credit-card.png" />
+    <Content Include="Resources\1371475930_filenew.png" />
+    <Content Include="Resources\1371475973_document_edit.png" />
+    <Content Include="Resources\1371476007_Close_Box_Red.png" />
+    <Content Include="Resources\1371476049_fork3.png" />
+    <Content Include="Resources\1371476070_self1.png" />
+    <Content Include="Resources\1371476120_fingerprint_reader.png" />
+    <Content Include="Resources\1371476143_deliverables.png" />
+    <Content Include="Resources\1371476193_printers-&amp;-Faxes.png" />
+    <Content Include="Resources\1371476276_Print.png" />
+    <Content Include="Resources\1371476342_Refresh.png" />
+    <Content Include="Resources\1371476368_Synchronize.png" />
+    <Content Include="Resources\1371476394_refresh red.png" />
+    <Content Include="Resources\1371476468_preferences-contact-list.png" />
+    <Content Include="Resources\1371476499_todo-list.png" />
+    <Content Include="Resources\images.png" />
+    <Content Include="Resources\list2.png" />
+    <Content Include="Resources\no-profile-image.gif" />
+    <Content Include="Resources\servicesCosts.png" />
+    <Content Include="Resources\Untitled-1.png" />
+    <Content Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

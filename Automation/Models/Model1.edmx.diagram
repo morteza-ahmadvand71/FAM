@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bd0db09c48934511a1325cead00a6d3f" Name="Diagram1" ZoomLevel="79">
+        <EntityTypeShape EntityType="dbAfrzModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabBanks" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabBranch" Width="1.5" PointX="7.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabCategories" Width="1.5" PointX="2.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabCoInformation" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabCurrentAffairs" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabEmployeesBankInfo" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabFamSettings" Width="1.5" PointX="11.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabInvoiceItems" Width="1.5" PointX="11.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabInvoices" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabLoadingLadles" Width="1.5" PointX="4.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabMaintenanceFurnaceEquips" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabName" Width="1.5" PointX="5" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabParts" Width="1.5" PointX="11.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabPosts" Width="1.5" PointX="13.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabProductionMeltLoadings" Width="1.5" PointX="13.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabProjects" Width="1.5" PointX="13.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabProvinces" Width="1.5" PointX="13.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabRequestItems" Width="1.5" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabRequests" Width="1.5" PointX="15.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabShiftType" Width="1.5" PointX="6.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabStoreGetOutItems" Width="1.5" PointX="15.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabStoreGetOuts" Width="1.5" PointX="15.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabStores" Width="1.5" PointX="9.5" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabStuffMaterials" Width="1.5" PointX="15.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabStuffProperties" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabStuffSections" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabStuffTypes" Width="1.5" PointX="17.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabSubBranch" Width="1.5" PointX="9.5" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabSubprojects" Width="1.5" PointX="17.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabTagParts" Width="1.5" PointX="8.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabTechnicalDocuments" Width="1.5" PointX="17.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabTechnicalDocumentTags" Width="1.5" PointX="10.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabUsers" Width="1.5" PointX="12.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabVendors" Width="1.5" PointX="17.75" PointY="14.75" IsExpanded="true" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabBranch_tabName" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabParts_tabBranch" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabSubBranch_tabBranch" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabName_tabCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabParts_tabCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabParts_tabName" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabParts_tabStores" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabParts_tabSubBranch" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabMeasurementUnits" Width="1.5" PointX="5" PointY="19.5" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabMeasurementUnits_tabCategories" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabParts_tabMeasurementUnits" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabProperties" Width="1.5" PointX="7.25" PointY="20.5" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabProperties_tabCategories" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabProperties_tabMeasurementUnits" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabMaintenanceItems" Width="1.625" PointX="5.25" PointY="28.625" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabMaintenanceParts" Width="1.5" PointX="7.5" PointY="29.25" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabMaintenanceFurnaceParts_tabMaintenanceFurnaceItems1" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabDepartments" Width="1.5" PointX="15.375" PointY="20.125" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabSubDepartments" Width="1.5" PointX="17.625" PointY="19.875" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabSubDepartments_tabSubDepartments" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabSubdepartmentSubsets" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabEmployees" Width="1.5" PointX="20.875" PointY="9.5" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabEmployees_tabDepartments" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabEmployees_tabSubDepartments" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabEmployees_tabSubdepartmentSubsets" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabMaintenances" Width="1.5" PointX="19.875" PointY="19.5" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabShifts" Width="1.5" PointX="17.625" PointY="24.125" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabMaintenances_tabMaintenances" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabMaintenanceItems_tabMaintenance" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabMaintenances_tabShifts" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabMaintenances_tabSubDepartments" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabEquipName" Width="1.5" PointX="5" PointY="4.625" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabEquips" Width="1.5" PointX="7.25" PointY="4.5" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabSubZones" Width="1.5" PointX="5" PointY="0.75" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabEquipName_tabCategories" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabEquips_tabCategories" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabEquips_tabEquipName" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabEquips_tabSubZones" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabZones" Width="1.5" PointX="0.75" PointY="4.875" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabEquips_tabZones" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabSubZones_tabZones" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

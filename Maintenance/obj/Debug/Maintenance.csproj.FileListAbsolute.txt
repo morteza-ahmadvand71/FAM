@@ -31,3 +31,19 @@ C:\Douran\FAM\Source\Maintenance\obj\Debug\Baran.Ferroalloy.Maintenance.dll
 C:\Douran\FAM\Source\Maintenance\obj\Debug\Baran.Ferroalloy.Maintenance.pdb
 C:\Douran\FAM\Source\Maintenance\bin\Debug\Baran.Ferroalloy.Finance.dll
 C:\Douran\FAM\Source\Maintenance\bin\Debug\Baran.Ferroalloy.Finance.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\bin\Debug\Baran.Ferroalloy.Maintenance.dll
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\bin\Debug\Baran.Ferroalloy.Maintenance.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\bin\Debug\Baran.Ferroalloy.Automation.dll
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\bin\Debug\Baran.Ferroalloy.Office.dll
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\bin\Debug\Baran.Ferroalloy.Finance.dll
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\bin\Debug\Baran.Ferroalloy.Automation.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\bin\Debug\Baran.Ferroalloy.Office.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\bin\Debug\Baran.Ferroalloy.Finance.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\obj\Debug\Maintenance.csprojAssemblyReference.cache
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\obj\Debug\Maintenance.csproj.CoreCompileInputs.cache
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\obj\Debug\Maintenance.csproj.CopyComplete
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\obj\Debug\Baran.Ferroalloy.Maintenance.dll
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\obj\Debug\Baran.Ferroalloy.Maintenance.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\bin\Debug\EntityFramework.dll
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\bin\Debug\Baran.Ferroalloy.Automation.dll.config
+E:\Classes\Project WindowsForm\FAM_Project\Maintenance\bin\Debug\EntityFramework.xml

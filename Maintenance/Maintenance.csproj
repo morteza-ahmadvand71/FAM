@@ -45,6 +45,7 @@
     <Compile Include="MaintenanceAction.cs" />
     <Compile Include="MaintenanceFurnaceItem.cs" />
     <Compile Include="MaintenanceFurnaceShift.cs" />
+    <Compile Include="MaintenanceTypes.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="Property.cs" />
     <Compile Include="StoreCode.cs" />

@@ -14,3 +14,15 @@ C:\Douran\FAM\Source\Automation\bin\Debug\Baran.Ferroalloy.Automation.pdb
 C:\Douran\FAM\Source\Automation\obj\Debug\Baran.Ferroalloy.Automation.dll
 C:\Douran\FAM\Source\Automation\obj\Debug\Baran.Ferroalloy.Automation.pdb
 C:\Douran\FAM\Source\Automation\obj\Debug\Automation.csprojAssemblyReference.cache
+E:\Classes\Project WindowsForm\FAM_Project\Automation\bin\Debug\Baran.Ferroalloy.Automation.dll.config
+E:\Classes\Project WindowsForm\FAM_Project\Automation\bin\Debug\Baran.Ferroalloy.Automation.dll
+E:\Classes\Project WindowsForm\FAM_Project\Automation\bin\Debug\Baran.Ferroalloy.Automation.pdb
+E:\Classes\Project WindowsForm\FAM_Project\Automation\bin\Debug\EntityFramework.dll
+E:\Classes\Project WindowsForm\FAM_Project\Automation\bin\Debug\EntityFramework.SqlServer.dll
+E:\Classes\Project WindowsForm\FAM_Project\Automation\bin\Debug\EntityFramework.xml
+E:\Classes\Project WindowsForm\FAM_Project\Automation\bin\Debug\EntityFramework.SqlServer.xml
+E:\Classes\Project WindowsForm\FAM_Project\Automation\obj\Debug\Automation.csprojAssemblyReference.cache
+E:\Classes\Project WindowsForm\FAM_Project\Automation\obj\Debug\Automation.csproj.CoreCompileInputs.cache
+E:\Classes\Project WindowsForm\FAM_Project\Automation\obj\Debug\Automation.csproj.CopyComplete
+E:\Classes\Project WindowsForm\FAM_Project\Automation\obj\Debug\Baran.Ferroalloy.Automation.dll
+E:\Classes\Project WindowsForm\FAM_Project\Automation\obj\Debug\Baran.Ferroalloy.Automation.pdb

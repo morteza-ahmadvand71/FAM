@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbAfrzModelStoreContainer" CdmEntityContainer="dbAfrzEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="dbAfrzModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabBanks">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabBanks">
+        <MappingFragment StoreEntitySet="tabBanks">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabBranch">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabBranch">
+        <MappingFragment StoreEntitySet="tabBranch">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="intName" ColumnName="intName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabCategories">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabCategories">
+        <MappingFragment StoreEntitySet="tabCategories">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="bitIsActual" ColumnName="bitIsActual" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabCoInformation">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabCoInformation">
+        <MappingFragment StoreEntitySet="tabCoInformation">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="nvcCoType" ColumnName="nvcCoType" />
+          <ScalarProperty Name="datRegister" ColumnName="datRegister" />
+          <ScalarProperty Name="nvcRegisterCode" ColumnName="nvcRegisterCode" />
+          <ScalarProperty Name="nvcCoID" ColumnName="nvcCoID" />
+          <ScalarProperty Name="nvcAddress" ColumnName="nvcAddress" />
+          <ScalarProperty Name="nvcPostalCode" ColumnName="nvcPostalCode" />
+          <ScalarProperty Name="nvcTell" ColumnName="nvcTell" />
+          <ScalarProperty Name="nvcFax" ColumnName="nvcFax" />
+          <ScalarProperty Name="nvcTaxID" ColumnName="nvcTaxID" />
+          <ScalarProperty Name="nvcProvince" ColumnName="nvcProvince" />
+          <ScalarProperty Name="nvcCity" ColumnName="nvcCity" />
+          <ScalarProperty Name="nvcWebSite" ColumnName="nvcWebSite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabCurrentAffairs">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabCurrentAffairs">
+        <MappingFragment StoreEntitySet="tabCurrentAffairs">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabEmployeesBankInfo">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabEmployeesBankInfo">
+        <MappingFragment StoreEntitySet="tabEmployeesBankInfo">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="nvcCoID" ColumnName="nvcCoID" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="nvcAccount" ColumnName="nvcAccount" />
+          <ScalarProperty Name="nvcShaba" ColumnName="nvcShaba" />
+          <ScalarProperty Name="nvcAtmCard" ColumnName="nvcAtmCard" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabFamSettings">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabFamSettings">
+        <MappingFragment StoreEntitySet="tabFamSettings">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="intMaintenanceFurnaceShifttype" ColumnName="intMaintenanceFurnaceShifttype" />
+          <ScalarProperty Name="datMaintenanceFurnaceDateOrgin" ColumnName="datMaintenanceFurnaceDateOrgin" />
+          <ScalarProperty Name="intProductionFurnaceShifttype" ColumnName="intProductionFurnaceShifttype" />
+          <ScalarProperty Name="datProductionFurnaceDateOrgin" ColumnName="datProductionFurnaceDateOrgin" />
+          <ScalarProperty Name="nvcEquipPicsPath" ColumnName="nvcEquipPicsPath" />
+          <ScalarProperty Name="nvcInvoiceImagesPath" ColumnName="nvcInvoiceImagesPath" />
+          <ScalarProperty Name="tinTapholeCount" ColumnName="tinTapholeCount" />
+          <ScalarProperty Name="tinLadleCount" ColumnName="tinLadleCount" />
+          <ScalarProperty Name="nvcLoadingSerialPortRS232" ColumnName="nvcLoadingSerialPortRS232" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabInvoiceItems">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabInvoiceItems">
+        <MappingFragment StoreEntitySet="tabInvoiceItems">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intInvoiceNumber" ColumnName="intInvoiceNumber" />
+          <ScalarProperty Name="intRequestNumber" ColumnName="intRequestNumber" />
+          <ScalarProperty Name="nvcStoreCode" ColumnName="nvcStoreCode" />
+          <ScalarProperty Name="floAmount" ColumnName="floAmount" />
+          <ScalarProperty Name="floPrice" ColumnName="floPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabInvoices">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabInvoices">
+        <MappingFragment StoreEntitySet="tabInvoices">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="intInvoiceNumberofVendor" ColumnName="intInvoiceNumberofVendor" />
+          <ScalarProperty Name="datDate" ColumnName="datDate" />
+          <ScalarProperty Name="intVendorNumber" ColumnName="intVendorNumber" />
+          <ScalarProperty Name="nvcBuyerCoID" ColumnName="nvcBuyerCoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabLoadingLadles">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabLoadingLadles">
+        <MappingFragment StoreEntitySet="tabLoadingLadles">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="nvcNumber" ColumnName="nvcNumber" />
+          <ScalarProperty Name="intLoadingCount" ColumnName="intLoadingCount" />
+          <ScalarProperty Name="intEmptyWeight" ColumnName="intEmptyWeight" />
+          <ScalarProperty Name="bitIsCurrent" ColumnName="bitIsCurrent" />
+          <ScalarProperty Name="intServiceCount" ColumnName="intServiceCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabMaintenanceFurnaceEquips">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabMaintenanceFurnaceEquips">
+        <MappingFragment StoreEntitySet="tabMaintenanceFurnaceEquips">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="intTabItemsID" ColumnName="intTabItemsID" />
+          <ScalarProperty Name="nvcStoreCode" ColumnName="nvcStoreCode" />
+          <ScalarProperty Name="floAmount" ColumnName="floAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabName">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabName">
+        <MappingFragment StoreEntitySet="tabName">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="intCategory" ColumnName="intCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabParts">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabParts">
+        <MappingFragment StoreEntitySet="tabParts">
+          <ScalarProperty Name="nvcProperties" ColumnName="nvcProperties" />
+          <ScalarProperty Name="intMeasurementUnit" ColumnName="intMeasurementUnit" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intStore" ColumnName="intStore" />
+          <ScalarProperty Name="intCategory" ColumnName="intCategory" />
+          <ScalarProperty Name="intName" ColumnName="intName" />
+          <ScalarProperty Name="intBranch" ColumnName="intBranch" />
+          <ScalarProperty Name="intSubBranch" ColumnName="intSubBranch" />
+          <ScalarProperty Name="floOrderPoint" ColumnName="floOrderPoint" />
+          <ScalarProperty Name="floSupply" ColumnName="floSupply" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabPosts">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabPosts">
+        <MappingFragment StoreEntitySet="tabPosts">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="bitIsActual" ColumnName="bitIsActual" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabProductionMeltLoadings">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabProductionMeltLoadings">
+        <MappingFragment StoreEntitySet="tabProductionMeltLoadings">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="intLoadingCount" ColumnName="intLoadingCount" />
+          <ScalarProperty Name="datDate" ColumnName="datDate" />
+          <ScalarProperty Name="timStart" ColumnName="timStart" />
+          <ScalarProperty Name="timStop" ColumnName="timStop" />
+          <ScalarProperty Name="nvcLadleNumber" ColumnName="nvcLadleNumber" />
+          <ScalarProperty Name="intLadleLoadingCount" ColumnName="intLadleLoadingCount" />
+          <ScalarProperty Name="intEmptyWeight" ColumnName="intEmptyWeight" />
+          <ScalarProperty Name="intFillWeight" ColumnName="intFillWeight" />
+          <ScalarProperty Name="intMasidegiWeight" ColumnName="intMasidegiWeight" />
+          <ScalarProperty Name="nvcTapholeNumber" ColumnName="nvcTapholeNumber" />
+          <ScalarProperty Name="intTapholePosition" ColumnName="intTapholePosition" />
+          <ScalarProperty Name="nvcGroupNumber" ColumnName="nvcGroupNumber" />
+          <ScalarProperty Name="intShift" ColumnName="intShift" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabProjects">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabProjects">
+        <MappingFragment StoreEntitySet="tabProjects">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="intCategory" ColumnName="intCategory" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="nvcTip" ColumnName="nvcTip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabProvinces">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabProvinces">
+        <MappingFragment StoreEntitySet="tabProvinces">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabRequestItems">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabRequestItems">
+        <MappingFragment StoreEntitySet="tabRequestItems">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intRequestNumber" ColumnName="intRequestNumber" />
+          <ScalarProperty Name="nvcStoreCode" ColumnName="nvcStoreCode" />
+          <ScalarProperty Name="floAmount" ColumnName="floAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabRequests">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabRequests">
+        <MappingFragment StoreEntitySet="tabRequests">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="intDepartment" ColumnName="intDepartment" />
+          <ScalarProperty Name="intRowBudget" ColumnName="intRowBudget" />
+          <ScalarProperty Name="datDate" ColumnName="datDate" />
+          <ScalarProperty Name="nvcRequesterCoID" ColumnName="nvcRequesterCoID" />
+          <ScalarProperty Name="nvcSupervisorCoID" ColumnName="nvcSupervisorCoID" />
+          <ScalarProperty Name="nvcPlantmanagerCoID" ColumnName="nvcPlantmanagerCoID" />
+          <ScalarProperty Name="nvcCeoCoID" ColumnName="nvcCeoCoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabShiftType">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabShiftType">
+        <MappingFragment StoreEntitySet="tabShiftType">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="intShiftsCountInDay" ColumnName="intShiftsCountInDay" />
+          <ScalarProperty Name="intWorkShiftsRepeatCount" ColumnName="intWorkShiftsRepeatCount" />
+          <ScalarProperty Name="intRestShiftRepeatCount" ColumnName="intRestShiftRepeatCount" />
+          <ScalarProperty Name="timShiftStartTime1" ColumnName="timShiftStartTime1" />
+          <ScalarProperty Name="timShiftStartTime2" ColumnName="timShiftStartTime2" />
+          <ScalarProperty Name="timShiftStartTime3" ColumnName="timShiftStartTime3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabStoreGetOutItems">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabStoreGetOutItems">
+        <MappingFragment StoreEntitySet="tabStoreGetOutItems">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intStoreGetOutNumber" ColumnName="intStoreGetOutNumber" />
+          <ScalarProperty Name="nvcStuffStoreCode" ColumnName="nvcStuffStoreCode" />
+          <ScalarProperty Name="floStuffAmount" ColumnName="floStuffAmount" />
+          <ScalarProperty Name="nvcEquipTag" ColumnName="nvcEquipTag" />
+          <ScalarProperty Name="intTechnicalActionType" ColumnName="intTechnicalActionType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabStoreGetOuts">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabStoreGetOuts">
+        <MappingFragment StoreEntitySet="tabStoreGetOuts">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="intDepartment" ColumnName="intDepartment" />
+          <ScalarProperty Name="intSubDepartment" ColumnName="intSubDepartment" />
+          <ScalarProperty Name="datDate" ColumnName="datDate" />
+          <ScalarProperty Name="intGroupNumber" ColumnName="intGroupNumber" />
+          <ScalarProperty Name="nvcRequesterCoID" ColumnName="nvcRequesterCoID" />
+          <ScalarProperty Name="nvcDepartmentSupervisorCoID" ColumnName="nvcDepartmentSupervisorCoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabStores">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabStores">
+        <MappingFragment StoreEntitySet="tabStores">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabStuffMaterials">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabStuffMaterials">
+        <MappingFragment StoreEntitySet="tabStuffMaterials">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="nvcStore" ColumnName="nvcStore" />
+          <ScalarProperty Name="nvcSection" ColumnName="nvcSection" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="nvcCode" ColumnName="nvcCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabStuffProperties">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabStuffProperties">
+        <MappingFragment StoreEntitySet="tabStuffProperties">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="nvcStoreCode" ColumnName="nvcStoreCode" />
+          <ScalarProperty Name="nvcProperty" ColumnName="nvcProperty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabStuffSections">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabStuffSections">
+        <MappingFragment StoreEntitySet="tabStuffSections">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="nvcStore" ColumnName="nvcStore" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="nvcCode" ColumnName="nvcCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabStuffTypes">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabStuffTypes">
+        <MappingFragment StoreEntitySet="tabStuffTypes">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="nvcStore" ColumnName="nvcStore" />
+          <ScalarProperty Name="nvcSection" ColumnName="nvcSection" />
+          <ScalarProperty Name="nvcMaterial" ColumnName="nvcMaterial" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="nvcCode" ColumnName="nvcCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabSubBranch">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabSubBranch">
+        <MappingFragment StoreEntitySet="tabSubBranch">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="intBranch" ColumnName="intBranch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabSubprojects">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabSubprojects">
+        <MappingFragment StoreEntitySet="tabSubprojects">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intCategory" ColumnName="intCategory" />
+          <ScalarProperty Name="intProjectNumber" ColumnName="intProjectNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="datStart" ColumnName="datStart" />
+          <ScalarProperty Name="intDuration" ColumnName="intDuration" />
+          <ScalarProperty Name="intProgress" ColumnName="intProgress" />
+          <ScalarProperty Name="nvcTip" ColumnName="nvcTip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabTagParts">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabTagParts">
+        <MappingFragment StoreEntitySet="tabTagParts">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="nvcTag" ColumnName="nvcTag" />
+          <ScalarProperty Name="nvcPartStorecode" ColumnName="nvcPartStorecode" />
+          <ScalarProperty Name="nvcTip" ColumnName="nvcTip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabTechnicalDocuments">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabTechnicalDocuments">
+        <MappingFragment StoreEntitySet="tabTechnicalDocuments">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intCategory" ColumnName="intCategory" />
+          <ScalarProperty Name="nvcZone" ColumnName="nvcZone" />
+          <ScalarProperty Name="nvcCode" ColumnName="nvcCode" />
+          <ScalarProperty Name="nvcCoDesigner" ColumnName="nvcCoDesigner" />
+          <ScalarProperty Name="nvcPersonDesigner" ColumnName="nvcPersonDesigner" />
+          <ScalarProperty Name="nvcRevisionNumber" ColumnName="nvcRevisionNumber" />
+          <ScalarProperty Name="nvcTip" ColumnName="nvcTip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabTechnicalDocumentTags">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabTechnicalDocumentTags">
+        <MappingFragment StoreEntitySet="tabTechnicalDocumentTags">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="nvcDocumentCode" ColumnName="nvcDocumentCode" />
+          <ScalarProperty Name="nvcPartTag" ColumnName="nvcPartTag" />
+          <ScalarProperty Name="nvcTip" ColumnName="nvcTip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabUsers">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabUsers">
+        <MappingFragment StoreEntitySet="tabUsers">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="nvcUsername" ColumnName="nvcUsername" />
+          <ScalarProperty Name="nvcPassword" ColumnName="nvcPassword" />
+          <ScalarProperty Name="nvcCoID" ColumnName="nvcCoID" />
+          <ScalarProperty Name="bitLogined" ColumnName="bitLogined" />
+          <ScalarProperty Name="bitOfficeEnabed" ColumnName="bitOfficeEnabed" />
+          <ScalarProperty Name="bitFinanceEnabed" ColumnName="bitFinanceEnabed" />
+          <ScalarProperty Name="bitCommerceEnabed" ColumnName="bitCommerceEnabed" />
+          <ScalarProperty Name="bitProductionEnabed" ColumnName="bitProductionEnabed" />
+          <ScalarProperty Name="bitTechnicalEnabed" ColumnName="bitTechnicalEnabed" />
+          <ScalarProperty Name="bitStoreEnabed" ColumnName="bitStoreEnabed" />
+          <ScalarProperty Name="bitLabEnabed" ColumnName="bitLabEnabed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabVendors">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabVendors">
+        <MappingFragment StoreEntitySet="tabVendors">
+          <ScalarProperty Name="intID" ColumnName="intID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="intCategory" ColumnName="intCategory" />
+          <ScalarProperty Name="nvcBrand" ColumnName="nvcBrand" />
+          <ScalarProperty Name="nvcActivityType" ColumnName="nvcActivityType" />
+          <ScalarProperty Name="nvcActivities" ColumnName="nvcActivities" />
+          <ScalarProperty Name="nvcTell" ColumnName="nvcTell" />
+          <ScalarProperty Name="nvcFirstName" ColumnName="nvcFirstName" />
+          <ScalarProperty Name="nvcLastName" ColumnName="nvcLastName" />
+          <ScalarProperty Name="nvcCity" ColumnName="nvcCity" />
+          <ScalarProperty Name="nvcAddress" ColumnName="nvcAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabMeasurementUnits">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabMeasurementUnits">
+        <MappingFragment StoreEntitySet="tabMeasurementUnits">
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="intCategory" ColumnName="intCategory" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabProperties">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabProperties">
+        <MappingFragment StoreEntitySet="tabProperties">
+          <ScalarProperty Name="intCategory" ColumnName="intCategory" />
+          <ScalarProperty Name="intMeasurementUnit" ColumnName="intMeasurementUnit" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabMaintenanceItems">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabMaintenanceItems">
+        <MappingFragment StoreEntitySet="tabMaintenanceItems">
+          <ScalarProperty Name="nvcTips" ColumnName="nvcTips" />
+          <ScalarProperty Name="bitIsSuccessful" ColumnName="bitIsSuccessful" />
+          <ScalarProperty Name="bitIsNeedToShutDown" ColumnName="bitIsNeedToShutDown" />
+          <ScalarProperty Name="bitIsDueToShutDown" ColumnName="bitIsDueToShutDown" />
+          <ScalarProperty Name="intMaintenanceType" ColumnName="intMaintenanceType" />
+          <ScalarProperty Name="nvcEquip" ColumnName="nvcEquip" />
+          <ScalarProperty Name="intDuration" ColumnName="intDuration" />
+          <ScalarProperty Name="nvcCoIdsWorker" ColumnName="nvcCoIdsWorker" />
+          <ScalarProperty Name="timItem" ColumnName="timItem" />
+          <ScalarProperty Name="intMaintenance" ColumnName="intMaintenance" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabMaintenanceParts">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabMaintenanceParts">
+        <MappingFragment StoreEntitySet="tabMaintenanceParts">
+          <ScalarProperty Name="intCount" ColumnName="intCount" />
+          <ScalarProperty Name="intMaintenaceType" ColumnName="intMaintenaceType" />
+          <ScalarProperty Name="nvcPart" ColumnName="nvcPart" />
+          <ScalarProperty Name="intMaintenanceItem" ColumnName="intMaintenanceItem" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabDepartments">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabDepartments">
+        <MappingFragment StoreEntitySet="tabDepartments">
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="bitIsActual" ColumnName="bitIsActual" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabSubDepartments">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabSubDepartments">
+        <MappingFragment StoreEntitySet="tabSubDepartments">
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="intDepartment" ColumnName="intDepartment" />
+          <ScalarProperty Name="bitIsActual" ColumnName="bitIsActual" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabSubdepartmentSubsets">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabSubdepartmentSubsets">
+        <MappingFragment StoreEntitySet="tabSubdepartmentSubsets">
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="intSubdepartment" ColumnName="intSubdepartment" />
+          <ScalarProperty Name="bitIsActual" ColumnName="bitIsActual" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabEmployees">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabEmployees">
+        <MappingFragment StoreEntitySet="tabEmployees">
+          <ScalarProperty Name="nvcPostalCode" ColumnName="nvcPostalCode" />
+          <ScalarProperty Name="nvcLocationAddress" ColumnName="nvcLocationAddress" />
+          <ScalarProperty Name="nvcLocationCityVillage" ColumnName="nvcLocationCityVillage" />
+          <ScalarProperty Name="nvcLocationCounty" ColumnName="nvcLocationCounty" />
+          <ScalarProperty Name="nvcLocationProvince" ColumnName="nvcLocationProvince" />
+          <ScalarProperty Name="intEducationLevel" ColumnName="intEducationLevel" />
+          <ScalarProperty Name="nvcFatherName" ColumnName="nvcFatherName" />
+          <ScalarProperty Name="datBirth" ColumnName="datBirth" />
+          <ScalarProperty Name="nvcMobileNumber" ColumnName="nvcMobileNumber" />
+          <ScalarProperty Name="intShiftType" ColumnName="intShiftType" />
+          <ScalarProperty Name="bitIsShiftMode" ColumnName="bitIsShiftMode" />
+          <ScalarProperty Name="intEmploymentType" ColumnName="intEmploymentType" />
+          <ScalarProperty Name="intPost" ColumnName="intPost" />
+          <ScalarProperty Name="bitIsLeader" ColumnName="bitIsLeader" />
+          <ScalarProperty Name="intWorkGroup" ColumnName="intWorkGroup" />
+          <ScalarProperty Name="intSubDepartmentSubset" ColumnName="intSubDepartmentSubset" />
+          <ScalarProperty Name="intSubDepartment" ColumnName="intSubDepartment" />
+          <ScalarProperty Name="intDepartment" ColumnName="intDepartment" />
+          <ScalarProperty Name="nvcInsuranceNumber" ColumnName="nvcInsuranceNumber" />
+          <ScalarProperty Name="nvcNationalID" ColumnName="nvcNationalID" />
+          <ScalarProperty Name="nvcLastname" ColumnName="nvcLastname" />
+          <ScalarProperty Name="nvcFirstname" ColumnName="nvcFirstname" />
+          <ScalarProperty Name="nvcCoID" ColumnName="nvcCoID" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabMaintenances">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabMaintenances">
+        <MappingFragment StoreEntitySet="tabMaintenances">
+          <ScalarProperty Name="nvcCoIdLeader" ColumnName="nvcCoIdLeader" />
+          <ScalarProperty Name="nvcCoIdsWorkGroup" ColumnName="nvcCoIdsWorkGroup" />
+          <ScalarProperty Name="intShift" ColumnName="intShift" />
+          <ScalarProperty Name="intWourkGroup" ColumnName="intWourkGroup" />
+          <ScalarProperty Name="intSubDepartment" ColumnName="intSubDepartment" />
+          <ScalarProperty Name="intDepartment" ColumnName="intDepartment" />
+          <ScalarProperty Name="datWorkGroup" ColumnName="datWorkGroup" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabShifts">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabShifts">
+        <MappingFragment StoreEntitySet="tabShifts">
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="intShiftType" ColumnName="intShiftType" />
+          <ScalarProperty Name="bitIsActual" ColumnName="bitIsActual" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabEquipName">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabEquipName">
+        <MappingFragment StoreEntitySet="tabEquipName">
+          <ScalarProperty Name="intCategory" ColumnName="intCategory" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabEquips">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabEquips">
+        <MappingFragment StoreEntitySet="tabEquips">
+          <ScalarProperty Name="intEquipName" ColumnName="intEquipName" />
+          <ScalarProperty Name="intCategory" ColumnName="intCategory" />
+          <ScalarProperty Name="intSubZone" ColumnName="intSubZone" />
+          <ScalarProperty Name="intZone" ColumnName="intZone" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabSubZones">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabSubZones">
+        <MappingFragment StoreEntitySet="tabSubZones">
+          <ScalarProperty Name="intZone" ColumnName="intZone" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="birSelect" ColumnName="birSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabZones">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabZones">
+        <MappingFragment StoreEntitySet="tabZones">
+          <ScalarProperty Name="nvcTip" ColumnName="nvcTip" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

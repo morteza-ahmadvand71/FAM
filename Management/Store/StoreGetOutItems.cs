@@ -97,13 +97,13 @@ namespace Baran.Ferroalloy.Management
 
             this.dgvStoreGetOutItems.DataSource = this.dtStoreGetOutItems;
 
-            for(int i=0;i<this.dtStoreGetOutItems.Rows.Count;i++)
-            {
-                this.dgvStoreGetOutItems.Rows[i].Cells["nvcStuffStoreCodeAsName"].Value =
-                    StoreCode.GetNameByStoreCode(this.cnConnection, this.dgvStoreGetOutItems.Rows[i].Cells["nvcStuffStoreCode"].Value.ToString());
-                this.dgvStoreGetOutItems.Rows[i].Cells["intTechnicalActionTypeAsName"].Value =
-                     (Maintenance.ActionType)this.dgvStoreGetOutItems.Rows[i].Cells["intTechnicalActionType"].Value;
-            }
+            //for(int i=0;i<this.dtStoreGetOutItems.Rows.Count;i++)
+            //{
+            //    this.dgvStoreGetOutItems.Rows[i].Cells["nvcStuffStoreCodeAsName"].Value =
+            //        StoreCode.GetNameByStoreCode(this.cnConnection, this.dgvStoreGetOutItems.Rows[i].Cells["nvcStuffStoreCode"].Value.ToString());
+            //    this.dgvStoreGetOutItems.Rows[i].Cells["intTechnicalActionTypeAsName"].Value =
+            //         (Maintenance.ActionType)this.dgvStoreGetOutItems.Rows[i].Cells["intTechnicalActionType"].Value;
+            //}
         }                                                               
 
         private void btmExit_Click(object sender, EventArgs e)
