@@ -107,11 +107,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(22, 39);
+            this.label4.Location = new System.Drawing.Point(56, 40);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(391, 20);
+            this.label4.Size = new System.Drawing.Size(357, 20);
             this.label4.TabIndex = 6;
-            this.label4.Text = "برای ویرایش رسته از لیست مقابل روی نام رسته دوبار کلیک کنید.";
+            this.label4.Text = "برای ویرایش رسته از لیست مقابل روی نام رسته کلیک کنید.";
             // 
             // btmEdit
             // 

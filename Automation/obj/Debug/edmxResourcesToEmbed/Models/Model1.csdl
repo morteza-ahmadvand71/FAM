@@ -661,7 +661,6 @@
     </AssociationSet>
     <EntitySet Name="tabEquipName" EntityType="dbAfrzModel.tabEquipName" />
     <EntitySet Name="tabEquips" EntityType="dbAfrzModel.tabEquips" />
-    <EntitySet Name="tabSubZones" EntityType="dbAfrzModel.tabSubZones" />
     <AssociationSet Name="FK_tabEquipName_tabCategories" Association="dbAfrzModel.FK_tabEquipName_tabCategories">
       <End Role="tabCategories" EntitySet="tabCategories" />
       <End Role="tabEquipName" EntitySet="tabEquipName" />
@@ -674,13 +673,14 @@
       <End Role="tabEquipName" EntitySet="tabEquipName" />
       <End Role="tabEquips" EntitySet="tabEquips" />
     </AssociationSet>
-    <AssociationSet Name="FK_tabEquips_tabSubZones" Association="dbAfrzModel.FK_tabEquips_tabSubZones">
-      <End Role="tabSubZones" EntitySet="tabSubZones" />
-      <End Role="tabEquips" EntitySet="tabEquips" />
-    </AssociationSet>
     <EntitySet Name="tabZones" EntityType="dbAfrzModel.tabZones" />
     <AssociationSet Name="FK_tabEquips_tabZones" Association="dbAfrzModel.FK_tabEquips_tabZones">
       <End Role="tabZones" EntitySet="tabZones" />
+      <End Role="tabEquips" EntitySet="tabEquips" />
+    </AssociationSet>
+    <EntitySet Name="tabSubZones" EntityType="dbAfrzModel.tabSubZones" />
+    <AssociationSet Name="FK_tabEquips_tabSubZones" Association="dbAfrzModel.FK_tabEquips_tabSubZones">
+      <End Role="tabSubZones" EntitySet="tabSubZones" />
       <End Role="tabEquips" EntitySet="tabEquips" />
     </AssociationSet>
     <AssociationSet Name="FK_tabSubZones_tabZones" Association="dbAfrzModel.FK_tabSubZones_tabZones">
@@ -1027,20 +1027,8 @@
     <Property Name="intEquipName" Type="Int32" Nullable="false" />
     <NavigationProperty Name="tabCategories" Relationship="dbAfrzModel.FK_tabEquips_tabCategories" FromRole="tabEquips" ToRole="tabCategories" />
     <NavigationProperty Name="tabEquipName" Relationship="dbAfrzModel.FK_tabEquips_tabEquipName" FromRole="tabEquips" ToRole="tabEquipName" />
-    <NavigationProperty Name="tabSubZones" Relationship="dbAfrzModel.FK_tabEquips_tabSubZones" FromRole="tabEquips" ToRole="tabSubZones" />
     <NavigationProperty Name="tabZones" Relationship="dbAfrzModel.FK_tabEquips_tabZones" FromRole="tabEquips" ToRole="tabZones" />
-  </EntityType>
-  <EntityType Name="tabSubZones">
-    <Key>
-      <PropertyRef Name="intNumber" />
-    </Key>
-    <Property Name="intID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="birSelect" Type="Boolean" />
-    <Property Name="nvcName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="intNumber" Type="Int32" Nullable="false" />
-    <Property Name="intZone" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="tabEquips" Relationship="dbAfrzModel.FK_tabEquips_tabSubZones" FromRole="tabSubZones" ToRole="tabEquips" />
-    <NavigationProperty Name="tabZones" Relationship="dbAfrzModel.FK_tabSubZones_tabZones" FromRole="tabSubZones" ToRole="tabZones" />
+    <NavigationProperty Name="tabSubZones" Relationship="dbAfrzModel.FK_tabEquips_tabSubZones" FromRole="tabEquips" ToRole="tabSubZones" />
   </EntityType>
   <Association Name="FK_tabEquipName_tabCategories">
     <End Type="dbAfrzModel.tabCategories" Role="tabCategories" Multiplicity="1" />
@@ -1078,23 +1066,11 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_tabEquips_tabSubZones">
-    <End Type="dbAfrzModel.tabSubZones" Role="tabSubZones" Multiplicity="1" />
-    <End Type="dbAfrzModel.tabEquips" Role="tabEquips" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tabSubZones">
-        <PropertyRef Name="intNumber" />
-      </Principal>
-      <Dependent Role="tabEquips">
-        <PropertyRef Name="intSubZone" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityType Name="tabZones">
     <Key>
       <PropertyRef Name="intNumber" />
     </Key>
-    <Property Name="intID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="intID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="bitSelect" Type="Boolean" />
     <Property Name="intNumber" Type="Int32" Nullable="false" />
     <Property Name="nvcName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -1111,6 +1087,30 @@
       </Principal>
       <Dependent Role="tabEquips">
         <PropertyRef Name="intZone" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="tabSubZones">
+    <Key>
+      <PropertyRef Name="intNumber" />
+    </Key>
+    <Property Name="intID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bitSelect" Type="Boolean" />
+    <Property Name="nvcName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="intNumber" Type="Int32" Nullable="false" />
+    <Property Name="intZone" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tabEquips" Relationship="dbAfrzModel.FK_tabEquips_tabSubZones" FromRole="tabSubZones" ToRole="tabEquips" />
+    <NavigationProperty Name="tabZones" Relationship="dbAfrzModel.FK_tabSubZones_tabZones" FromRole="tabSubZones" ToRole="tabZones" />
+  </EntityType>
+  <Association Name="FK_tabEquips_tabSubZones">
+    <End Type="dbAfrzModel.tabSubZones" Role="tabSubZones" Multiplicity="1" />
+    <End Type="dbAfrzModel.tabEquips" Role="tabEquips" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tabSubZones">
+        <PropertyRef Name="intNumber" />
+      </Principal>
+      <Dependent Role="tabEquips">
+        <PropertyRef Name="intSubZone" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

@@ -617,23 +617,23 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tabSubZones">
-      <EntityTypeMapping TypeName="dbAfrzModel.tabSubZones">
-        <MappingFragment StoreEntitySet="tabSubZones">
-          <ScalarProperty Name="intZone" ColumnName="intZone" />
-          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
-          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
-          <ScalarProperty Name="birSelect" ColumnName="birSelect" />
-          <ScalarProperty Name="intID" ColumnName="intID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="tabZones">
       <EntityTypeMapping TypeName="dbAfrzModel.tabZones">
         <MappingFragment StoreEntitySet="tabZones">
           <ScalarProperty Name="nvcTip" ColumnName="nvcTip" />
           <ScalarProperty Name="nvcName" ColumnName="nvcName" />
           <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
+          <ScalarProperty Name="intID" ColumnName="intID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tabSubZones">
+      <EntityTypeMapping TypeName="dbAfrzModel.tabSubZones">
+        <MappingFragment StoreEntitySet="tabSubZones">
+          <ScalarProperty Name="intZone" ColumnName="intZone" />
+          <ScalarProperty Name="intNumber" ColumnName="intNumber" />
+          <ScalarProperty Name="nvcName" ColumnName="nvcName" />
           <ScalarProperty Name="bitSelect" ColumnName="bitSelect" />
           <ScalarProperty Name="intID" ColumnName="intID" />
         </MappingFragment>

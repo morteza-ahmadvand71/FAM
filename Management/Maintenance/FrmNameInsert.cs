@@ -167,6 +167,54 @@ namespace Baran.Ferroalloy.Management.Maintenance
             }
         }
 
-        
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtRegisterName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtEditName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GroupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GroupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DgvListName_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void GbRegister_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

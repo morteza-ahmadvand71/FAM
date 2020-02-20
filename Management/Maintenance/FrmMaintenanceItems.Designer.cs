@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSelectEquip = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.txtWorker = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -53,10 +54,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.dgvMaintenanceItems = new System.Windows.Forms.DataGridView();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.intID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nvcEquip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaintenanceItems)).BeginInit();
@@ -64,6 +65,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnSelectEquip);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtWorker);
             this.groupBox1.Controls.Add(this.label10);
@@ -90,6 +92,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ورود آیتم تعمیراتی";
+            // 
+            // btnSelectEquip
+            // 
+            this.btnSelectEquip.Location = new System.Drawing.Point(420, 26);
+            this.btnSelectEquip.Name = "btnSelectEquip";
+            this.btnSelectEquip.Size = new System.Drawing.Size(72, 26);
+            this.btnSelectEquip.TabIndex = 42;
+            this.btnSelectEquip.Text = "انتخاب";
+            this.btnSelectEquip.UseVisualStyleBackColor = true;
+            this.btnSelectEquip.Click += new System.EventHandler(this.BtnSelectEquip_Click);
             // 
             // label11
             // 
@@ -138,7 +150,7 @@
             // chbIsSuccessful
             // 
             this.chbIsSuccessful.AutoSize = true;
-            this.chbIsSuccessful.Location = new System.Drawing.Point(349, 184);
+            this.chbIsSuccessful.Location = new System.Drawing.Point(529, 181);
             this.chbIsSuccessful.Name = "chbIsSuccessful";
             this.chbIsSuccessful.Size = new System.Drawing.Size(15, 14);
             this.chbIsSuccessful.TabIndex = 36;
@@ -147,7 +159,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(370, 180);
+            this.label9.Location = new System.Drawing.Point(342, 177);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(169, 20);
             this.label9.TabIndex = 35;
@@ -156,7 +168,7 @@
             // chbIsNeedToShutDown
             // 
             this.chbIsNeedToShutDown.AutoSize = true;
-            this.chbIsNeedToShutDown.Location = new System.Drawing.Point(274, 164);
+            this.chbIsNeedToShutDown.Location = new System.Drawing.Point(529, 161);
             this.chbIsNeedToShutDown.Name = "chbIsNeedToShutDown";
             this.chbIsNeedToShutDown.Size = new System.Drawing.Size(15, 14);
             this.chbIsNeedToShutDown.TabIndex = 34;
@@ -165,7 +177,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(295, 160);
+            this.label8.Location = new System.Drawing.Point(267, 157);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(244, 20);
             this.label8.TabIndex = 33;
@@ -174,7 +186,7 @@
             // chbIsDueToShutDown
             // 
             this.chbIsDueToShutDown.AutoSize = true;
-            this.chbIsDueToShutDown.Location = new System.Drawing.Point(310, 144);
+            this.chbIsDueToShutDown.Location = new System.Drawing.Point(529, 139);
             this.chbIsDueToShutDown.Name = "chbIsDueToShutDown";
             this.chbIsDueToShutDown.Size = new System.Drawing.Size(15, 14);
             this.chbIsDueToShutDown.TabIndex = 32;
@@ -183,7 +195,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(331, 140);
+            this.label6.Location = new System.Drawing.Point(303, 135);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(208, 20);
             this.label6.TabIndex = 31;
@@ -254,9 +266,10 @@
             // 
             // txtEquip
             // 
+            this.txtEquip.Enabled = false;
             this.txtEquip.Location = new System.Drawing.Point(279, 26);
             this.txtEquip.Name = "txtEquip";
-            this.txtEquip.Size = new System.Drawing.Size(205, 27);
+            this.txtEquip.Size = new System.Drawing.Size(135, 27);
             this.txtEquip.TabIndex = 1;
             // 
             // label2
@@ -317,6 +330,21 @@
             this.dgvMaintenanceItems.Size = new System.Drawing.Size(399, 301);
             this.dgvMaintenanceItems.TabIndex = 2;
             // 
+            // intID
+            // 
+            this.intID.DataPropertyName = "intID";
+            this.intID.HeaderText = "intID";
+            this.intID.Name = "intID";
+            this.intID.ReadOnly = true;
+            this.intID.Visible = false;
+            // 
+            // nvcEquip
+            // 
+            this.nvcEquip.DataPropertyName = "nvcEquip";
+            this.nvcEquip.HeaderText = "نام تجهیز";
+            this.nvcEquip.Name = "nvcEquip";
+            this.nvcEquip.ReadOnly = true;
+            // 
             // txtSearch
             // 
             this.txtSearch.Location = new System.Drawing.Point(6, 29);
@@ -333,21 +361,6 @@
             this.label1.Size = new System.Drawing.Size(48, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "جستجو:";
-            // 
-            // intID
-            // 
-            this.intID.DataPropertyName = "intID";
-            this.intID.HeaderText = "intID";
-            this.intID.Name = "intID";
-            this.intID.ReadOnly = true;
-            this.intID.Visible = false;
-            // 
-            // nvcEquip
-            // 
-            this.nvcEquip.DataPropertyName = "nvcEquip";
-            this.nvcEquip.HeaderText = "نام تجهیز";
-            this.nvcEquip.Name = "nvcEquip";
-            this.nvcEquip.ReadOnly = true;
             // 
             // FrmMaintenanceItems
             // 
@@ -387,7 +400,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTimeItem;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtEquip;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Label label11;
@@ -406,5 +418,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn intID;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvcEquip;
+        private System.Windows.Forms.Button btnSelectEquip;
+        private System.Windows.Forms.TextBox txtEquip;
     }
 }

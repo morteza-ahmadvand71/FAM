@@ -50,7 +50,7 @@ namespace Baran.Ferroalloy.Automation
                 }
                 if (filter == "")
                 {
-                    return _db.tabMaintenanceParts.Select(t => new dgvListMaintenancePartsViewModel()
+                    return _db.tabMaintenanceParts.Where(t => t.intMaintenanceItem == maiantenanceItemId).Select(t => new dgvListMaintenancePartsViewModel()
                     {
                         intID = t.intID,
                         maintenanceType = t.intMaintenaceType.ToString(),

@@ -772,7 +772,7 @@ namespace Baran.Ferroalloy.Management
         private void EquipsMenu_Click(object sender, EventArgs e)
         {
             FrmEquips frmEquips=new FrmEquips();
-            frmEquips.Show();
+            frmEquips.ShowDialog();
         }
     }
 }

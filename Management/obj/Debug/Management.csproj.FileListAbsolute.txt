@@ -331,3 +331,8 @@ E:\Classes\Project WindowsForm\FAM_Project\Management\obj\Debug\Baran.Ferroalloy
 E:\Classes\Project WindowsForm\FAM_Project\Management\obj\Debug\Baran.Ferroalloy.Management.Maintenance.FrmMaintenanceUpdate.resources
 E:\Classes\Project WindowsForm\FAM_Project\Management\obj\Debug\Baran.Ferroalloy.Management.Maintenance.FrmSelectPart.resources
 E:\Classes\Project WindowsForm\FAM_Project\Management\obj\Debug\Baran.Ferroalloy.Management.FrmEquips.resources
+E:\Classes\Project WindowsForm\FAM_Project\Management\obj\Debug\Baran.Ferroalloy.Management.FrmEquipInsert.resources
+E:\Classes\Project WindowsForm\FAM_Project\Management\obj\Debug\Baran.Ferroalloy.Management.FrmZones.resources
+E:\Classes\Project WindowsForm\FAM_Project\Management\obj\Debug\Baran.Ferroalloy.Management.Maintenance.FrmSubZones.resources
+E:\Classes\Project WindowsForm\FAM_Project\Management\obj\Debug\Baran.Ferroalloy.Management.FrmEquipName.resources
+E:\Classes\Project WindowsForm\FAM_Project\Management\obj\Debug\Baran.Ferroalloy.Management.FrmSelectEquip.resources

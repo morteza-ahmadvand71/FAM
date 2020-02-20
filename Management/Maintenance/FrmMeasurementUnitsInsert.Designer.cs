@@ -107,11 +107,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("B Yekan", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(24, 41);
+            this.label4.Location = new System.Drawing.Point(56, 45);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(388, 18);
+            this.label4.Size = new System.Drawing.Size(357, 18);
             this.label4.TabIndex = 6;
-            this.label4.Text = "برای ویرایش واحد اندازه گیری از لیست مقابل روی آن دوبار کلیک کنید.";
+            this.label4.Text = "برای ویرایش واحد اندازه گیری از لیست مقابل روی آن کلیک کنید.";
             // 
             // btmEdit
             // 

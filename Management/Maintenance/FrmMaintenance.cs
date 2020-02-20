@@ -177,6 +177,11 @@ namespace Baran.Ferroalloy.Management.Maintenance
                 var maintenanceId = Convert.ToInt32(dgvMaintenance.CurrentRow.Cells["intID"].Value.ToString());
                 FrmMaintenanceItems frmMaintenanceItems = new FrmMaintenanceItems();
                 frmMaintenanceItems.maintenanceId = maintenanceId;
+                using (UnitOfWork db = new UnitOfWork())
+                {
+                    var maintenance = db.Maintenance.GetEntity(t => t.intID == maintenanceId);
+                    frmMaintenanceItems.coIdsWorker = maintenance.nvcCoIdsWorkGroup;
+                }
                 frmMaintenanceItems.Show();
             }
             else
@@ -204,6 +209,6 @@ namespace Baran.Ferroalloy.Management.Maintenance
             Filter();
         }
 
-        
+
     }
 }

@@ -72,7 +72,7 @@ namespace Baran.Ferroalloy.Automation.Models
         public virtual DbSet<tabShifts> tabShifts { get; set; }
         public virtual DbSet<tabEquipName> tabEquipName { get; set; }
         public virtual DbSet<tabEquips> tabEquips { get; set; }
-        public virtual DbSet<tabSubZones> tabSubZones { get; set; }
         public virtual DbSet<tabZones> tabZones { get; set; }
+        public virtual DbSet<tabSubZones> tabSubZones { get; set; }
     }
 }

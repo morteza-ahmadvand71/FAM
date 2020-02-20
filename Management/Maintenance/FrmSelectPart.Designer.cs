@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cbStores = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbCategories = new System.Windows.Forms.ComboBox();
@@ -68,6 +68,7 @@
             this.cbStores.Name = "cbStores";
             this.cbStores.Size = new System.Drawing.Size(133, 28);
             this.cbStores.TabIndex = 34;
+            this.cbStores.SelectedIndexChanged += new System.EventHandler(this.CbStores_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -93,6 +94,7 @@
             this.cbCategories.Name = "cbCategories";
             this.cbCategories.Size = new System.Drawing.Size(133, 28);
             this.cbCategories.TabIndex = 36;
+            this.cbCategories.SelectedIndexChanged += new System.EventHandler(this.CbCategories_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -118,6 +120,7 @@
             this.cbName.Name = "cbName";
             this.cbName.Size = new System.Drawing.Size(150, 28);
             this.cbName.TabIndex = 38;
+            this.cbName.SelectedIndexChanged += new System.EventHandler(this.cbNames_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -143,6 +146,7 @@
             this.cbBranch.Name = "cbBranch";
             this.cbBranch.Size = new System.Drawing.Size(133, 28);
             this.cbBranch.TabIndex = 46;
+            this.cbBranch.SelectedIndexChanged += new System.EventHandler(this.CbBranch_SelectedIndexChanged);
             // 
             // cbSubBranch
             // 
@@ -155,6 +159,7 @@
             this.cbSubBranch.Name = "cbSubBranch";
             this.cbSubBranch.Size = new System.Drawing.Size(133, 28);
             this.cbSubBranch.TabIndex = 48;
+            this.cbSubBranch.SelectedIndexChanged += new System.EventHandler(this.CbSubBranch_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -224,14 +229,14 @@
             this.dgvParts.AllowUserToOrderColumns = true;
             this.dgvParts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvParts.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvParts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvParts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvParts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvParts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.intID,
@@ -253,8 +258,8 @@
             // intID
             // 
             this.intID.DataPropertyName = "intID";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intID.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intID.DefaultCellStyle = dataGridViewCellStyle12;
             this.intID.HeaderText = "intID";
             this.intID.MinimumWidth = 10;
             this.intID.Name = "intID";
@@ -298,7 +303,6 @@
             // 
             // btmSelect
             // 
-            this.btmSelect.Enabled = false;
             this.btmSelect.Location = new System.Drawing.Point(275, 484);
             this.btmSelect.Margin = new System.Windows.Forms.Padding(4);
             this.btmSelect.Name = "btmSelect";
@@ -310,7 +314,6 @@
             // 
             // btnClose
             // 
-            this.btnClose.Enabled = false;
             this.btnClose.Location = new System.Drawing.Point(470, 484);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";

@@ -27,16 +27,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvEquips = new System.Windows.Forms.DataGridView();
-            this.intID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bitSelect = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.zoneTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subZoneTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.equipNameTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btmInsert = new System.Windows.Forms.Button();
             this.btmDelete = new System.Windows.Forms.Button();
             this.btmExit = new System.Windows.Forms.Button();
@@ -53,6 +47,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btmSearch = new System.Windows.Forms.Button();
+            this.intID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bitSelect = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.zoneTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subZoneTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.equipNameTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquips)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,14 +66,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvEquips.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvEquips.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEquips.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEquips.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvEquips.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEquips.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.intID,
@@ -92,47 +92,6 @@
             this.dgvEquips.Size = new System.Drawing.Size(1100, 353);
             this.dgvEquips.TabIndex = 25;
             // 
-            // intID
-            // 
-            this.intID.DataPropertyName = "intID";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intID.DefaultCellStyle = dataGridViewCellStyle2;
-            this.intID.HeaderText = "intID";
-            this.intID.MinimumWidth = 10;
-            this.intID.Name = "intID";
-            this.intID.Visible = false;
-            // 
-            // bitSelect
-            // 
-            this.bitSelect.DataPropertyName = "bitSelect";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.NullValue = false;
-            this.bitSelect.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bitSelect.HeaderText = "انتخاب";
-            this.bitSelect.MinimumWidth = 10;
-            this.bitSelect.Name = "bitSelect";
-            // 
-            // zoneTitle
-            // 
-            this.zoneTitle.HeaderText = "بخش";
-            this.zoneTitle.Name = "zoneTitle";
-            // 
-            // subZoneTitle
-            // 
-            this.subZoneTitle.HeaderText = "زیربخش";
-            this.subZoneTitle.Name = "subZoneTitle";
-            // 
-            // categoryTitle
-            // 
-            this.categoryTitle.HeaderText = "رسته";
-            this.categoryTitle.Name = "categoryTitle";
-            // 
-            // equipNameTitle
-            // 
-            this.equipNameTitle.HeaderText = "نام";
-            this.equipNameTitle.Name = "equipNameTitle";
-            // 
             // btmInsert
             // 
             this.btmInsert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -145,12 +104,12 @@
             this.btmInsert.TabIndex = 26;
             this.btmInsert.Text = "ورود";
             this.btmInsert.UseVisualStyleBackColor = true;
+            this.btmInsert.Click += new System.EventHandler(this.BtmInsert_Click);
             // 
             // btmDelete
             // 
             this.btmDelete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btmDelete.Enabled = false;
             this.btmDelete.Font = new System.Drawing.Font("B Yekan", 11F);
             this.btmDelete.Location = new System.Drawing.Point(526, 563);
             this.btmDelete.Margin = new System.Windows.Forms.Padding(0);
@@ -159,6 +118,7 @@
             this.btmDelete.TabIndex = 27;
             this.btmDelete.Text = "حذف";
             this.btmDelete.UseVisualStyleBackColor = true;
+            this.btmDelete.Click += new System.EventHandler(this.BtmDelete_Click);
             // 
             // btmExit
             // 
@@ -172,6 +132,7 @@
             this.btmExit.TabIndex = 24;
             this.btmExit.Text = "خروج";
             this.btmExit.UseVisualStyleBackColor = true;
+            this.btmExit.Click += new System.EventHandler(this.BtmExit_Click);
             // 
             // cbZones
             // 
@@ -334,6 +295,51 @@
             this.btmSearch.UseVisualStyleBackColor = true;
             this.btmSearch.Click += new System.EventHandler(this.BtmSearch_Click);
             // 
+            // intID
+            // 
+            this.intID.DataPropertyName = "intID";
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intID.DefaultCellStyle = dataGridViewCellStyle14;
+            this.intID.HeaderText = "intID";
+            this.intID.MinimumWidth = 10;
+            this.intID.Name = "intID";
+            this.intID.Visible = false;
+            // 
+            // bitSelect
+            // 
+            this.bitSelect.DataPropertyName = "bitSelect";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.NullValue = false;
+            this.bitSelect.DefaultCellStyle = dataGridViewCellStyle15;
+            this.bitSelect.HeaderText = "انتخاب";
+            this.bitSelect.MinimumWidth = 10;
+            this.bitSelect.Name = "bitSelect";
+            // 
+            // zoneTitle
+            // 
+            this.zoneTitle.DataPropertyName = "zoneTitle";
+            this.zoneTitle.HeaderText = "بخش";
+            this.zoneTitle.Name = "zoneTitle";
+            // 
+            // subZoneTitle
+            // 
+            this.subZoneTitle.DataPropertyName = "subZoneTitle";
+            this.subZoneTitle.HeaderText = "زیربخش";
+            this.subZoneTitle.Name = "subZoneTitle";
+            // 
+            // categoryTitle
+            // 
+            this.categoryTitle.DataPropertyName = "categoryTitle";
+            this.categoryTitle.HeaderText = "رسته";
+            this.categoryTitle.Name = "categoryTitle";
+            // 
+            // equipNameTitle
+            // 
+            this.equipNameTitle.DataPropertyName = "equipNameTitle";
+            this.equipNameTitle.HeaderText = "نام";
+            this.equipNameTitle.Name = "equipNameTitle";
+            // 
             // FrmEquips
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -380,12 +386,6 @@
         private System.Windows.Forms.Button btmInsert;
         private System.Windows.Forms.Button btmDelete;
         private System.Windows.Forms.Button btmExit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn intID;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn bitSelect;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zoneTitle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn subZoneTitle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoryTitle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn equipNameTitle;
         private System.Windows.Forms.ComboBox cbZones;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbSubZones;
@@ -399,5 +399,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btmSearch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn intID;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn bitSelect;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zoneTitle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subZoneTitle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryTitle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn equipNameTitle;
     }
 }

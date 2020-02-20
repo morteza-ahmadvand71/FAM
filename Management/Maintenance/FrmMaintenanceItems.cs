@@ -66,7 +66,7 @@ namespace Baran.Ferroalloy.Management.Maintenance
         {
             using (UnitOfWork db = new UnitOfWork())
             {
-                this.dgvMaintenanceItems.DataSource = db.MaintenanceItem.ListMaintenanceItems(maintenanceId,txtSearch.Text);
+                this.dgvMaintenanceItems.DataSource = db.MaintenanceItem.ListMaintenanceItems(maintenanceId, txtSearch.Text);
             }
         }
 
@@ -88,7 +88,7 @@ namespace Baran.Ferroalloy.Management.Maintenance
             using (UnitOfWork db = new UnitOfWork())
             {
                 var coIds = "";
-                var nameWorker = txtWorker.Text.Split('-');
+                var nameWorker = txtWorker.Text.Trim().Split('-');
                 foreach (var item in nameWorker)
                 {
                     coIds += db.Employees.GetEntity(t => t.nvcFirstname + " " + t.nvcLastname == item).nvcCoID + "-";
@@ -132,7 +132,7 @@ namespace Baran.Ferroalloy.Management.Maintenance
                     timItem = DateTime.Now.TimeOfDay,
                     intMaintenanceType = maintenanceType,
                     nvcEquip = txtEquip.Text,
-                    nvcTips = txtTips.Text,
+                    nvcTips = txtTips.Text.Trim(),
                     nvcCoIdsWorker = coIds
                 };
                 db.MaintenanceItem.Insert(tabMaintenanceItems);
@@ -160,9 +160,20 @@ namespace Baran.Ferroalloy.Management.Maintenance
                     {
                         var maintenaceItemsId = Convert.ToInt32(dgvMaintenanceItems.CurrentRow.Cells[0].Value.ToString());
                         var maintenanceItems = db.MaintenanceItem.GetEntity(t => t.intID == maintenaceItemsId);
-                        db.MaintenanceItem.Delete(maintenanceItems);
-                        db.Save();
-                        ListRefresh();
+                        var maintenanceParts =
+                            db.MaintenanceParts.GetByWhere(t => t.intMaintenanceItem == maintenaceItemsId);
+                        if (maintenanceParts.Any())
+                        {
+                            RtlMessageBox.Show("حذف امکان پذیر نیست", "خطا", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            db.MaintenanceItem.Delete(maintenanceItems);
+                            db.Save();
+                            ListRefresh();
+                        }
+                        
                     }
                 }
             }
@@ -170,13 +181,20 @@ namespace Baran.Ferroalloy.Management.Maintenance
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            FrmMaintenanceParts frmMaintenanceParts=new FrmMaintenanceParts();
+            FrmMaintenanceParts frmMaintenanceParts = new FrmMaintenanceParts();
             if (dgvMaintenanceItems.CurrentRow != null)
             {
                 frmMaintenanceParts.maintenanceItemId = int.Parse(dgvMaintenanceItems.CurrentRow.Cells[0].Value.ToString());
             }
-                
+
             frmMaintenanceParts.Show();
+        }
+
+        private void BtnSelectEquip_Click(object sender, EventArgs e)
+        {
+            FrmSelectEquip frmSelectEquip = new FrmSelectEquip();
+            frmSelectEquip.ShowDialog();
+            txtEquip.Text = frmSelectEquip.equipName;
         }
     }
 }

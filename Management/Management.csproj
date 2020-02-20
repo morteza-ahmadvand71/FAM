@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Maintenance\FrmEquipInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\FrmEquipInsert.designer.cs">
+      <DependentUpon>FrmEquipInsert.cs</DependentUpon>
+    </Compile>
     <Compile Include="Maintenance\FrmBranchInsert.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     </Compile>
     <Compile Include="Maintenance\FrmCategoryInsert.Designer.cs">
       <DependentUpon>FrmCategoryInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\FrmEquipName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\FrmEquipName.Designer.cs">
+      <DependentUpon>FrmEquipName.cs</DependentUpon>
     </Compile>
     <Compile Include="Maintenance\FrmMaintenance.cs">
       <SubType>Form</SubType>
@@ -119,6 +131,12 @@
     <Compile Include="Maintenance\FrmNames.Designer.cs">
       <DependentUpon>FrmNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="Maintenance\FrmSelectEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\FrmSelectEquip.Designer.cs">
+      <DependentUpon>FrmSelectEquip.cs</DependentUpon>
+    </Compile>
     <Compile Include="Maintenance\FrmSelectPart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +160,18 @@
     </Compile>
     <Compile Include="Maintenance\FrmEquips.Designer.cs">
       <DependentUpon>FrmEquips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\FrmSubZones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\FrmSubZones.Designer.cs">
+      <DependentUpon>FrmSubZones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\FrmZones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\FrmZones.Designer.cs">
+      <DependentUpon>FrmZones.cs</DependentUpon>
     </Compile>
     <Compile Include="Maintenance\MaintenanceElectricalFurnaceInsert.cs">
       <SubType>Form</SubType>
@@ -493,11 +523,17 @@
     <Compile Include="Store\Requests.Designer.cs">
       <DependentUpon>Requests.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Maintenance\FrmEquipInsert.resx">
+      <DependentUpon>FrmEquipInsert.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Maintenance\FrmBranchInsert.resx">
       <DependentUpon>FrmBranchInsert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maintenance\FrmCategoryInsert.resx">
       <DependentUpon>FrmCategoryInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\FrmEquipName.resx">
+      <DependentUpon>FrmEquipName.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maintenance\FrmMaintenance.resx">
       <DependentUpon>FrmMaintenance.cs</DependentUpon>
@@ -523,6 +559,9 @@
     <EmbeddedResource Include="Maintenance\FrmNames.resx">
       <DependentUpon>FrmNames.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\FrmSelectEquip.resx">
+      <DependentUpon>FrmSelectEquip.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Maintenance\FrmSelectPart.resx">
       <DependentUpon>FrmSelectPart.cs</DependentUpon>
     </EmbeddedResource>
@@ -534,6 +573,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Maintenance\FrmEquips.resx">
       <DependentUpon>FrmEquips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\FrmSubZones.resx">
+      <DependentUpon>FrmSubZones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\FrmZones.resx">
+      <DependentUpon>FrmZones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maintenance\MaintenanceElectricalFurnaceInsert.resx">
       <DependentUpon>MaintenanceElectricalFurnaceInsert.cs</DependentUpon>

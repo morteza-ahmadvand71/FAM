@@ -21,7 +21,7 @@ namespace Baran.Ferroalloy.Automation.Models
         }
     
         public int intID { get; set; }
-        public Nullable<bool> birSelect { get; set; }
+        public Nullable<bool> bitSelect { get; set; }
         public string nvcName { get; set; }
         public int intNumber { get; set; }
         public int intZone { get; set; }

@@ -111,7 +111,7 @@ namespace Baran.Ferroalloy.Management.Maintenance
                             subBranch.nvcName = subBranchName;
                             subBranch.intBranch = branch.intNumber;
 
-                            db.Branch.Update(branch);
+                            db.SubBranch.Update(subBranch);
                             db.Save();
                             RtlMessageBox.Show("ویرایش با موفقیت انجام شد", "ثبت", MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);

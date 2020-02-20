@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btmInsert = new System.Windows.Forms.Button();
             this.btmDelete = new System.Windows.Forms.Button();
             this.btmSearchItems = new System.Windows.Forms.Button();
@@ -121,7 +121,7 @@
             this.cbSubDepartment.Location = new System.Drawing.Point(468, 109);
             this.cbSubDepartment.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbSubDepartment.Name = "cbSubDepartment";
-            this.cbSubDepartment.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cbSubDepartment.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cbSubDepartment.Size = new System.Drawing.Size(143, 28);
             this.cbSubDepartment.TabIndex = 61;
             // 
@@ -146,7 +146,7 @@
             this.cbShift.Location = new System.Drawing.Point(768, 109);
             this.cbShift.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbShift.Name = "cbShift";
-            this.cbShift.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cbShift.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cbShift.Size = new System.Drawing.Size(150, 28);
             this.cbShift.TabIndex = 59;
             // 
@@ -199,14 +199,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvMaintenance.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMaintenance.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMaintenance.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMaintenance.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMaintenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMaintenance.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.intID,
@@ -230,8 +230,8 @@
             // intID
             // 
             this.intID.DataPropertyName = "intID";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.intID.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.intID.DefaultCellStyle = dataGridViewCellStyle2;
             this.intID.HeaderText = "intID";
             this.intID.MinimumWidth = 10;
             this.intID.Name = "intID";
@@ -240,10 +240,10 @@
             // bitSelect
             // 
             this.bitSelect.DataPropertyName = "bitSelect";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.NullValue = false;
-            this.bitSelect.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.NullValue = false;
+            this.bitSelect.DefaultCellStyle = dataGridViewCellStyle3;
             this.bitSelect.FillWeight = 85.27919F;
             this.bitSelect.HeaderText = "انتخاب";
             this.bitSelect.MinimumWidth = 10;

@@ -14,8 +14,10 @@ namespace Baran.Ferroalloy.Management.Maintenance
     public partial class FrmSelectPart : Form
     {
         private bool bolEnableBtmSearchByInterface;
-        private int partId;
-        private string partName;
+        public int partId;
+        public string partName;
+        public string partCode;
+        public string measurementUnit;
 
         public FrmSelectPart()
         {
@@ -23,6 +25,8 @@ namespace Baran.Ferroalloy.Management.Maintenance
             bolEnableBtmSearchByInterface = false;
             partId = 0;
             partName = "";
+            partCode = "";
+            measurementUnit = "";
         }
 
         private void FrmSelectPart_Load(object sender, EventArgs e)
@@ -151,7 +155,7 @@ namespace Baran.Ferroalloy.Management.Maintenance
 
         #region Branch
 
-        private void CbBranch_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void CbBranch_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.cbSubBranch.Items.Clear();
             using (UnitOfWork db = new UnitOfWork())
@@ -236,11 +240,11 @@ namespace Baran.Ferroalloy.Management.Maintenance
             if (this.cbBranch.SelectedIndex >= 1 || this.cbStores.SelectedIndex >= 1 ||
                 this.cbCategories.SelectedIndex >= 1 || this.cbName.SelectedIndex >= 1)
             {
-                this.bolEnableBtmSearchByInterface = true;
+                this.btmSearch.Enabled = true;
             }
             else
             {
-                this.bolEnableBtmSearchByInterface = false;
+                this.btmSearch.Enabled = false;
             }
         }
 
@@ -260,7 +264,59 @@ namespace Baran.Ferroalloy.Management.Maintenance
                 {
                     var parts = db.Parts.GetEntity(t => t.intID == partId);
                     partName = parts.tabName.nvcName + " " + parts.tabBranch.nvcName + " " + parts.tabSubBranch.nvcName;
+                    var measurementUnits = db.MeasurementUnits.GetEntity(t => t.intCategory == parts.intCategory);
+                    measurementUnit = measurementUnits.nvcName;
+                    var storeId = parts.intStore.ToString();
+                    if (storeId.Length == 1)
+                    {
+                        storeId = 0 + storeId;
+                    }
+                    else
+                    {
+                        storeId = storeId;
+                    }
+
+                    var categoryId = parts.intCategory.ToString();
+                    if (categoryId.Length == 1)
+                    {
+                        categoryId = 0 + categoryId;
+                    }
+                    else
+                    {
+                        categoryId = categoryId;
+                    }
+
+                    var nameId = parts.intName.ToString();
+                    if (nameId.Length == 1)
+                    {
+                        nameId = 0 + nameId;
+                    }
+                    else
+                    {
+                        nameId = nameId;
+                    }
+
+                    var branchId = parts.intBranch.ToString();
+                    if (branchId.Length == 1)
+                    {
+                        branchId = 0 + branchId;
+                    }
+                    else
+                    {
+                        branchId = branchId;
+                    }
+                    var subBranchId = parts.intSubBranch.ToString();
+                    if (subBranchId.Length == 1)
+                    {
+                        subBranchId = 0 + subBranchId;
+                    }
+                    else
+                    {
+                        subBranchId = subBranchId;
+                    }
+                    partCode = storeId + "-" + categoryId + "-" + nameId + "-" + branchId + "-" + subBranchId;
                 }
+                this.Close();
             }
             else
             {

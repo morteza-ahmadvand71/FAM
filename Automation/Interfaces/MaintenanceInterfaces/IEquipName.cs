@@ -9,5 +9,6 @@ namespace Baran.Ferroalloy.Automation
 {
     public interface IEquipName:IGeneric<tabEquipName>
     {
+        List<tabEquipName> ListEquipNames(int categoryId, string filter = "");
     }
 }

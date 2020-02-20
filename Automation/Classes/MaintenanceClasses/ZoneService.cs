@@ -13,5 +13,18 @@ namespace Baran.Ferroalloy.Automation
         public ZoneService(DbContext db) : base(db)
         {
         }
+
+        public List<tabZones> ListZones(string filter = "")
+        {
+            using (UnitOfWork db = new UnitOfWork())
+            {
+                if (filter == "")
+                {
+                    return db.Zone.GetAll().ToList();
+                }
+
+                return db.Zone.GetAll().Where(t => t.nvcName.Contains(filter)).ToList();
+            }
+        }
     }
 }

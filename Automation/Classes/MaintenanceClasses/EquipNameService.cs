@@ -13,5 +13,18 @@ namespace Baran.Ferroalloy.Automation
         public EquipNameService(DbContext db) : base(db)
         {
         }
+
+        public List<tabEquipName> ListEquipNames(int categoryId, string filter = "")
+        {
+            using (UnitOfWork db = new UnitOfWork())
+            {
+                if (filter == "")
+                {
+                    return db.EquipName.GetAll().Where(t => t.intCategory == categoryId).ToList();
+                }
+
+                return db.EquipName.GetAll().Where(t => t.nvcName.Contains(filter) && t.intCategory == categoryId).ToList();
+            }
+        }
     }
 }

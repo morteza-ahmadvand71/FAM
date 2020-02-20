@@ -23,6 +23,7 @@ namespace Baran.Ferroalloy.Management
 
         private void FrmZones_Load(object sender, EventArgs e)
         {
+            dgvEquips.AutoGenerateColumns = false;
             using (UnitOfWork db=new UnitOfWork())
             {
                 var zones = db.Zone.GetAll();
@@ -122,7 +123,7 @@ namespace Baran.Ferroalloy.Management
 
         private void BtmSearch_Click(object sender, EventArgs e)
         {
-
+            Filter();
         }
 
         public void Filter()
@@ -149,6 +150,40 @@ namespace Baran.Ferroalloy.Management
 
                 dgvEquips.DataSource = list;
             }
+        }
+
+        private void BtmDelete_Click(object sender, EventArgs e)
+        {
+            using (UnitOfWork db = new UnitOfWork())
+            {
+                if (RtlMessageBox.Show($"آیا از حذف مطمئن هستید؟", "توجه", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    var selectItems = dgvEquips.Rows.Cast<DataGridViewRow>().Where(t => Convert.ToBoolean(t.Cells["bitSelect"].Value) == true).ToList();
+
+                    foreach (var item in selectItems)
+                    {
+                        var id = int.Parse(item.Cells["intID"].Value.ToString());
+                        var equips = db.Equip.GetEntity(t => t.intID == id);
+                        db.Equip.Delete(equips);
+                        db.Save();
+                        //RtlMessageBox.Show("حذف با موفقیت انجام شد", "حذف کالا", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Filter();
+                    }
+                }
+
+            }
+        }
+
+        private void BtmExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtmInsert_Click(object sender, EventArgs e)
+        {
+            FrmEquipInsert frmEquipInsert=new FrmEquipInsert();
+            frmEquipInsert.ShowDialog();
         }
     }
 }

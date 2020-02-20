@@ -21,7 +21,7 @@ namespace Baran.Ferroalloy.Automation.Models
             this.tabSubZones = new HashSet<tabSubZones>();
         }
     
-        public short intID { get; set; }
+        public int intID { get; set; }
         public Nullable<bool> bitSelect { get; set; }
         public int intNumber { get; set; }
         public string nvcName { get; set; }

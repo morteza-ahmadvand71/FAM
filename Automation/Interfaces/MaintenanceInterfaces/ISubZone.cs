@@ -9,5 +9,6 @@ namespace Baran.Ferroalloy.Automation
 {
     public interface ISubZone:IGeneric<tabSubZones>
     {
+        List<tabSubZones> ListSubZones(int zoneId,string filter = "");
     }
 }

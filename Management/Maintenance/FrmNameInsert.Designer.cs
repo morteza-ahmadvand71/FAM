@@ -59,6 +59,7 @@
             this.label2.Size = new System.Drawing.Size(45, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "نام کالا:";
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // gbRegister
             // 
@@ -71,6 +72,7 @@
             this.gbRegister.TabIndex = 3;
             this.gbRegister.TabStop = false;
             this.gbRegister.Text = "ثبت کالای جدید";
+            this.gbRegister.Enter += new System.EventHandler(this.GbRegister_Enter);
             // 
             // btmRegister
             // 
@@ -88,17 +90,19 @@
             this.txtRegisterName.Name = "txtRegisterName";
             this.txtRegisterName.Size = new System.Drawing.Size(343, 27);
             this.txtRegisterName.TabIndex = 1;
+            this.txtRegisterName.TextChanged += new System.EventHandler(this.TxtRegisterName_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(48, 40);
+            this.label4.Location = new System.Drawing.Point(82, 39);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(365, 20);
+            this.label4.Size = new System.Drawing.Size(331, 20);
             this.label4.TabIndex = 6;
-            this.label4.Text = "برای ویرایش کالا از لیست مقابل روی نام کالا دوبار کلیک کنید.";
+            this.label4.Text = "برای ویرایش کالا از لیست مقابل روی نام کالا کلیک کنید.";
+            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // btmEdit
             // 
@@ -116,6 +120,7 @@
             this.txtEditName.Name = "txtEditName";
             this.txtEditName.Size = new System.Drawing.Size(343, 27);
             this.txtEditName.TabIndex = 4;
+            this.txtEditName.TextChanged += new System.EventHandler(this.TxtEditName_TextChanged);
             // 
             // label3
             // 
@@ -125,6 +130,7 @@
             this.label3.Size = new System.Drawing.Size(45, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "نام کالا:";
+            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // groupBox3
             // 
@@ -138,6 +144,7 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "لیست کالا ها";
+            this.groupBox3.Enter += new System.EventHandler(this.GroupBox3_Enter);
             // 
             // btnDelete
             // 
@@ -166,6 +173,7 @@
             this.dgvListName.Size = new System.Drawing.Size(250, 258);
             this.dgvListName.TabIndex = 2;
             this.dgvListName.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListName_CellClick);
+            this.dgvListName.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListName_CellContentClick);
             this.dgvListName.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListName_CellDoubleClick);
             // 
             // intID
@@ -207,6 +215,7 @@
             this.label1.Size = new System.Drawing.Size(48, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "جستجو:";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // groupBox2
             // 
@@ -220,6 +229,7 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "ویرایش کالا";
+            this.groupBox2.Enter += new System.EventHandler(this.GroupBox2_Enter);
             // 
             // FrmNameInsert
             // 

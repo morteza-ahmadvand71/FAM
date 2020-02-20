@@ -23,7 +23,7 @@ namespace Baran.Ferroalloy.Automation.Models
     
         public virtual tabCategories tabCategories { get; set; }
         public virtual tabEquipName tabEquipName { get; set; }
-        public virtual tabSubZones tabSubZones { get; set; }
         public virtual tabZones tabZones { get; set; }
+        public virtual tabSubZones tabSubZones { get; set; }
     }
 }

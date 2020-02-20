@@ -73,13 +73,13 @@
         <AssociationConnector Association="dbAfrzModel.FK_tabMaintenances_tabSubDepartments" />
         <EntityTypeShape EntityType="dbAfrzModel.tabEquipName" Width="1.5" PointX="5" PointY="4.625" />
         <EntityTypeShape EntityType="dbAfrzModel.tabEquips" Width="1.5" PointX="7.25" PointY="4.5" />
-        <EntityTypeShape EntityType="dbAfrzModel.tabSubZones" Width="1.5" PointX="5" PointY="0.75" />
         <AssociationConnector Association="dbAfrzModel.FK_tabEquipName_tabCategories" />
         <AssociationConnector Association="dbAfrzModel.FK_tabEquips_tabCategories" />
         <AssociationConnector Association="dbAfrzModel.FK_tabEquips_tabEquipName" />
-        <AssociationConnector Association="dbAfrzModel.FK_tabEquips_tabSubZones" />
         <EntityTypeShape EntityType="dbAfrzModel.tabZones" Width="1.5" PointX="0.75" PointY="4.875" />
         <AssociationConnector Association="dbAfrzModel.FK_tabEquips_tabZones" />
+        <EntityTypeShape EntityType="dbAfrzModel.tabSubZones" Width="1.5" PointX="3" PointY="0.875" />
+        <AssociationConnector Association="dbAfrzModel.FK_tabEquips_tabSubZones" />
         <AssociationConnector Association="dbAfrzModel.FK_tabSubZones_tabZones" />
         </Diagram>
     </edmx:Diagrams>

@@ -508,7 +508,7 @@
       <PropertyRef Name="intNumber" />
     </Key>
     <Property Name="intID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="birSelect" Type="bit" />
+    <Property Name="bitSelect" Type="bit" />
     <Property Name="nvcName" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="intNumber" Type="int" Nullable="false" />
     <Property Name="intZone" Type="int" Nullable="false" />
@@ -583,7 +583,7 @@
     <Key>
       <PropertyRef Name="intNumber" />
     </Key>
-    <Property Name="intID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="intID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="bitSelect" Type="bit" />
     <Property Name="intNumber" Type="int" Nullable="false" />
     <Property Name="nvcName" Type="nvarchar" MaxLength="50" Nullable="false" />
